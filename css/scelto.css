@@ -1,3 +1,55 @@
 .scelto-red {
 	color: #d92b2b;
 }
+
+.scelto-logo {
+	padding: 0;
+	margin-top: 49px;
+	position: absolute;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.scelto-logo img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	height: 100px;
+}
+
+.scelto-logo.shrink img {
+	height: 50px;
+}
+
+.scelto-logo div {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	height: 150px;
+	background: #202020;
+}
+
+.scelto-logo.shrink div {
+	height: 50px;
+}
+
+.scelto-logo.shrink {
+	margin-top: 0px;
+}
+
+#scelto-navbar {
+	margin-left: 200px;
+}
+
+.scelto-logo.shrinked {
+	margin-top: 0px;
+
+}
