@@ -20,6 +20,7 @@
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	height: 100px;
+	max-width: 100%;
 }
 
 .scelto-logo.shrink img {
