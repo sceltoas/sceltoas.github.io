@@ -43,14 +43,24 @@
 }
 
 .scelto-logo.shrink {
-	margin-top: 0px;
-}
-
-#scelto-navbar {
-	margin-left: 200px;
+	margin-top: 0;
 }
 
 .scelto-logo.shrinked {
-	margin-top: 0px;
+	margin-top: 0;
 
+}
+
+@media(max-width:767px) {
+	.scelto-logo img {
+		height: 50px;
+	}
+
+	.scelto-logo div {
+		height: 50px;
+	}
+
+	.scelto-logo {
+		margin-top: 0;
+	}
 }
