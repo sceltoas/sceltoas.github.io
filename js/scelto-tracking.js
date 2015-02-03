@@ -1,20 +1,20 @@
-if (_gaq) {
-	var links = $('a');
+var _gaq = _gaq || [];
 
-	$.each(links, function(i, link) {
-		var category = $(link).data('ga-category');
-		var action = $(link).data('ga-action');
-		var label = $(link).data('ga-label');
-		var value = $(link).data('ga-value');
-		addListener(link, 'click', function() {
-			category = typeof category !== 'undefined' ? category : 'Link';
-			action = typeof action !== 'undefined' ? action : 'Click';
-			label = typeof label !== 'undefined' ? label :
-				typeof $(link).attr('alt') !== 'undefined' ? $(link).attr('alt') : $(link).attr('href');
-			_gaq.push(['_trackEvent', category, action, label, value]);
-		});
+var links = $('a');
+
+$.each(links, function(i, link) {
+	var category = $(link).data('ga-category');
+	var action = $(link).data('ga-action');
+	var label = $(link).data('ga-label');
+	var value = $(link).data('ga-value');
+	addListener(link, 'click', function() {
+		category = typeof category !== 'undefined' ? category : 'Link';
+		action = typeof action !== 'undefined' ? action : 'Click';
+		label = typeof label !== 'undefined' ? label :
+			typeof $(link).attr('alt') !== 'undefined' ? $(link).attr('alt') : $(link).attr('href');
+		_gaq.push(['_trackEvent', category, action, label, value]);
 	});
-}
+});
 
 
 /**
