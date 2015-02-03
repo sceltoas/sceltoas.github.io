@@ -1,17 +1,18 @@
 var links = $('a');
 
-$.each(links, function (i, link) {
+$.each(links, function(i, link) {
 	var category = $(link).data('ga-category');
 	var action = $(link).data('ga-action');
 	var label = $(link).data('ga-label');
 	var value = $(link).data('ga-value');
-	console.info ('Cat: '+category+', Action: '+action+', Label: '+label+', Value: '+value);
-	//addListener(link, 'click', function() {
-	//	category = typeof category !== 'undefined' ? category : 'Link';
-	//	action = typeof action !== 'undefined' ? action : 'Click';
-	//	label = typeof label !== 'undefined' ? label : typeof link.attr('alt') !== 'undefined' ? link.attr('alt') : link.attr('href');
-	//	_trackEvent(category, action, label, value);
-	//});
+	addListener(link, 'click', function() {
+		category = typeof category !== 'undefined' ? category : 'Link';
+		action = typeof action !== 'undefined' ? action : 'Click';
+		label = typeof label !== 'undefined' ? label :
+			typeof $(link).attr('alt') !== 'undefined' ? $(link).attr('alt') : $(link).attr('href');
+		//_trackEvent(category, action, label, value);
+		console.info('GA. Category: ' + category + ', Action: ' + action + ', Label: ' + label + ', Value: ' + value);
+	});
 });
 
 /**
@@ -24,6 +25,6 @@ $.each(links, function (i, link) {
  * @param {function()} callback The function that receives the notification.
  */
 function addListener(element, type, callback) {
- if (element.addEventListener) element.addEventListener(type, callback);
- else if (element.attachEvent) element.attachEvent('on' + type, callback);
+	if (element.addEventListener) element.addEventListener(type, callback);
+	else if (element.attachEvent) element.attachEvent('on' + type, callback);
 }
