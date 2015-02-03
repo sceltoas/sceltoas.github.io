@@ -10,8 +10,7 @@ $.each(links, function(i, link) {
 		action = typeof action !== 'undefined' ? action : 'Click';
 		label = typeof label !== 'undefined' ? label :
 			typeof $(link).attr('alt') !== 'undefined' ? $(link).attr('alt') : $(link).attr('href');
-		//_trackEvent(category, action, label, value);
-		console.info('GA. Category: ' + category + ', Action: ' + action + ', Label: ' + label + ', Value: ' + value);
+		_trackEvent(category, action, label, value);
 	});
 });
 
