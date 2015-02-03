@@ -1,18 +1,21 @@
-var links = $('a');
+if (_gaq) {
+	var links = $('a');
 
-$.each(links, function(i, link) {
-	var category = $(link).data('ga-category');
-	var action = $(link).data('ga-action');
-	var label = $(link).data('ga-label');
-	var value = $(link).data('ga-value');
-	addListener(link, 'click', function() {
-		category = typeof category !== 'undefined' ? category : 'Link';
-		action = typeof action !== 'undefined' ? action : 'Click';
-		label = typeof label !== 'undefined' ? label :
-			typeof $(link).attr('alt') !== 'undefined' ? $(link).attr('alt') : $(link).attr('href');
-		_trackEvent(category, action, label, value);
+	$.each(links, function(i, link) {
+		var category = $(link).data('ga-category');
+		var action = $(link).data('ga-action');
+		var label = $(link).data('ga-label');
+		var value = $(link).data('ga-value');
+		addListener(link, 'click', function() {
+			category = typeof category !== 'undefined' ? category : 'Link';
+			action = typeof action !== 'undefined' ? action : 'Click';
+			label = typeof label !== 'undefined' ? label :
+				typeof $(link).attr('alt') !== 'undefined' ? $(link).attr('alt') : $(link).attr('href');
+			_gaq.push(['_trackEvent', category, action, label, value]);
+		});
 	});
-});
+}
+
 
 /**
  * Utility to wrap the different behaviors between W3C-compliant browsers
