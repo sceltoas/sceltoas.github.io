@@ -7,15 +7,22 @@ $.each(links, function(i, link) {
 	var action = $(link).data('ga-action');
 	var label = $(link).data('ga-label');
 	var value = $(link).data('ga-value');
+	var linkType = $(link).data('ga-type');
 	addListener(link, 'click', function() {
 		category = typeof category !== 'undefined' ? category : 'Link';
 		action = typeof action !== 'undefined' ? action : 'Click';
 		label = typeof label !== 'undefined' ? label :
 			typeof $(link).attr('alt') !== 'undefined' ? $(link).attr('alt') : $(link).attr('href');
-		_gaq.push(['_trackEvent', category, action, label, value]);
+		var method = getTrackingMethodName(linkType);
+		_gaq.push([method, category, action, label, value]);
 	});
 });
 
+function getTrackingMethodName(linkType) {
+	if(linkType === 'event')
+		return '_trackEvent';
+	return '_trackPageview';
+}
 
 /**
  * Utility to wrap the different behaviors between W3C-compliant browsers
