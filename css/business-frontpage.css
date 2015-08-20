@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #d92b2b;
+    color: #c5d200;
 }
 
 h1,
@@ -50,7 +50,7 @@ h6 {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #d92b2b;
+    color: #c5d200;
     background: #fff;
 }
 
@@ -91,6 +91,8 @@ h6 {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+    border-color: #343434;
+    background-color: #343434;
 }
 
 @media(max-width:767px) {
@@ -139,7 +141,7 @@ h6 {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    color: #d92b2b;
+    color: #c5d200;
 }
 
 #people .people-item .people-link .caption .caption-content i {
@@ -176,7 +178,7 @@ h6 {
     border-radius: 100%;
     font-size: 20px;
     line-height: 28px;
-    background-color: #d92b2b;
+    background-color: #c5d200;
     color: #fff;
     border-color: #fff;
 }

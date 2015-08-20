@@ -1,5 +1,5 @@
-.scelto-red {
-	color: #d92b2b;
+.scelto-accent {
+	color: #c5d200;
 }
 
 .scelto-logo {
@@ -35,7 +35,7 @@
 	transition: all 0.5s ease;
 
 	height: 150px;
-	background: #202020;
+	background: #343434;
 }
 
 .scelto-logo.shrink div {
