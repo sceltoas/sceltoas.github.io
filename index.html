@@ -309,26 +309,15 @@
             </div>
             <div class="col-sm-4">
                 <h2>Følg oss:</h2>
-                <a target="_blank" href="http://scel.to/lnkd?src=scelto-web" data-ga-category="Link"
-                   data-ga-action="LinkedIn" alt="Scelto på LinkedIn">
-                    <i class="fa fa-linkedin-square fa-2x"></i> LinkedIn
-                </a>
+                <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                <script type="IN/FollowCompany" data-id="3534998" data-counter="right"></script>
                 <br/>
-                <a target="_blank" href="http://scel.to/tw?src=scelto-web" data-ga-category="Link"
-                   data-ga-action="Twitter" alt="Scelto på Twitter">
-                    <i class="fa fa-twitter-square fa-2x"></i> Twitter
-                </a>
+                <a class="twitter-follow-button" href="https://twitter.com/Scelto_as">Følg @Scelto_as</a>
                 <br/>
-                <a target="_blank" href="http://scel.to/gp?src=scelto-web" data-ga-category="Link"
-                   data-ga-action="Google+" alt="Scelto på Google+">
-                    <i class="fa fa-google-plus-square fa-2x"></i> Google+
-                </a>
+                <!-- Place this tag where you want the widget to render. -->
+                <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/1/102246584782809789530" data-rel="publisher"></div>
                 <br/>
-                <a target="_blank" href="http://scel.to/fb?src=scelto-web" data-ga-category="Link"
-                   data-ga-action="Facebook" alt="Scelto på Facebook">
-                    <i class="fa fa-facebook-square fa-2x"></i> Facebook
-                </a>
-
+                <div class="fb-like" data-href="https://www.facebook.com/scelto.no" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>&nbsp;<div class="fb-follow" data-href="https://www.facebook.com/scelto.no" data-layout="button_count" data-show-faces="true"></div>
             </div>
         </div>
     </div>
@@ -863,6 +852,37 @@
 </script>
 
 <script src="js/scelto-tracking.js"></script>
+
+<!-- Google+ button -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Facebook button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Twitter script -->
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
 </body>
 
 </html>
