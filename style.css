@@ -1,0 +1,245 @@
+html, body {
+    font-family: "Sanuk Regular", "Courier New";
+}
+h1, h2 {
+    font-family: "Sanuk", "Courier New";
+    line-height: 1.3em;
+}
+h4 {
+    line-height: 140%;
+}
+h5 {
+    font-size: 1.9em;
+    line-height: 140%;
+}
+
+a {
+    text-decoration: none;
+    color: #666464;
+}
+
+.sc-link {
+    color: #ffffff;
+    border-bottom: 2px solid #C5D200;
+}
+
+.sc-link:hover {
+    color: #C5D200;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 1.3em;
+}
+
+nav {
+    padding: 5em 1em;
+}
+
+nav ul {
+    margin: 10px;
+}
+
+::selection {
+    background: #C5D200;
+    color: #283739;
+}
+
+.sc-underlined {
+    border-bottom: 4px solid #C5D200;
+}
+
+.header {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.mugshot > img,
+.mugshot > a > img {
+    border-bottom: 4px solid #C5D200;
+}
+
+.mugshot:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.mugshot {
+    position: relative;
+    width: 100%;
+    margin-bottom: 90px;
+    transition:all 0.3s ease;
+}
+
+.mugshot-content {
+    background: #666464;
+    padding: 2em;
+    color: #fff;
+    margin-top: -10px;
+    min-height: 220px;
+}
+
+.mugshot-content > p {
+    font-size: 16px;
+}
+
+.material-icons {
+    font-size: 36px;
+}
+
+.green-text {
+    color: #C5D200;
+}
+
+.bg-dark {
+    background: #283739;
+}
+
+.bg-grey {
+    background: #666464;
+}
+
+.light-grey {
+    color: #a0a0a0;
+}
+
+.dark-green {
+    color: #283739;
+}
+
+.green-color {
+    color: #C5D200;
+}
+
+.text-color {
+    color: #666464;
+}
+
+.center-align {
+    text-align: center ;
+    text-align: -webkit-center ;
+}
+
+.circle-border {
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sc-btn,
+.sc-btn:focus,
+.sc-btn:active {
+    margin-top: 90px;
+    background: transparent;
+    padding: 1.5em;
+    font-size: 1.4em;
+    border: 4px solid #C5D200;
+    line-height: normal;
+}
+
+.no-vmargin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sc-btn:hover {
+    background: #C5D200;
+}
+
+.contact-form > span,
+.contact-form > .editable-text {
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.contact-form > .editable-text {
+    color: #C5D200;
+}
+
+.editable-text,
+.editable-text:hover,
+.editable-text:focus,
+.editable-text:active {
+    border-bottom: 2px solid #C5D200;
+
+}
+
+.editable-text:hover {
+    color: #C5D200;
+}
+
+.editable-text::selection {
+    background-color: #C5D200;
+    color: #283739;
+}
+
+.nav-wrapper > ul > li > a {
+    font-size: 1.5em;
+    color: white;
+}
+
+.brand-logo > img {
+    width: 170px;
+}
+
+.tinted-image {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+            rgba(40, 55, 57, 0.6),
+            rgba(40, 55, 57, 0.6)
+    ),
+    url("images/background1.jpg") ;
+    background-size: cover;
+    min-height: 55em;
+}
+
+.screen-height {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.vertical-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin: auto;
+}
+
+footer.page-footer {
+    background-color: black;
+    color: white;
+    font-size: 75%;
+}
+
+@font-face {
+    font-family: "Sanuk Thin";
+    src: url("./fonts/sanuk/SanukOffc-Thin.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Sanuk";
+    src: url("./fonts/sanuk/SanukOffc-Black.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Sanuk Regular";
+    src: url("./fonts/sanuk/SanukOffc-Regular.otf") format("opentype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Sanuk Regular";
+    src: url("./fonts/sanuk/SanukOffc-Black.ttf") format("opentype");
+    font-weight: bold;
+}

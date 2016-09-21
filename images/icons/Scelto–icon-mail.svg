@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9443 -914 42 42">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Scelto_icon-mail);
+      }
+
+      .cls-2 {
+        fill: #e9e7e7;
+      }
+
+      .cls-3 {
+        stroke: #666464;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clip-Scelto_icon-mail">
+      <rect x="-9443" y="-914" width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_icon-mail" data-name="Scelto–icon-mail" class="cls-1">
+    <g id="group-542" transform="translate(-9999 -4058)">
+      <path id="Path-31_1_" class="cls-2" d="M2.368,1A1.333,1.333,0,0,0,1,2.286V17.714A1.333,1.333,0,0,0,2.368,19H25.632A1.333,1.333,0,0,0,27,17.714V2.286A1.333,1.333,0,0,0,25.632,1Z" transform="translate(563 3155)"/>
+      <path id="Path-82_1_" class="cls-3" d="M5,5l8.026,7.779a2.6,2.6,0,0,0,3.684,0L24.736,5" transform="translate(561.786 3155.5)"/>
+      <path id="Path-83_1_" class="cls-3" d="M5,17.463,9.605,13" transform="translate(561.786 3152.601)"/>
+      <path id="Path-83-Copy_1_" class="cls-3" d="M32.605,17.463,28,13" transform="translate(553.917 3152.601)"/>
+    </g>
+  </g>
+</svg>

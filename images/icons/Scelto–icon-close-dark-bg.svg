@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9863 -914 42 42">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Scelto_icon-close-dark-bg);
+      }
+
+      .cls-2 {
+        stroke: #c5d200;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-Scelto_icon-close-dark-bg">
+      <rect x="-9863" y="-914" width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_icon-close-dark-bg" data-name="Scelto–icon-close-dark-bg" class="cls-1">
+    <g id="group-419" transform="translate(-11109 -1057)">
+      <g id="rectangle-9" class="cls-2" transform="translate(1247 144)">
+        <rect class="cls-4" width="40" height="40"/>
+        <rect class="cls-5" x="2" y="2" width="36" height="36"/>
+      </g>
+      <g id="group-351" transform="translate(12.49 1.49)">
+        <line id="line-6" class="cls-3" x2="25.456" transform="translate(1245.51 153.51) rotate(45)"/>
+        <line id="line-6-2" data-name="line-6" class="cls-3" x2="25.456" transform="translate(1263.51 153.51) rotate(135)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9573 -520 300 300">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Scelto_illustration-systemutvikling-dark-bg-tjenester);
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke: #c5d300;
+      }
+
+      .cls-4 {
+        stroke: #a0a0a0;
+      }
+    </style>
+    <clipPath id="clip-Scelto_illustration-systemutvikling-dark-bg-tjenester">
+      <rect x="-9573" y="-520" width="300" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_illustration-systemutvikling-dark-bg-tjenester" data-name="Scelto–illustration-systemutvikling-dark-bg-tjenester" class="cls-1">
+    <g id="group-395" transform="translate(-10539 -2812.848)">
+      <g id="group-324" transform="translate(978.253 2314.848)">
+        <path id="path" class="cls-2" d="M192.409,220.256a28.528,28.528,0,1,1,0-57.056H30.53a28.528,28.528,0,1,0,0,57.056H192.409" transform="translate(-2 36.744)"/>
+        <path id="path-2" data-name="path" class="cls-2" d="M155.5,209.2" transform="translate(34.909 47.8)"/>
+        <path id="path-3" data-name="path" class="cls-2" d="M40.4,187.68V30.528A28.533,28.533,0,0,1,68.93,2h171.43a28.533,28.533,0,0,0-28.53,28.528V230.472A28.533,28.533,0,0,1,183.3,259" transform="translate(7.234 -2)"/>
+        <path id="path-4" data-name="path" class="cls-2" d="M197.7,59.156h4.714a28.528,28.528,0,1,0,0-57.056" transform="translate(45.056 -1.976)"/>
+        <line id="line" class="cls-3" x2="9.551" transform="translate(128.511 38.079)"/>
+        <line id="line-2" data-name="line" class="cls-3" x2="9.427" transform="translate(147.614 38.079)"/>
+        <line id="line-3" data-name="line" class="cls-3" x2="9.427" transform="translate(109.532 38.079)"/>
+        <path id="line-4" data-name="line" class="cls-4" d="M31.864,0h53.96" transform="translate(99.871 76.157)"/>
+        <line id="line-5" data-name="line" class="cls-4" x2="104.818" transform="translate(80.877 95.258)"/>
+        <line id="line-6" data-name="line" class="cls-4" x2="104.818" transform="translate(80.877 114.236)"/>
+        <line id="line-7" data-name="line" class="cls-4" x2="104.818" transform="translate(80.877 133.337)"/>
+        <line id="line-8" data-name="line" class="cls-4" x2="104.818" transform="translate(80.877 152.315)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-8523 -520 300 300">
+  <defs>
+    <style>
+      .cls-1, .cls-7 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Scelto_illustration-mountains);
+      }
+
+      .cls-2 {
+        fill: #c5d200;
+      }
+
+      .cls-3 {
+        fill: #283739;
+      }
+
+      .cls-3, .cls-4, .cls-7 {
+        stroke: #e9e7e7;
+      }
+
+      .cls-3, .cls-4, .cls-6, .cls-7 {
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: #666464;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        stroke: #283739;
+      }
+    </style>
+    <clipPath id="clip-Scelto_illustration-mountains">
+      <rect x="-8523" y="-520" width="300" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_illustration-mountains" data-name="Scelto–illustration-mountains" class="cls-1">
+    <g id="group-443" transform="translate(-9395 -2979)">
+      <circle id="ellipse" class="cls-2" cx="78.198" cy="78.198" r="78.198" transform="translate(943.802 2524.641)"/>
+      <path id="path" class="cls-3" d="M107.126,110.783H1L54.063,27Z" transform="translate(934.424 2573.046)"/>
+      <path id="path-2" data-name="path" class="cls-4" d="M145.468,128.711H17L81.234,17Z" transform="translate(963.108 2555.118)"/>
+      <path id="path-3" data-name="path" class="cls-5" d="M43.171,75.648,32,56.1,54.342,17,76.684,56.1,65.513,67.27l-8.378-8.378Z" transform="translate(990 2555.118)"/>
+      <path id="path-4" data-name="path" class="cls-6" d="M1251.685,2265.17h-.5a7.793,7.793,0,0,0-13.462-2.793,10.391,10.391,0,0,0-9.774-8.378,9.532,9.532,0,0,0-9.635,11.171h-.14a11.171,11.171,0,0,0,0,22.342h33.513a11.171,11.171,0,1,0,0-22.342Z" transform="translate(-271.577 292.984)"/>
+      <line id="line" class="cls-7" x2="178.738" transform="translate(932.631 2695)"/>
+    </g>
+  </g>
+</svg>

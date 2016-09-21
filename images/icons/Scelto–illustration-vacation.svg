@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-8873 -520 300 300">
+  <defs>
+    <style>
+      .cls-1, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Scelto_illustration-vacation);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #c5d200;
+      }
+
+      .cls-3, .cls-5 {
+        stroke: #fff;
+      }
+
+      .cls-3, .cls-5, .cls-6 {
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: #666464;
+      }
+
+      .cls-6 {
+        stroke: #e9e7e7;
+      }
+    </style>
+    <clipPath id="clip-Scelto_illustration-vacation">
+      <rect x="-8873" y="-520" width="300" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_illustration-vacation" data-name="Scelto–illustration-vacation" class="cls-1">
+    <g id="group-523" transform="translate(-9071 -2671)">
+      <circle id="ellipse" class="cls-2" cx="43.496" cy="43.496" r="43.496" transform="translate(315.378 2238.389)"/>
+      <path id="path" class="cls-3" d="M834.62,2254A61.619,61.619,0,0,0,773,2315.621h29C802,2281.587,809.247,2254,834.62,2254Z" transform="translate(-537.365 -33.737)"/>
+      <path id="path-2" data-name="path" class="cls-4" d="M781,2315.621h32.622V2254C788.249,2254,781,2281.587,781,2315.621Z" transform="translate(-516.367 -33.737)"/>
+      <path id="path-3" data-name="path" class="cls-4" d="M822.622,2315.621h29A61.619,61.619,0,0,0,790,2254C815.373,2254,822.622,2281.587,822.622,2315.621Z" transform="translate(-492.745 -33.737)"/>
+      <path id="path-4" data-name="path" class="cls-2" d="M790,2254v61.619h32.622C822.622,2281.587,815.372,2254,790,2254Z" transform="translate(-492.745 -33.737)"/>
+      <line id="line" class="cls-5" x2="231.979" transform="translate(232.011 2387)"/>
+      <line id="line-2" data-name="line" class="cls-5" y1="170.359" transform="translate(297.255 2216.641)"/>
+      <path id="path-5" data-name="path" class="cls-5" d="M781,2315.621c0-34.034,7.249-61.619,32.622-61.619s32.622,27.585,32.622,61.619" transform="translate(-516.368 -33.737)"/>
+      <path id="path-6" data-name="path" class="cls-5" d="M773,2315.621H896.239a61.619,61.619,0,0,0-123.239,0Z" transform="translate(-537.365 -33.737)"/>
+      <path id="path-7" data-name="path" class="cls-5" d="M23,41h94.241l21.748,21.748" transform="translate(292.378 2324.252)"/>
+      <line id="line-3" data-name="line" class="cls-6" x1="21.748" y2="21.748" transform="translate(315.378 2365.252)"/>
+      <line id="line-4" data-name="line" class="cls-5" x1="32.622" y1="32.622" transform="translate(319.003 2332.63)"/>
+      <path id="path-8" data-name="path" class="cls-5" d="M79.745,51.5,65.247,37H29" transform="translate(308.126 2313.753)"/>
+    </g>
+  </g>
+</svg>
