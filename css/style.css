@@ -104,6 +104,10 @@ footer.page-footer {
     padding-bottom: 90px;
 }
 
+.section-padding-top {
+    padding-top: 90px;
+}
+
 @media only screen and (min-width: 993px) {
     .container {
         width: 85%;
