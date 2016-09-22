@@ -7,19 +7,43 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../../style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link rel="icon" href="../../favicon.png" sizes="16x16" type="image/png">
-    <base href="/"/>
+    <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+
+    <base href="../../"/>
 </head>
 <body>
 
+<div class="mobile-menu-wrapper hide-on-large-only">
+    <div class="container">
+        <div class="row center valign-wrapper">
+            <div class="col s10 valign left-align">
+                <a href="/" class="logo">
+                    <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                </a>
+            </div>
+            <div class="col s2 valign">
+                <p id="mobile-menu-close"><img src="/images/icons/Scelto–icon-menu-checkmark.svg" width="50px"/></p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
+        <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
+        <li><a href="/kontakt"><span class="sc-link">Kontakt</span></a></li>
+        <li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>
+        <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
+    </div>
+
+</div>
+
 <div id="index-banner" class="big bg-dark">
     <nav class="transparent" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="/" class="brand-logo">
-                <img src="../../images/logo-green-white-trans.png" alt="Logo for Scelto">
+        <div class="nav-wrapper container hide-on-med-and-down">
+            <a id="logo-container" href="/" class="logo">
+                <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
@@ -28,16 +52,20 @@
                 <li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>
                 <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
             </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
-                <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
-                <li><a href="/kontakt"><span class="sc-link">Kontakt</span></a></li>
-                <li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>
-                <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><img src="../../images/icons/Scelto–icon-menu.svg"
-                                                                                 width="50px"/></a>
+        </div>
+        <div class="hide-on-large-only">
+            <div class="container">
+                <div class="row center valign-wrapper">
+                    <div class="col s10 valign left-align">
+                        <a href="/" class="logo">
+                            <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                        </a>
+                    </div>
+                    <div class="col s2 valign">
+                        <p id="mobile-menu-open"><img src="/images/icons/Scelto–icon-menu.svg" width="50px"/></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="container section-padding">
@@ -46,17 +74,18 @@
                 <h1 class="left-align white-text">Herman Crawfurd Svensen</h1>
                 <h5 class="left-align grey-text">Seniorkonsulent</h5>
                 <div class="section-padding">
-                    <p><img src="../../images/icons/Scelto–icon-mail.svg" width="40px"/><a
-                            class="sc-link" href="mailto:herman@scelto.no">
-                        herman@scelto.no</a>
-                    </p>
-                    <p><img src="../../images/icons/Scelto–icon-linkedin.svg" width="40px"/><a
-                            class="sc-link" href="https://www.linkedin.com/in/hermancs"
-                            target="_blank"> /hermancs</a></p>
+                    <div class="valign-wrapper">
+                        <img src="/images/icons/Scelto–icon-mail.svg" width="40px"/>
+                        <p class="valign"><a class="sc-link" href="mailto:herman@scelto.no">herman@scelto.no</a></p>
+                    </div>
+                    <div class="valign-wrapper">
+                        <img src="/images/icons/Scelto–icon-linkedin.svg" width="40px"/>
+                        <p class="valign"><a class="sc-link" href="https://www.linkedin.com/in/hermancs" target="_blank"> /hermancs</a></p>
+                    </div>
                 </div>
             </div>
             <div class="col s12 m5">
-                <img src="../../images/mugshots/herman.jpg" width="100%">
+                <img src="/images/mugshots/herman.jpg" width="100%">
             </div>
         </div>
     </div>
@@ -65,32 +94,28 @@
 
 <div id="about" class="container">
     <div class="info-section">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h4 class="header col s12 light">Herman ønsker stadig å utvikle seg, og deler også mer enn gjerne
-                        sin egen kunnskap. Han har i tidligere arbeidsforhold hatt lederoppgaver, både som
-                        faggruppeleder for Microsoft/.NET, og som gruppeleder med personalansvar.</h4>
-                </div>
+        <div class="container">
+            <div class="row center">
+                <h4 class="header col s12 light">Herman ønsker stadig å utvikle seg, og deler også mer enn gjerne
+                    sin egen kunnskap. Han har i tidligere arbeidsforhold hatt lederoppgaver, både som
+                    faggruppeleder for Microsoft/.NET, og som gruppeleder med personalansvar.</h4>
             </div>
         </div>
-
     </div>
 </div>
 
 <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <div class="row center">
-                <h1 class="header col s12 light">Herman er scawesome!</h1>
-            </div>
+    <div class="container">
+        <div class="row center">
+            <h1 class="header col s12 light">Herman er scawesome!</h1>
         </div>
     </div>
-    <div class="parallax"><img src="../../images/feet-hipster-longboard-skateboard.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="/images/feet-hipster-longboard-skateboard.jpg" alt="Unsplashed background img 2">
+    </div>
 </div>
 
 <div class="dark-scelto-container bg-grey">
-    <div class="section">
+    <div class="container section">
         <div class="container">
             <div class="row center">
                 <h1>Hermans scills</h1>
@@ -124,17 +149,17 @@
                     </div>
                 </div>
                 <div class="col s12 m6 l4">
-                    <div class="icon-block section-padding center-align">
+                    <div class="icon-block section-padding-top center-align">
                         <p class="center circle-border-white">Arkitektur</p>
                     </div>
                 </div>
                 <div class="col s12 m6 l4">
-                    <div class="icon-block section-padding center-align">
+                    <div class="icon-block section-padding-top center-align">
                         <p class="center circle-border-white">Lag-<br/>spiller</p>
                     </div>
                 </div>
                 <div class="col s12 m6 l4">
-                    <div class="icon-block section-padding center-align">
+                    <div class="icon-block section-padding-top center-align">
                         <p class="center circle-border-white">Skate-boarding</p>
                     </div>
                 </div>
@@ -147,28 +172,26 @@
     </div>
 </div>
 
-<div class="dark-scelto-container bg-dark">
-    <div class="section">
-        <div class="container">
-            <div class="row center">
-                <h4 class="header col s12 light">Ønsker du å bli kontaktet av oss?</h4>
-            </div>
-            <div class="row center">
-                <div class="contact-form">
-                    <span class="contact-header">Hei, jeg heter </span>
+<div id="contact-me" class="dark-scelto-container bg-dark">
+    <div class="container">
+        <div class="row center">
+            <h4 class="header col s12 light">Ønsker du å bli kontaktet av oss?</h4>
+        </div>
+        <div class="row center">
+            <div class="contact-form">
+                <span class="contact-header">Hei, jeg heter </span>
                     <span class="editable-text" contenteditable="true" type="text"
                           onclick="document.execCommand('selectAll',false,null)">oppgi navn</span>
-                    <span class="contact-header">, og dere kan kontakte oss på </span>
+                <span class="contact-header">, og dere kan kontakte meg på </span>
                     <span class="editable-text" contenteditable="true" type="tlf"
-                          onclick="document.execCommand('selectAll',false,null)">oppgi mobilnummer</span>
-                    <span class="contact-header">.</span>
-                </div>
-            </div>
-            <div class="row center">
-                <button class="waves-effect waves-light sc-btn">Kontakt meg</button>
+                          onclick="document.execCommand('selectAll',false,null)"
+                          onfocus="document.execCommand('selectAll',false,null)">oppgi mobilnummer</span>
+                <span class="contact-header">.</span>
             </div>
         </div>
-
+        <div class="row center">
+            <button class="waves-effect waves-light sc-btn">Kontakt meg</button>
+        </div>
     </div>
 </div>
 
@@ -186,12 +209,12 @@
                         <div class="col s6">
                             <p>Følg oss på sosiale medier: </p>
                         </div>
-                        <p class="col s2"><a href="#"><img src="../../images/icons/Scelto–icon-linkedin-footer.svg"
-                                                           width="40px"/></a></p>
-                        <p class="col s2"><a href="#"><img src="../../images/icons/Scelto–icon-facebook-footer.svg"
-                                                           width="40px"/></a></p>
-                        <p class="col s2"><a href="#"><img src="../../images/icons/Scelto–icon-twitter-footer.svg"
-                                                           width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/lnkd"><img
+                                src="/images/icons/Scelto–icon-linkedin-footer.svg" width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/tw/"><img
+                                src="/images/icons/Scelto–icon-facebook-footer.svg" width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/fb"><img
+                                src="/images/icons/Scelto–icon-twitter-footer.svg" width="40px"/></a></p>
                     </div>
                 </div>
             </div>
@@ -206,9 +229,9 @@
 
 
 <!--  Scripts-->
-<script src="../../js/jquery-2.1.1.min.js"></script>
-<script src="../../js/materialize.js"></script>
-<script src="../../js/init.js"></script>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
 
 </body>
 </html>

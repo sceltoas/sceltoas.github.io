@@ -15,11 +15,34 @@
 </head>
 <body>
 
+<div class="mobile-menu-wrapper hide-on-large-only">
+    <div class="container">
+        <div class="row center valign-wrapper">
+            <div class="col s10 valign left-align">
+                <a href="/" class="logo">
+                    <img src="images/logo-green-white-trans.png" alt="Logo for Scelto">
+                </a>
+            </div>
+            <div class="col s2 valign">
+                <p id="mobile-menu-close"><img src="images/icons/Scelto–icon-menu-checkmark.svg" width="50px"/></p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
+        <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
+        <li><a href="/kontakt"><span class="sc-link">Kontakt</span></a></li>
+        <li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>
+        <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
+    </div>
+
+</div>
+
 <div id="index-banner" class="parallax-container">
     <nav class="transparent" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="/" class="brand-logo">
-                <img src="../images/logo-green-white-trans.png" alt="Logo for Scelto">
+        <div class="nav-wrapper container hide-on-med-and-down">
+            <a id="logo-container" href="/" class="logo">
+                <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
@@ -28,27 +51,32 @@
                 <li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>
                 <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
             </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
-                <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
-                <li><a href="/kontakt"><span class="sc-link">Kontakt</span></a></li>
-                <li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>
-                <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><img src="../images/icons/Scelto–icon-menu.svg"
-                                                                                 width="50px"/></a>
+        </div>
+        <div class="hide-on-large-only">
+            <div class="container">
+                <div class="row center valign-wrapper">
+                    <div class="col s10 valign left-align">
+                        <a href="/" class="logo">
+                            <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                        </a>
+                    </div>
+                    <div class="col s2 valign">
+                        <p id="mobile-menu-open"><img src="/images/icons/Scelto–icon-menu.svg" width="50px"/></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
-    <div class="container section-padding">
-        <br><br>
-        <h1 class="header center white-text section-padding">Scelto tilbyr konsulentutleie innen IT. Våre konsulenter jobber med systemutvikling, arkitektur og prosjektledelse.</h1>
+    <div class="container">
+        <h1 class="header center white-text section-padding">Scelto tilbyr konsulentutleie innen IT. Våre konsulenter jobber med
+            <a href="/tjenester/#systemutvikling" class="sc-link">systemutvikling</a>, <a href="/tjenester/#arkitektur" class="sc-link">arkitektur</a> og
+            <a href="/tjenester/#prosjektledelse" class="sc-link">prosjektledelse</a>.</h1>
 
     </div>
-    <div class="parallax"><img src="../images/light-car-display-shop.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="../images/people-coffee-tea-meeting.jpg" alt="Unsplashed background img 2"></div>
 </div>
 
-<div class="container section-padding">
+<div id="systemutvikling" class="container section-padding">
     <div class="row valign-wrapper hide-on-small-and-down">
         <div class="col s12 m3 valign center-align hide-on-small-and-down">
             <img class="center-align" src="../images/icons/Scelto–illustration-systemutvikling-light-bg-tjenester.svg" width="100%" />
@@ -93,7 +121,7 @@
     </div>
 </div>
 
-<div class="section-padding bg-dark">
+<div id="prosjektledelse" class="section-padding bg-dark">
 <div class="container">
     <div class="row valign-wrapper hide-on-small-and-down">
         <div class="col s12 m8 valign">
@@ -140,7 +168,7 @@
 </div>
 </div>
 
-<div class="container section-padding">
+<div id="arkitektur" class="container section-padding">
     <div class="row valign-wrapper hide-on-small-and-down">
         <div class="col s12 m3 valign center-align hide-on-small-and-down">
             <img class="center-align" src="../images/icons/Scelto–illustration-arkitektur-dark-bg-big-tjenester.svg" width="100%" />
@@ -186,28 +214,25 @@
 </div>
 
 <div id="contact-me" class="dark-scelto-container bg-dark">
-    <div class="section">
-        <div class="container">
-            <div class="row center">
-                <h4 class="header col s12 light">Ønsker du å bli kontaktet av oss?</h4>
-            </div>
-            <div class="row center">
-                <div class="contact-form">
-                    <span class="contact-header">Hei, jeg heter </span>
+    <div class="container">
+        <div class="row center">
+            <h4 class="header col s12 light">Ønsker du å bli kontaktet av oss?</h4>
+        </div>
+        <div class="row center">
+            <div class="contact-form">
+                <span class="contact-header">Hei, jeg heter </span>
                     <span class="editable-text" contenteditable="true" type="text"
                           onclick="document.execCommand('selectAll',false,null)">oppgi navn</span>
-                    <span class="contact-header">, og dere kan kontakte meg på </span>
+                <span class="contact-header">, og dere kan kontakte meg på </span>
                     <span class="editable-text" contenteditable="true" type="tlf"
                           onclick="document.execCommand('selectAll',false,null)"
                           onfocus="document.execCommand('selectAll',false,null)">oppgi mobilnummer</span>
-                    <span class="contact-header">.</span>
-                </div>
-            </div>
-            <div class="row center">
-                <button class="waves-effect waves-light sc-btn">Kontakt meg</button>
+                <span class="contact-header">.</span>
             </div>
         </div>
-
+        <div class="row center">
+            <button class="waves-effect waves-light sc-btn">Kontakt meg</button>
+        </div>
     </div>
 </div>
 
@@ -225,12 +250,9 @@
                         <div class="col s6">
                             <p>Følg oss på sosiale medier: </p>
                         </div>
-                        <p class="col s2"><a href="#"><img src="../images/icons/Scelto–icon-linkedin-footer.svg"
-                                                           width="40px"/></a></p>
-                        <p class="col s2"><a href="#"><img src="../images/icons/Scelto–icon-facebook-footer.svg"
-                                                           width="40px"/></a></p>
-                        <p class="col s2"><a href="#"><img src="../images/icons/Scelto–icon-twitter-footer.svg"
-                                                           width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/lnkd"><img src="../images/icons/Scelto–icon-linkedin-footer.svg" width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/tw/"><img src="../images/icons/Scelto–icon-facebook-footer.svg" width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/fb"><img src="../images/icons/Scelto–icon-twitter-footer.svg" width="40px"/></a></p>
                     </div>
                 </div>
             </div>
