@@ -31,8 +31,8 @@
     <div class="center">
         <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
         <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
-        <li><a href="/kontakt"><span class="sc-link">Kontakt</span></a></li>
-        <li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>
+        <li><a href="/ansatte/#contact-me"><span class="sc-link">Kontakt</span></a></li>
+        <!--<li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>-->
         <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
     </div>
 
@@ -47,8 +47,8 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
                 <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
-                <li><a href="/kontakt"><span class="sc-link">Kontakt</span></a></li>
-                <li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>
+                <li><a href="/ansatte/#contact-me"><span class="sc-link">Kontakt</span></a></li>
+                <!--<li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>-->
                 <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
             </ul>
         </div>
@@ -96,9 +96,9 @@
 
                 <div class="col s12 m6 l4">
                     <div class="mugshot">
-                        <a href="/ansatte/torerik"><img src="../images/mugshots/torerik.jpg" width="100%"></a>
+                        <a href="/ansatte/toreric"><img src="../images/mugshots/toreric.jpg" width="100%"></a>
                         <div class="mugshot-content">
-                            <h5 class="center"><a class="sc-link" href="/ansatte/torerik">Tor Eric Sandvik</a></h5>
+                            <h5 class="center"><a class="sc-link" href="/ansatte/toreric">Tor Eric Sandvik</a></h5>
                             <p class="center light-grey">Prosjektleder og daglig leder</p>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                     <div class="mugshot">
                         <a href="/ansatte/oleandre"><img src="../images/mugshots/oleandre.jpg" width="100%"></a>
                         <div class="mugshot-content">
-                            <h5 class="center"><a class="sc-link" href="/ansatte/oleandre">Ole André Riga-Johansen</a></h5>
+                            <h5 class="center"><a class="sc-link" href="/ansatte/ole-andre">Ole-André Riga-Johansen</a></h5>
                             <p class="center light-grey">Seniorkonsulent</p>
                         </div>
                     </div>
@@ -190,25 +190,53 @@
     </div>
 </div>
 
-<div id="contact-me" class="dark-scelto-container bg-dark section-padding-top">
-    <div class="container">
-        <div class="row center">
-            <h4 class="header col s12 light">Ønsker du å bli kontaktet av oss?</h4>
-        </div>
-        <div class="row center">
-            <div class="contact-form">
-                <span class="contact-header">Hei, jeg heter </span>
-                    <span class="editable-text" contenteditable="true" type="text"
+<div id="contact-me" class="dark-scelto-container bg-dark">
+    <div class="section section-padding">
+        <div class="container">
+            <div class="row center">
+                <h4 class="header col s12 light">Ønsker du å bli kontaktet av oss?</h4>
+            </div>
+            <div class="row center">
+                <div class="contact-form">
+                    <span class="contact-header">Hei, jeg heter </span>
+                    <span class="editable-text" id="input-name" contenteditable="true" type="text"
                           onclick="document.execCommand('selectAll',false,null)">oppgi navn</span>
-                <span class="contact-header">, og dere kan kontakte meg på </span>
-                    <span class="editable-text" contenteditable="true" type="tlf"
+                    <span class="contact-header">, og dere kan kontakte meg på </span>
+                    <span class="editable-text" id="input-number" contenteditable="true" type="tlf"
                           onclick="document.execCommand('selectAll',false,null)"
                           onfocus="document.execCommand('selectAll',false,null)">oppgi mobilnummer</span>
-                <span class="contact-header">.</span>
+                    <span class="contact-header">.</span>
+                </div>
+            </div>
+            <div class="row center" id="contact-form-validation-error">
+                <h5 class="red-text">Vennligst fyll inn både navn og mobilnummer så vi vet hvem vi skal ringe :)</h5>
+            </div>
+            <div class="row center red-text" id="contact-form-submit-error">
+                <h5>Innsending av kontakt-meg-skjema feilet. Vær snill og prøv igjen :)</h5>
+            </div>
+            <div class="row center" id="contact-form-submit-loading">
+                <img src="/images/icons/loading.gif" width="35px"/>
+            </div>
+            <div class="row center">
+                <button id="submit-contact" class="waves-effect waves-light sc-btn" onclick="submitContactForm()">
+                    Kontakt meg
+                </button>
             </div>
         </div>
-        <div class="row center">
-            <button class="waves-effect waves-light sc-btn">Kontakt meg</button>
+    </div>
+</div>
+<div id="modal1" class="modal bg-dark white-text">
+    <div class="modal-content">
+        <div class="row valign-wrapper">
+            <div class="valign"><i class="material-icons green-text" style="padding-right: 1em;">check_circle</i></div>
+            <div class="valign"><h2>Takk for at du tok kontakt</h2></div>
+        </div>
+        <div class="row valign-wrapper">
+            <h5>Vi ringer deg så snart som mulig! <br />Ha en fortsatt fin dag!</h5>
+        </div>
+
+        <div class="row center section-padding-top">
+            <a onclick="$('#modal1').closeModal()" class="modal-action modal-close sc-btn white-text">Lukk</a>
         </div>
     </div>
 </div>
