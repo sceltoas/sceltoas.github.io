@@ -257,6 +257,12 @@ nav ul {
     color: #283739;
 }
 
+#contact-form-submit-error,
+#contact-form-submit-loading,
+#contact-form-validation-error {
+    display: none;
+}
+
 .nav-wrapper > ul > li > a {
     font-size: 1.5em;
     color: white;
@@ -289,6 +295,10 @@ nav ul {
     bottom: 20px;
     left: 50%;
     margin: auto;
+}
+
+.modal .modal-content {
+    padding: 4em;
 }
 
 footer.page-footer {
