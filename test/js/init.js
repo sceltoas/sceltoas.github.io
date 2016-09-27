@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 function mail(name, number, success, error) {
   $.ajax({
-    url: 'https://formspree.io/erik@scelto.no',
+    url: 'https://formspree.io/post@scelto.no',
     method: 'POST',
     data: {
       name: name,
