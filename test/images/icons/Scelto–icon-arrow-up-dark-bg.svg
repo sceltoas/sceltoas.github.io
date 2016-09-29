@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9803 -914 42 42">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Scelto_icon-arrow-up-dark-bg);
+      }
+
+      .cls-2 {
+        stroke: #c5d200;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-Scelto_icon-arrow-up-dark-bg">
+      <rect x="-9803" y="-914" width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_icon-arrow-up-dark-bg" data-name="Scelto–icon-arrow-up-dark-bg" class="cls-1">
+    <g id="group-386" transform="translate(-9099 -205) rotate(180)">
+      <g id="rectangle-12" class="cls-2" transform="translate(663 668)">
+        <rect class="cls-4" width="40" height="40"/>
+        <rect class="cls-5" x="2" y="2" width="36" height="36"/>
+      </g>
+      <path id="path-1" class="cls-3" d="M-5268.016,579.5l10.453,10.454,10.454-10.454" transform="translate(5940.423 103.187)"/>
+    </g>
+  </g>
+</svg>

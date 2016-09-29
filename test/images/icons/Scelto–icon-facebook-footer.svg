@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9143 -914 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        clip-path: url(#clip-Scelto_icon-facebook-footer);
+      }
+
+      .cls-2 {
+        fill: #c5d200;
+      }
+    </style>
+    <clipPath id="clip-Scelto_icon-facebook-footer">
+      <rect x="-9143" y="-914" width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_icon-facebook-footer" data-name="Scelto–icon-facebook-footer" class="cls-1">
+    <g id="group-540" transform="translate(-9480 -7872)">
+      <path id="dh_facebook" class="cls-2" d="M19,6.74A1.1,1.1,0,0,1,20.143,5.49h2.915V1H19.043C14.592,1,13.6,4.338,13.6,6.473V9.46H11v4.607h2.6V27.082h5.421V14.067h3.657l.443-4.607H19Z" transform="translate(341 6965)"/>
+    </g>
+  </g>
+</svg>

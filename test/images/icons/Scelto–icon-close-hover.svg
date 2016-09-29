@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9563 -914 42 42">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Scelto_icon-close-hover);
+      }
+
+      .cls-2 {
+        fill: #c5d200;
+        stroke: #c5d200;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke: #283739;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-Scelto_icon-close-hover">
+      <rect x="-9563" y="-914" width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_icon-close-hover" data-name="Scelto–icon-close-hover" class="cls-1">
+    <g id="rectangle-9" class="cls-2" transform="translate(-9562 -913)">
+      <rect class="cls-4" width="40" height="40"/>
+      <rect class="cls-5" x="2" y="2" width="36" height="36"/>
+    </g>
+    <line id="line-6" class="cls-3" x2="25.456" transform="translate(-9551 -902) rotate(45)"/>
+    <line id="line-6-2" data-name="line-6" class="cls-3" x2="25.456" transform="translate(-9533 -902) rotate(135)"/>
+  </g>
+</svg>
