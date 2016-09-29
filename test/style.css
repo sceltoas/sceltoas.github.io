@@ -149,6 +149,7 @@ nav ul {
     color: #fff;
     margin-top: -10px;
     min-height: 220px;
+    max-height: 220px;
 }
 
 .mugshot-content > p {
