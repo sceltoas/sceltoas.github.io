@@ -250,7 +250,7 @@ nav ul {
 .editable-text:focus,
 .editable-text:active {
     border-bottom: 2px solid #C5D200;
-
+    outline: none;
 }
 
 .editable-text:hover {
