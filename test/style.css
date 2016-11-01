@@ -88,6 +88,17 @@ a {
     color: #666464;
 }
 
+.social-link > svg {
+    fill: #ffffff;
+    border-bottom: none;
+    margin: 0 25px 0 5px;
+}
+
+.social-link:hover > svg {
+    fill: #C5D200;
+    border-bottom: none;
+}
+
 .sc-link {
     color: #ffffff;
     border-bottom: 2px solid #C5D200;
