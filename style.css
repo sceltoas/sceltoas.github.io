@@ -94,6 +94,10 @@ a {
     margin: 0 25px 0 5px;
 }
 
+.scelto-header {
+    color: #C5D200;
+}
+
 .social-link:hover > svg {
     fill: #C5D200;
     border-bottom: none;
