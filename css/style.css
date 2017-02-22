@@ -61,6 +61,7 @@ p {
     min-height: 900px;
     line-height: 0;
     height: 100vh;
+    max-height: 1400px;
     color: rgba(255, 255, 255, .9);
 }
 
