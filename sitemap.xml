@@ -6,8 +6,13 @@
         <changefreq>yearly</changefreq>
     </url>
     <url>
-        <loc>http://scelto.no/ansatte/</loc>
+        <loc>http://scelto.no</loc>
         <lastmod>2017-02-20</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/</loc>
+        <lastmod>2017-06-07</lastmod>
         <changefreq>yearly</changefreq>
     </url>
     <url>
@@ -18,6 +23,11 @@
     <url>
         <loc>http://scelto.no/ansatte/janerik/</loc>
         <lastmod>2017-02-20</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/ivar/</loc>
+        <lastmod>2017-06-07</lastmod>
         <changefreq>yearly</changefreq>
     </url>
     <url>
