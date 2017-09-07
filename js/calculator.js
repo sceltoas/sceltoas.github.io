@@ -21,11 +21,11 @@ $(document).ready(function() {
         if (isNaN(hours) || isNaN(moneys)) {
             return updateResult(0, 0, 0, 0, 0);
         }
-        var nettoLonnMnd = Math.ceil(0.6 * hours * moneys);
-        var feriepengerMnd = Math.ceil(nettoLonnMnd * 0.12);
-        var nettoLonnAr = (nettoLonnMnd * 11) + (feriepengerMnd * 11);
-        var bruttoInntjeningMnd = Math.ceil(hours * moneys);
-        var bruttoLonnMnd = nettoLonnMnd - feriepengerMnd;
+        var nettoLonnMnd = Math.round(0.6 * hours * moneys);
+        var nettoLonnAr = nettoLonnMnd * 11;
+        var bruttoInntjeningMnd = Math.round(hours * moneys);
+        var bruttoLonnMnd = Math.round((0.6 * hours * moneys) / 1.12);
+        var feriepengerMnd = Math.round(((0.6 * hours * moneys) / 1.12) * 0.12);
 
         return updateResult(nettoLonnMnd, nettoLonnAr, bruttoInntjeningMnd, bruttoLonnMnd, feriepengerMnd);
     }, 1));
