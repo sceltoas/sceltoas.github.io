@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1308 0 180 180">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Scelto_illustration-Lønnskalkulator);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-2, .cls-6 {
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke: #a0a0a0;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke-width: 3px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #c5d200;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-Scelto_illustration-Lønnskalkulator">
+      <rect x="-1308" width="180" height="180"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_illustration-Lønnskalkulator" data-name="Scelto–illustration-Lønnskalkulator" class="cls-1">
+    <g id="Symbol_1_4" data-name="Symbol 1 – 4" transform="translate(-1308)">
+      <rect id="Rectangle_13" data-name="Rectangle 13" class="cls-2" width="96.97" height="160" transform="translate(41 10)"/>
+      <g id="Rectangle_14" data-name="Rectangle 14" class="cls-3" transform="translate(79.182 58.485)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_15" data-name="Rectangle 15" class="cls-3" transform="translate(105.848 58.485)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_16" data-name="Rectangle 16" class="cls-4" transform="translate(52.515 58.485)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_17" data-name="Rectangle 17" class="cls-3" transform="translate(79.182 85.152)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_18" data-name="Rectangle 18" class="cls-3" transform="translate(105.848 85.152)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_19" data-name="Rectangle 19" class="cls-3" transform="translate(52.515 85.152)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_20" data-name="Rectangle 20" class="cls-3" transform="translate(79.182 111.818)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_21" data-name="Rectangle 21" class="cls-3" transform="translate(52.515 111.818)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_22" data-name="Rectangle 22" class="cls-3" transform="translate(79.182 138.485)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <g id="Rectangle_23" data-name="Rectangle 23" class="cls-5" transform="translate(105.848 111.818)">
+        <rect class="cls-7" width="19.394" height="46.061" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="43.061" rx="8.197"/>
+      </g>
+      <g id="Rectangle_24" data-name="Rectangle 24" class="cls-3" transform="translate(52.515 138.485)">
+        <rect class="cls-7" width="19.394" height="19.394" rx="9.697"/>
+        <rect class="cls-8" x="1.5" y="1.5" width="16.394" height="16.394" rx="8.197"/>
+      </g>
+      <line id="Line_9" data-name="Line 9" class="cls-6" x2="9.697" transform="translate(87.06 28.788)"/>
+      <line id="Line_10" data-name="Line 10" class="cls-6" x2="9.697" transform="translate(101.606 28.788)"/>
+      <line id="Line_11" data-name="Line 11" class="cls-6" x2="9.697" transform="translate(116.151 28.788)"/>
+      <line id="Line_12" data-name="Line 12" class="cls-4" x2="96.97" transform="translate(41.606 46.97)"/>
+    </g>
+  </g>
+</svg>

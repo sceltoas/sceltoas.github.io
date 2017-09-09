@@ -1,3 +1,37 @@
+.portrait-image {
+    border-radius: 50%;
+    margin-top: 40px;
+    width: 200px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.calculator-label {
+    display: inline-block;
+}
+
+.calculator-result {
+    line-height: 50px;
+    margin-top: 40px;
+}
+
+.calculator-sum {
+    font-size: 4em;
+}
+
+.calculator-sum--small {
+    font-size: 3em;
+}
+
+.calculator-description {
+    padding-top: 25px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
 .mobile-menu-wrapper > .center > li {
     list-style: none;
     padding: 20px;
@@ -30,6 +64,10 @@ html, body {
         font-size: 85%;
     }
 
+    .calculator-label {
+        display: block;
+    }
+
     .header {
         padding-top: 45px;
         padding-bottom: 45px;
@@ -54,6 +92,8 @@ html, body {
         line-height: 1.3em;
     }
 
+    .calculator-form span,
+    .calculator-form .editable-text,
     .contact-form > span,
     .contact-form > .editable-text {
         font-size: 3em;
@@ -67,10 +107,17 @@ html, body {
         line-height: 1.3em;
     }
 
+    .calculator-form span,
+    .calculator-form .editable-text,
     .contact-form > span,
     .contact-form > .editable-text {
         font-size: 3em;
         line-height: 1.5em;
+    }
+
+    .calculator-form .editable-text {
+        margin-left: 10px;
+        display: inline-block;
     }
 }
 
@@ -106,6 +153,10 @@ a {
 .sc-link {
     color: #ffffff;
     border-bottom: 2px solid #C5D200;
+}
+
+.sc-link--dark {
+    color: #666464;
 }
 
 .sc-link:hover {
@@ -256,6 +307,7 @@ nav ul {
     background: #C5D200;
 }
 
+.calculator-form .editable-text,
 .contact-form > .editable-text {
     color: #C5D200;
 }

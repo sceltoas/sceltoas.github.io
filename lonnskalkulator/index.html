@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Scelto AS</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+
+    <meta name="og:image" content="http://scelto.no/images/gruppebilde.jpg">
+    <meta name="og:title" content="En lagspiller, lett å samarbeide med, og et positivt bidrag til ethvert miljø."/>
+    <meta name="og:description"
+          content="Menneskene som jobber i Scelto kjennetegnes ved mer enn bare sin faglig styrke og
+                    senior erfaring. En Scelto-er er også fremoverlent, nysgjerrig og aldri redd for bidra med sin
+                    synsvinkel. En lagspiller, lett å samarbeide med, og et positivt bidrag til ethvert miljø.">
+
+    <base href="/"/>
+</head>
+<body>
+
+<div class="mobile-menu-wrapper hide-on-large-only">
+    <div class="container">
+        <div class="row center valign-wrapper">
+            <div class="col s10 valign left-align">
+                <a href="/" class="logo">
+                    <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                </a>
+            </div>
+            <div class="col s2 valign">
+                <p id="mobile-menu-close"><img src="/images/icons/Scelto–icon-menu-checkmark.svg" width="50px"/></p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <li><a href="/lonnskalkulator"><span class="sc-link">Lønnskalkulator</span></a></li>
+        <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
+        <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
+        <li><a href="/lonnskalkulator/#contact-me"><span class="sc-link">Kontakt</span></a></li>
+        <!--<li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>-->
+        <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
+    </div>
+
+</div>
+
+<div class="dark-scelto-container bg-dark">
+    <div id="index-banner">
+        <nav class="transparent" role="navigation">
+            <div class="nav-wrapper container hide-on-med-and-down">
+                <a id="logo-container" href="/" class="logo">
+                    <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/lonnskalkulator"><span class="sc-link">Lønnskalkulator</span></a></li>
+                    <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
+                    <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
+                    <li><a href="/lonnskalkulator/#contact-me"><span class="sc-link">Kontakt</span></a></li>
+                    <!--<li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>-->
+                    <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
+                </ul>
+            </div>
+            <div class="hide-on-large-only">
+                <div class="container">
+                    <div class="row center valign-wrapper">
+                        <div class="col s10 valign left-align">
+                            <a href="/" class="logo">
+                                <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                            </a>
+                        </div>
+                        <div class="col s2 valign">
+                            <p id="mobile-menu-open"><img src="/images/icons/Scelto–icon-menu.svg" width="50px"/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container section-padding-bottom">
+        <div class="row valign-wrapper">
+            <div class="col s12 offset-m2 m8 valign">
+                <h1 class="header center white-text section-padding">Lønnskalkulator</h1>
+                <div>
+                    <p>
+                        I Scelto er de ansatte ansiktet utad og selve merkevaren. Du er en hyggelig,
+                        dyktig og erfaren java-utvikler, .Net-utvikler, prosjektutvikler eller arkitekt.
+                    </p>
+                    <p>
+                        Det vet vi å sette pris på med bla. en svært god sosial kalender, gode
+                        forsikringer, godt miljø og ikke minst en av bransjens beste lønnsbetingelser.
+                    </p>
+                    <p>
+                        Gjennomfør lønnskalkulatoren og se hva du kunne tjent i Scelto.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="calculator-form col s12 offset-m2 m8">
+                <div>
+                    <p class="bold calculator-label">
+                        Sett inn din timepris:
+                    </p>
+                    <span
+                        class="editable-text"
+                        id="input-moneysperhour"
+                        contenteditable="true"
+                        type="text"
+                        onclick="document.execCommand('selectAll',false,null)">
+                            1100
+                    </span>
+                </div>
+                <div>
+                    <p class="bold calculator-label">
+                        Antall timer du jobber pr. måned:
+                    </p>
+                    <span
+                        class="editable-text"
+                        id="input-hourspermonth"
+                        contenteditable="true"
+                        type="text"
+                        onclick="document.execCommand('selectAll',false,null)">
+                            157,5
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col s12 m5 offset-m1 calculator-result">
+                <div class="calculator-sum white-text" id="nettoLonnMnd">
+                    kr. 103&nbsp;950
+                </div>
+                <div class="calculator-description grey-text">
+                    Du får 60% av din inntjening pr. måned
+                </div>
+            </div>
+            <div class="col s12 m5 calculator-result">
+                <div class="calculator-sum white-text" id="nettoLonnAr">
+                    kr. 1&nbsp;143&nbsp;450
+                </div>
+                <div class="calculator-description grey-text">
+                    Ca årslønn i Scelto med 5 ukers ferie
+                    <br />
+                    11*mnd lønn + 11*oppsparte feriepenger
+                </div>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col s12 m4 calculator-result">
+                <div class="calculator-sum calculator-sum--small white-text" id="bruttoInntjeningMnd">
+                    kr. 173&nbsp;250
+                </div>
+                <div class="calculator-description grey-text">
+                    Bruttoinntjening pr. måned
+                </div>
+            </div>
+            <div class="col s12 m4 calculator-result">
+                <div class="calculator-sum calculator-sum--small white-text" id="bruttoLonnMnd">
+                    kr. 92&nbsp;812
+                </div>
+                <div class="calculator-description grey-text">
+                    Bruttolønn pr. måned
+                </div>
+            </div>
+            <div class="col s12 m4 calculator-result">
+                <div class="calculator-sum calculator-sum--small white-text" id="feriepengerMnd">
+                    kr. 11&nbsp;137
+                </div>
+                <div class="calculator-description grey-text">
+                    Avsatte feriepenger 12%
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-padding">
+    <div class="container">
+        <div class="row center">
+            <div class="row s12 m8 offset-m2">
+                <h4>
+                    Ring meg for en uforpliktende prat på tlf <a href="tel:90969097" class="sc-link sc-link--dark">90 96 90 97</a>
+                </h4>
+                <h4>
+                    Eller ta kontakt på mail <a href="mailto:tor.eric.sandvik@scelto.no" class="sc-link sc-link--dark">tor.eric.sandvik@scelto.no</a>
+                </h4>
+            </div>
+            <div class="row s12">
+                <div >
+                    <img class="portrait-image" src="/images/tor_eric_crop.jpg" role="presentation">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact-me" class="dark-scelto-container bg-dark">
+    <div class="section section-padding">
+        <div class="container">
+            <div class="row center">
+                <h4 class="header col s12 light">Ønsker du å bli kontaktet av oss?</h4>
+            </div>
+            <div class="row center">
+                <div class="contact-form">
+                    <span class="contact-header">Hei, jeg heter </span>
+                    <span class="editable-text" id="input-name" contenteditable="true" type="text"
+                          onclick="document.execCommand('selectAll',false,null)">oppgi navn</span>
+                    <span class="contact-header">, og dere kan kontakte meg på </span>
+                    <span class="editable-text" id="input-number" contenteditable="true" type="tlf"
+                          onclick="document.execCommand('selectAll',false,null)"
+                          onfocus="document.execCommand('selectAll',false,null)">oppgi mobilnummer</span>
+                    <span class="contact-header">.</span>
+                </div>
+            </div>
+            <div class="row center" id="contact-form-validation-error">
+                <h5 class="red-text">Vennligst fyll inn både navn og mobilnummer så vi vet hvem vi skal ringe :)</h5>
+            </div>
+            <div class="row center red-text" id="contact-form-submit-error">
+                <h5>Innsending av kontakt-meg-skjema feilet. Vær snill og prøv igjen :)</h5>
+            </div>
+            <div class="row center" id="contact-form-submit-loading">
+                <img src="/images/icons/loading.gif" width="35px"/>
+            </div>
+            <div class="row center">
+                <button id="submit-contact" class="waves-effect waves-light sc-btn" onclick="submitContactForm()">
+                    Kontakt meg
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal1" class="modal bg-dark white-text">
+    <div class="modal-content">
+        <div class="row valign-wrapper">
+            <div class="valign"><i class="material-icons green-text" style="padding-right: 1em;">check_circle</i></div>
+            <div class="valign"><h2>Takk for at du tok kontakt</h2></div>
+        </div>
+        <div class="row valign-wrapper">
+            <h5>Vi ringer deg så snart som mulig! <br/>Ha en fortsatt fin dag!</h5>
+        </div>
+
+        <div class="row center section-padding-top">
+            <a onclick="$('#modal1').closeModal()" class="modal-action modal-close sc-btn white-text">Lukk</a>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p>Scelto AS<br/>Rosenkrantzgate' 7<br/>0159 OSLO</p>
+                    <p><a class="sc-link" href="mailto:post@scelto.no">post@scelto.no</a></p>
+                    <p>Org.nr.: 914 757 274 MVA<br/>Telefon: (+47) 909 69 097</p>
+                </div>
+                <div class="col l6 s12">
+                    <div class="row">
+                        <div class="col s6">
+                            <p>Følg oss på sosiale medier: </p>
+                        </div>
+                        <p class="col s2"><a href="http://scel.to/g/lnkd"><img
+                                src="/images/icons/Scelto–icon-linkedin-footer.svg" width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/fb/"><img
+                                src="/images/icons/Scelto–icon-facebook-footer.svg" width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/fb"><img
+                                src="/images/icons/Scelto–icon-twitter-footer.svg" width="40px"/></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p>Scelto AS &copy; 2016</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+<script src="/js/calculator.js"></script>
+
+<script>     var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-58669694-1']);
+_gaq.push(['_trackPageview']);
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})(); </script>
+</body>
+</html>
