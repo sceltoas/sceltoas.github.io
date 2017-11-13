@@ -424,3 +424,12 @@ footer.page-footer {
     src: url("./fonts/sanuk/SanukOffc-Black.ttf") format("opentype");
     font-weight: bold;
 }
+
+
+.tabs .tab a, .tabs .tab a:hover {
+    color: inherit;
+}
+
+.tabs .indicator {
+    background-color: #C5D200;
+}
