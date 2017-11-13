@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Scelto AS</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+
+    <meta name="og:image" content="http://scelto.no/images/feriebilde.jpg">
+    <meta name="og:title" content="Lønnskalkulator"/>
+    <meta name="og:description"
+          content="I Scelto er de ansatte ansiktet utad og selve merkevaren. Du er en hyggelig,
+                dyktig og erfaren java-utvikler, .Net-utvikler, prosjektleder eller arkitekt.">
+
+    <base href="/../"/>
+</head>
+<body>
+
+<div class="mobile-menu-wrapper hide-on-large-only">
+    <div class="container">
+        <div class="row center valign-wrapper">
+            <div class="col s10 valign left-align">
+                <a href="/" class="logo">
+                    <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                </a>
+            </div>
+            <div class="col s2 valign">
+                <p id="mobile-menu-close"><img src="/images/icons/Scelto–icon-menu-checkmark.svg" width="50px"/></p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <li><a href="/lonnskalkulator"><span class="sc-link">Lønnskalkulator</span></a></li>
+        <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
+        <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
+        <li><a href="/lonnskalkulator/#contact-me"><span class="sc-link">Kontakt</span></a></li>
+    </div>
+
+</div>
+
+<div class="dark-scelto-container bg-dark">
+    <div id="index-banner">
+        <nav class="transparent" role="navigation">
+            <div class="nav-wrapper container hide-on-med-and-down">
+                <a id="logo-container" href="/" class="logo">
+                    <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/lonnskalkulator"><span class="sc-link">Lønnskalkulator</span></a></li>
+                    <li><a href="/ansatte"><span class="sc-link">Menneskene</span></a></li>
+                    <li><a href="/tjenester"><span class="sc-link">Tjenester</span></a></li>
+                    <li><a href="/lonnskalkulator/#contact-me"><span class="sc-link">Kontakt</span></a></li>
+                    <!--<li><a href="/omoss"><span class="sc-link">Om oss</span></a></li>-->
+                    <!--<li><a href="#"><span class="sc-link">Blogg</span></a></li>-->
+                </ul>
+            </div>
+            <div class="hide-on-large-only">
+                <div class="container">
+                    <div class="row center valign-wrapper">
+                        <div class="col s10 valign left-align">
+                            <a href="/" class="logo">
+                                <img src="/images/logo-green-white-trans.png" alt="Logo for Scelto">
+                            </a>
+                        </div>
+                        <div class="col s2 valign">
+                            <p id="mobile-menu-open"><img src="/images/icons/Scelto–icon-menu.svg" width="50px"/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container section-padding-bottom">
+        <div class="row valign-wrapper">
+            <div class="col s12 offset-m2 m8 valign">
+                <h1 class="header center white-text section-padding">
+                    <i class="fa fa-trophy"></i>
+                    Scuppen 2018
+                </h1>
+                <table class="highlight">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Sceltoer</th>
+                        <th>Resultater</th>
+                        <th>Poengsum</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results-table"></tbody>
+                </table>
+                <p style="font-size: 0.6em;">D=Deltatt, F=Feilet i å møte</p>
+                <p class="small">Resultat etter 0 runder. Alle deltakere vil få sine 2 værste noteringer strøket før
+                    endelig poengsum beregnes.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-padding-top">
+    <div class="container">
+        <div class="row center">
+            <div class="col s12 m8 offset-m2">
+                <h3>Øvelser</h3>
+                <p>Sesonger 2018 legger opp til 7 øvelser; 5 individuelle og 2 lagkonkurranser</p>
+                <p style="font-size: 0.6em;">Ved tvister og uoverenstemmelser angående regler, dommervurderinger, trekninger, juks og fanteri har @tuxbear siste ord.</p>
+
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col"><a class="active" href="#event1">#1 Ping Pong</a></li>
+                    <li class="tab col"><a class="active" href="#event2">#2 Kokkekamp</a></li>
+                    <li class="tab col"><a class="active" href="#event3">#3 HatTrick</a></li>
+                    <li class="tab col"><a class="active" href="#event4">#4 Poker</a></li>
+                    <li class="tab col"><a class="active" href="#event5">#5 Fekting</a></li>
+                    <li class="tab col"><a class="active" href="#event6">#6 Quiz</a></li>
+                    <li class="tab col"><a class="active" href="#event7">#7 SCIPT</a></li>
+
+                </ul>
+            </div>
+            <div id="event1" class="col s12">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5>Ping Pong: Ons. 10. Jan</h5>
+                        <p>
+                            Individuell konkurranse: Ping pong turnering på <a href="https://brygg.no/">Brygg</a>. Trekt
+                            utslagscup med SceltoRegler™
+                        </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <ul class="collection">
+                            <li class="collection-header"><h5>Poengfordeling</h5></li>
+                            <li class="collection-item">#1 500p</li>
+                            <li class="collection-item">#2 400p</li>
+                            <li class="collection-item">#3 300p</li>
+                            <li class="collection-item">#4 200p</li>
+
+                        </ul>
+                        Oppmøte: 100p
+                    </div>
+                </div>
+            </div>
+
+            <div id="event2" class="col s12">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5>Kokkekamp: Ons. 14. Feb</h5>
+                        <p>
+                            Lagkonkurranse: Kokkekunst på <a href="https://matkurs.no/">Matkurs.no</a>.
+                            Trekte lag kjemper om stabkokkenes gunst i forrettkokkelering.
+                        </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <ul class="collection">
+                            <li class="collection-header"><h5>Poengfordeling</h5></li>
+                            <li class="collection-item">Lag #1 500p</li>
+                            <li class="collection-item">Lag #2 300p</li>
+                            <li class="collection-item">Lag #3 100p</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="event3" class="col s12">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5>HatTrick: Tirs. 20. Mars</h5>
+                        <p>
+                            Individuell konkuranse: HatTrick-turnering på Scontoret. Trekt utslagscup.
+                        </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <ul class="collection">
+                            <li class="collection-header"><h5>Poengfordeling</h5></li>
+                            <li class="collection-item">#1 500p</li>
+                            <li class="collection-item">#2 400p</li>
+                            <li class="collection-item">#3 300p</li>
+                            <li class="collection-item">#4 200p</li>
+                        </ul>
+                        Oppmøte: 100p
+                    </div>
+                </div>
+            </div>
+
+            <div id="event4" class="col s12">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5>Poker: Lør. 7. April</h5>
+                        <p>
+                            Individuell konkuranse: Pokerturninger på hytteturen til Hafjell
+                        </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <ul class="collection">
+                            <li class="collection-header"><h5>Poengfordeling</h5></li>
+                            <li class="collection-item">#1 250p</li>
+                            <li class="collection-item">#2 200p</li>
+                            <li class="collection-item">#3 150p</li>
+                            <li class="collection-item">#4 100p</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="event5" class="col s12">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5>Fekting: Tirs. 20. Mars</h5>
+                        <p>
+                            Individuell konkuranse: Fekteturnering hos <a href="http://www.musketerevent.com/site/index.php">Musketer Event</a>. Trekt utslagscup.
+                        </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <ul class="collection">
+                            <li class="collection-header"><h5>Poengfordeling</h5></li>
+                            <li class="collection-item">#1 550p</li>
+                            <li class="collection-item">#2 450p</li>
+                            <li class="collection-item">#3 350p</li>
+                            <li class="collection-item">#4 250p</li>
+                        </ul>
+                        Oppmøte: 100p
+                    </div>
+                </div>
+            </div>
+
+            <div id="event6" class="col s12">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5>Quiz: Tors. 23. Aug</h5>
+                        <p>
+                            Lagkonkuranse: Quiz på TBA pub. Trekte Sceltolag a 3 pers stiller i pubquiz. Intern rangering av Sclagene.
+                        </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <ul class="collection">
+                            <li class="collection-header"><h5>Poengfordeling</h5></li>
+                            <li class="collection-item">Lag #1 450p</li>
+                            <li class="collection-item">Lag #2 350p</li>
+                            <li class="collection-item">Lag #3 250p</li>
+                        </ul>
+                        Oppmøte: 100p
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="event7" class="col s12">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5>SCIPT:  17. Okt</h5>
+                        <p>
+                            Individuell konkuranse: Intern rangering i SCIPT.
+                        </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <ul class="collection">
+                            <li class="collection-header"><h5>Poengfordeling</h5></li>
+                            <li class="collection-item">#1 250p</li>
+                            <li class="collection-item">#2 200p</li>
+                            <li class="collection-item">#3 150p</li>
+                            <li class="collection-item">#4 100p</li>
+                        </ul>
+                        Oppmøte: 50p
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p>Scelto AS<br/>Rosenkrantzgate' 7<br/>0159 OSLO</p>
+                    <p><a class="sc-link" href="mailto:post@scelto.no">post@scelto.no</a></p>
+                    <p>Org.nr.: 914 757 274 MVA<br/>Telefon: (+47) 909 69 097</p>
+                </div>
+                <div class="col l6 s12">
+                    <div class="row">
+                        <div class="col s6">
+                            <p>Følg oss på sosiale medier: </p>
+                        </div>
+                        <p class="col s2"><a href="http://scel.to/g/lnkd"><img
+                                src="/images/icons/Scelto–icon-linkedin-footer.svg" width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/fb/"><img
+                                src="/images/icons/Scelto–icon-facebook-footer.svg" width="40px"/></a></p>
+                        <p class="col s2"><a href="http://scel.to/g/fb"><img
+                                src="/images/icons/Scelto–icon-twitter-footer.svg" width="40px"/></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p>Scelto AS &copy; 2016</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/lodash.core.js"></script>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+<script src="/js/scuppen.js"></script>
+
+<script>     var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-58669694-1']);
+_gaq.push(['_trackPageview']);
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})(); </script>
+</body>
+</html>
