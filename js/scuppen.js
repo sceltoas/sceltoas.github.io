@@ -26,13 +26,12 @@ var participantsTemplate = _.template(
 
 var rounds = [
     {head: "PingPong", points: [500, 400, 300, 200], participationScore: 100},
-    {head: "Kokkekamp", location: 'Matkurs.no', points: [500, 400, 300, 200], participationScore: 100},
-    {head: "HatTrick", location: 'Brygg', points: [500, 400, 300, 200], participationScore: 100},
-    {head: "Hafjell Poker", location: 'Hafjell', points: [500, 400, 300, 200], participationScore: 100},
-    {head: "Fekting", location: '', points: [500, 400, 300, 200], participationScore: 100}
-
-
-
+    {head: "Kokkekamp", points: [500, 300, 100], participationScore: 0},
+    {head: "HatTrick", points: [500, 400, 300, 200], participationScore: 100},
+    {head: "Hafjell Poker", points: [250, 200, 150, 100], participationScore: 0},
+    {head: "Fekting", points: [550, 450, 350, 250], participationScore: 100},
+    {head: "Quiz", points: [450, 350, 250], participationScore: 100},
+    {head: "SCIPT", points: [250, 200, 150, 100], participationScore: 50}
 ];
 
 
