@@ -15,21 +15,28 @@ function debounce(cb, delay) {
 
 $(document).ready(function() {
     $('#input-moneysperhour, #input-hourspermonth').on("keyup cut copy paste mouseup", debounce(function() {
-        var hours = Number($('#input-hourspermonth').html().replace(/,/g, '.').replace(/[\s<br>]/g, ''));
-        var moneys = Number($('#input-moneysperhour').html().replace(/,/g, '.').replace(/[\s<br>]/g, ''));
-
-        if (isNaN(hours) || isNaN(moneys)) {
-            return updateResult(0, 0, 0, 0, 0);
-        }
-        var nettoLonnMnd = Math.round(0.6 * hours * moneys);
-        var nettoLonnAr = nettoLonnMnd * 11;
-        var bruttoInntjeningMnd = Math.round(hours * moneys);
-        var bruttoLonnMnd = Math.round((0.6 * hours * moneys) / 1.12);
-        var feriepengerMnd = Math.round(((0.6 * hours * moneys) / 1.12) * 0.12);
-
-        return updateResult(nettoLonnMnd, nettoLonnAr, bruttoInntjeningMnd, bruttoLonnMnd, feriepengerMnd);
+        doCalc();
     }, 1));
+
+    doCalc();
+    $('#input-moneysperhour').focus();
 });
+
+function doCalc() {
+    var hours = Number($('#input-hourspermonth').html().replace(/,/g, '.').replace(/[\s<br>]/g, ''));
+    var moneys = Number($('#input-moneysperhour').html().replace(/,/g, '.').replace(/[\s<br>]/g, ''));
+
+    if (isNaN(hours) || isNaN(moneys)) {
+        return updateResult(0, 0, 0, 0, 0);
+    }
+    var nettoLonnMnd = Math.round(0.6 * hours * moneys);
+    var nettoLonnAr = nettoLonnMnd * 11;
+    var bruttoInntjeningMnd = Math.round(hours * moneys);
+    var bruttoLonnMnd = Math.round((0.6 * hours * moneys) / 1.12);
+    var feriepengerMnd = Math.round(((0.6 * hours * moneys) / 1.12) * 0.12);
+
+    return updateResult(nettoLonnMnd, nettoLonnAr, bruttoInntjeningMnd, bruttoLonnMnd, feriepengerMnd);
+}
 
 function updateResult(nettoLonnMnd, nettoLonnAr, bruttoInntjeningMnd, bruttoLonnMnd, feriepengerMnd) {
     $('#nettoLonnMnd').html('kr. ' + formatMoneys(nettoLonnMnd));
