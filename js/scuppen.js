@@ -2,29 +2,29 @@ const PARTICIPATED = -1,
     NOT_PARTICIPATED = -2;
 
 var participants = [
-    {name: 'Ole Tommy', results: []},
-    {name: 'Ivar', results: []},
-    {name: 'Jan Erik', results: []},
-    {name: 'Herman', results: []},
-    {name: 'Ole-André', results: []},
-    {name: 'Tor Eric', results: []},
-    {name: 'Håken', results: []},
-    {name: 'Gustav', results: []},
-    {name: 'Erlend', results: []},
-    {name: 'Marius', results: []},
-    {name: 'Erik', results: []},
-    {name: 'Richard', results: []},
-    {name: 'Lars Fredrik', results: []},
-    {name: 'Fredrik B', results: []},
-    {name: 'Fredrik S', results: []},
-    {name: 'Bjarte', results: []},
-    {name: 'Vetle', results: []},
-    {name: 'Ken', results: []},
-    {name: 'Sean', results: []}
+    {name: 'Ole Tommy', results: [PARTICIPATED]},
+    {name: 'Ivar', results: [PARTICIPATED]},
+    {name: 'Jan Erik', results: [PARTICIPATED]},
+    {name: 'Herman', results: [PARTICIPATED]},
+    {name: 'Ole-André', results: [4]},
+    {name: 'Tor Eric', results: [PARTICIPATED]},
+    {name: 'Håken', results: [PARTICIPATED]},
+    {name: 'Gustav', results: [NOT_PARTICIPATED]},
+    {name: 'Erlend', results: [1]},
+    {name: 'Marius', results: [PARTICIPATED]},
+    {name: 'Erik', results: [NOT_PARTICIPATED]},
+    {name: 'Richard', results: [PARTICIPATED]},
+    {name: 'Lars Fredrik', results: [NOT_PARTICIPATED]},
+    {name: 'Fredrik B', results: [PARTICIPATED]},
+    {name: 'Fredrik S', results: [PARTICIPATED]},
+    {name: 'Bjarte', results: [PARTICIPATED]},
+    {name: 'Vetle', results: [PARTICIPATED]},
+    {name: 'Ken', results: [3]},
+    {name: 'Sean', results: [2]}
 ];
 
 var participantsTemplate = _.template(
-    '<% _.forEach(participants, function(p,i) { %><tr><td><%= i+1 %></td><td><%- p.name %></td><td><%- p.resultList %></td><td><%- p.score %></td></tr><% }); %>'
+    '<% _.forEach(participants, function(p,i) { %><tr><td><%= i+1 %></td><td><%- p.name %></td><td>[<%- p.resultList %>]</td><td><%- p.score %></td></tr><% }); %>'
 );
 
 var rounds = [
