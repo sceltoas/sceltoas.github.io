@@ -2,22 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://www.scelto.no</loc>
-        <lastmod>2017-02-20</lastmod>
+        <lastmod>2018-05-06</lastmod>
         <changefreq>yearly</changefreq>
     </url>
     <url>
         <loc>http://scelto.no</loc>
-        <lastmod>2017-02-20</lastmod>
+        <lastmod>2018-05-06</lastmod>
         <changefreq>yearly</changefreq>
     </url>
     <url>
         <loc>http://scelto.no/ansatte/</loc>
-        <lastmod>2017-06-07</lastmod>
+        <lastmod>2018-05-06</lastmod>
         <changefreq>yearly</changefreq>
     </url>
     <url>
         <loc>http://scelto.no/tjenester/</loc>
         <lastmod>2017-02-20</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/fredrikb/</loc>
+        <lastmod>2018-05-06</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/sean/</loc>
+        <lastmod>2018-05-06</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/ken/</loc>
+        <lastmod>2018-05-06</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/vetle/</loc>
+        <lastmod>2018-05-06</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/larsfredrik/</loc>
+        <lastmod>2018-05-06</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/bjarte/</loc>
+        <lastmod>2018-05-06</lastmod>
         <changefreq>yearly</changefreq>
     </url>
     <url>
