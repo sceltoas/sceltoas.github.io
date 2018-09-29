@@ -21,6 +21,21 @@
         <changefreq>yearly</changefreq>
     </url>
     <url>
+        <loc>http://scelto.no/ansatte/larsolav/</loc>
+        <lastmod>2018-09-30</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/terje/</loc>
+        <lastmod>2018-09-30</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://scelto.no/ansatte/fredriks/</loc>
+        <lastmod>2018-09-30</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
         <loc>http://scelto.no/ansatte/fredrikb/</loc>
         <lastmod>2018-05-06</lastmod>
         <changefreq>yearly</changefreq>
