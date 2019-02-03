@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9203 -914 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        clip-path: url(#clip-Scelto_icon-linkedin-footer);
+      }
+
+      .cls-2 {
+        fill: #c5d200;
+      }
+    </style>
+    <clipPath id="clip-Scelto_icon-linkedin-footer">
+      <rect x="-9203" y="-914" width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_icon-linkedin-footer" data-name="Scelto–icon-linkedin-footer" class="cls-1">
+    <g id="group-539" transform="translate(-9494 -7872)">
+      <path id="path" class="cls-2" d="M5.114,1.884A3.011,3.011,0,0,0,1.86,4.852,2.954,2.954,0,0,0,5.036,7.813h.039a2.976,2.976,0,1,0,.039-5.928" transform="translate(297.141 6964.777)"/>
+      <rect id="rectangle" class="cls-2" width="5.714" height="17.167" transform="translate(299.364 6974.938)"/>
+      <path id="path-2" data-name="path" class="cls-2" d="M26.88,14a5.661,5.661,0,0,0-5.147,2.837v.059h-.039l.039-.059V14.4H16c.1,1.607,0,17.167,0,17.167h5.707V21.975a3.9,3.9,0,0,1,.189-1.393,3.13,3.13,0,0,1,2.928-2.089c2.069,0,2.889,1.575,2.889,3.9v9.169H33.42V21.722C33.42,16.451,30.6,14,26.848,14" transform="translate(292.201 6960.544)"/>
+      <path id="path-3" data-name="path" class="cls-2" d="M24.789,18.409V18.35l-.039.052h.039Z" transform="translate(289.146 6959.022)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-jsx",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-jsx",
+        "jsonName": "404-html-516",
+        "path": "/404.html"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-jsx",
+        "jsonName": "404-22d",
+        "path": "/404/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-index-jsx",
+        "jsonName": "ansatte-c7e",
+        "path": "/ansatte/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-erik-index-js",
+        "jsonName": "ansatte-erik-c5c",
+        "path": "/ansatte/erik/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-erlend-index-js",
+        "jsonName": "ansatte-erlend-0c9",
+        "path": "/ansatte/erlend/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-fredrikb-index-js",
+        "jsonName": "ansatte-fredrikb-234",
+        "path": "/ansatte/fredrikb/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-fredriks-index-js",
+        "jsonName": "ansatte-fredriks-458",
+        "path": "/ansatte/fredriks/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-gustav-index-js",
+        "jsonName": "ansatte-gustav-05a",
+        "path": "/ansatte/gustav/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-haaken-index-js",
+        "jsonName": "ansatte-haaken-bac",
+        "path": "/ansatte/haaken/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-herman-index-js",
+        "jsonName": "ansatte-herman-77e",
+        "path": "/ansatte/herman/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-ivar-index-js",
+        "jsonName": "ansatte-ivar-bc6",
+        "path": "/ansatte/ivar/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-janerik-index-js",
+        "jsonName": "ansatte-janerik-74e",
+        "path": "/ansatte/janerik/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-ken-index-js",
+        "jsonName": "ansatte-ken-3b5",
+        "path": "/ansatte/ken/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-larsfredrik-index-js",
+        "jsonName": "ansatte-larsfredrik-1fe",
+        "path": "/ansatte/larsfredrik/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-marius-index-js",
+        "jsonName": "ansatte-marius-f0b",
+        "path": "/ansatte/marius/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-oleandre-index-js",
+        "jsonName": "ansatte-oleandre-56d",
+        "path": "/ansatte/oleandre/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-oletommy-index-js",
+        "jsonName": "ansatte-oletommy-14d",
+        "path": "/ansatte/oletommy/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-richard-index-js",
+        "jsonName": "ansatte-richard-86b",
+        "path": "/ansatte/richard/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-sean-index-js",
+        "jsonName": "ansatte-sean-2e6",
+        "path": "/ansatte/sean/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-toreric-index-js",
+        "jsonName": "ansatte-toreric-7fb",
+        "path": "/ansatte/toreric/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ansatte-vetle-index-js",
+        "jsonName": "ansatte-vetle-fb9",
+        "path": "/ansatte/vetle/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-kontakt-jsx",
+        "jsonName": "kontakt-8ac",
+        "path": "/kontakt/"
+    },
+    {
+        "componentChunkName": "component---src-pages-lonnskalkulator-index-jsx",
+        "jsonName": "lonnskalkulator-8f4",
+        "path": "/lonnskalkulator/"
+    },
+    {
+        "componentChunkName": "component---src-pages-tjenester-jsx",
+        "jsonName": "tjenester-12f",
+        "path": "/tjenester/"
+    }
+]

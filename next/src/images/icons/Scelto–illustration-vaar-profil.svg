@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9314 -786 180 180">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-8 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Scelto_illustration-vaar-profil);
+      }
+
+      .cls-3, .cls-7 {
+        fill: #c5d200;
+      }
+
+      .cls-4 {
+        stroke: #e9e7e7;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-8 {
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        stroke: #a0a0a0;
+      }
+
+      .cls-6 {
+        stroke: #c5d200;
+      }
+
+      .cls-7 {
+        opacity: 0.7;
+      }
+
+      .cls-8 {
+        stroke: #fff;
+      }
+    </style>
+    <clipPath id="clip-Scelto_illustration-vaar-profil">
+      <rect x="-9314" y="-786" width="180" height="180"/>
+    </clipPath>
+  </defs>
+  <g id="Scelto_illustration-vaar-profil" data-name="Scelto–illustration-vaar-profil" class="cls-1">
+    <g id="group-520" transform="translate(-9459 -1729)">
+      <path id="path" class="cls-2" d="M1069.034,1002.837a11.919,11.919,0,0,1,0-23.837H968.919a11.919,11.919,0,1,0,0,23.837Z" transform="translate(-780.592 66.64)"/>
+      <rect id="rectangle" class="cls-3" width="123.953" height="14.302" transform="translate(171.64 1069.477)"/>
+      <line id="line" class="cls-4" y2="19.07" transform="translate(231.233 966.978)"/>
+      <path id="path-2" data-name="path" class="cls-3" d="M995.3,956.3c-4.767,4.767-14.3,4.767-14.3,4.767s0-9.535,4.767-14.3,14.3-4.767,14.3-4.767S1000.07,951.534,995.3,956.3Z" transform="translate(-747.384 15.443)"/>
+      <path id="path-3" data-name="path" class="cls-5" d="M1069.034,1002.837a11.919,11.919,0,0,1,0-23.837H968.919a11.919,11.919,0,1,0,0,23.837Z" transform="translate(-780.592 66.64)"/>
+      <rect id="rectangle-2" data-name="rectangle" class="cls-5" width="123.953" height="14.302" transform="translate(171.64 1069.477)"/>
+      <rect id="rectangle-3" data-name="rectangle" class="cls-5" width="147.79" height="23.837" transform="translate(162.105 1084.779)"/>
+      <line id="line-2" data-name="line" class="cls-5" y2="14.302" transform="translate(190.71 1069.477)"/>
+      <line id="line-3" data-name="line" class="cls-5" y2="23.837" transform="translate(195.477 1084.779)"/>
+      <line id="line-4" data-name="line" class="cls-5" y2="14.302" transform="translate(200.244 1069.477)"/>
+      <line id="line-5" data-name="line" class="cls-5" y2="14.302" transform="translate(209.779 1069.477)"/>
+      <circle id="ellipse" class="cls-3" cx="4.767" cy="4.767" r="4.767" transform="translate(174.024 1091.93)"/>
+      <line id="line-6" data-name="line" class="cls-6" x1="4.767" transform="translate(293.209 1096.698)"/>
+      <line id="line-7" data-name="line" class="cls-6" x1="4.767" transform="translate(283.674 1096.698)"/>
+      <line id="line-8" data-name="line" class="cls-6" x1="4.767" transform="translate(274.139 1096.698)"/>
+      <path id="path-4" data-name="path" class="cls-7" d="M979.544,952.775a20.6,20.6,0,0,0-14.3,23.837c7.151,40.523,30.988,42.907,35.755,33.372V957.542C996.23,957.542,996.23,948.008,979.544,952.775Z" transform="translate(-769.765 28.505)"/>
+      <path id="path-5" data-name="path" class="cls-3" d="M1015.755,976.612a20.6,20.6,0,0,0-14.3-23.837c-16.686-4.767-16.686,4.768-21.453,4.768v52.441C984.767,1019.518,1008.6,1017.135,1015.755,976.612Z" transform="translate(-748.767 28.505)"/>
+      <line id="line-9" data-name="line" class="cls-8" y2="9.535" transform="translate(236 1007.501)"/>
+      <line id="line-10" data-name="line" class="cls-8" y2="9.535" transform="translate(226.465 1007.501)"/>
+    </g>
+  </g>
+</svg>

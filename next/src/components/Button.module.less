@@ -1,0 +1,48 @@
+.button {
+  background: transparent;
+  padding: 1em;
+  font-size: 1em;
+  border: 4px solid #C5D200;
+  line-height: normal;
+  color: #333;
+  text-decoration: none;
+  height: auto;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background: #C5D200;
+  }
+}
+
+.buttonLight {
+  composes: button;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background: #C5D200;
+    color: #333;
+  }
+}
+
+.buttonDark {
+  composes: button;
+  color: #333;
+}
+
+/* &Primary,
+&Primary:hover {
+  background: #C5D200;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: white;
+}
+
+&White {
+  color: white;
+}
+
+&Dark {
+  color: white;
+} */
