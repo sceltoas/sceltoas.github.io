@@ -5,11 +5,13 @@ import Section from './Section';
 import {ansatte} from '../ansatte';
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
-import CenteredText from '../components/CenteredText';
+import CenteredText from './CenteredText';
 import {Parallax} from 'react-parallax';
 import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
+import {LightButton} from './Button';
 
+const currentOrigin = window.location.origin;
 const EmployeePage = props => {
   const name = props.location.pathname
     .replace ('/ansatte/', '')
@@ -27,11 +29,14 @@ const EmployeePage = props => {
       <Helmet
         title={`${employee.name} jobber i Scelto AS`}
         meta={[
+          {name: 'description', content: employee.ingress},
           {name: 'og:title', content: `${employee.name} jobber i Scelto AS`},
           {name: 'og:description', content: employee.ingress},
-          {name: 'description', content: employee.ingress},
-          {name: 'og:image', content: employee.ingress},
-          {name: 'og:url', content: `https://scelto.no/ansatte/${name}`},
+          {
+            name: 'og:image',
+            content: `${currentOrigin}${employee.image}`,
+          },
+          {name: 'og:url', content: `${currentOrigin}/ansatte/${name}`},
         ]}
         link={[{rel: 'icon', href: Favicon}]}
       />
@@ -56,10 +61,9 @@ const EmployeePage = props => {
             </Fade>
           ))}
         <div className="sc-button-container">
-          <a
+          <LightButton
             href={employee.linkToCV}
-            className="sc-button sc-button--primary"
-          >{`Last ned ${employee.firstName} sin CV`}</a>
+          >{`Last ned ${employee.firstName} sin CV`}</LightButton>
         </div>
       </Section>
       <Parallax bgImage={employee.customImage}>

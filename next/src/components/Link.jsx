@@ -4,7 +4,7 @@ import {Link as GLink} from 'gatsby';
 import './Link.less';
 
 const Link = ({to, children}) => (
-  <GLink to={to} className="sc-link">{children}</GLink>
+  <GLink to={to} className="link">{children}</GLink>
 );
 
 Link.propTypes = {

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import ArrowDown from '../images/icons/Scelto–icon-arrow-down-dark-bg.svg';
-
+import Fade from 'react-reveal/Fade';
 import './FullPageImageWithHeader.less';
 
 const FullPageImageWithHeader = ({
@@ -20,9 +20,11 @@ const FullPageImageWithHeader = ({
       backgroundSize: 'cover',
     }}
   >
-    <h1 className="full-page-image-with-header__title">{title}</h1>
+    <Fade><h1 className="full-page-image-with-header__title">{title}</h1></Fade>
     {subtitle &&
-      <h3 className="full-page-image-with-header__subtitle">{subtitle}</h3>}
+      <Fade>
+        <h3 className="full-page-image-with-header__subtitle">{subtitle}</h3>
+      </Fade>}
 
     {children}
 

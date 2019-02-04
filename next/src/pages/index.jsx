@@ -38,17 +38,15 @@ const IndexPage = () => (
       link="#whoarewe"
       image={Employees}
     />
-    <Fade>
-      <TextWithPadding
-        id="whoarewe"
-        text={`Scelto teller ${Object.keys (ansatte).length} personer og det jobbes aktivt for å rekruttere de beste innenfor våre fagfelt. Menneskene som jobber i Scelto kjennetegnes ved mer enn bare sin faglige styrke og senior erfaring, en Scelto-er en lagspiller, lett å samarbeide med, og et positivt bidrag til et hvert miljø.`}
-      />
-    </Fade>
-    <Fade>
-      <Parallax bgImage={Image}>
-        <CenteredText text="Scawesomeness delivered!" />
-      </Parallax>
-    </Fade>
+
+    <TextWithPadding
+      id="whoarewe"
+      text={`Scelto teller ${Object.keys (ansatte).length} personer og det jobbes aktivt for å rekruttere de beste innenfor våre fagfelt. Menneskene som jobber i Scelto kjennetegnes ved mer enn bare sin faglige styrke og senior erfaring, en Scelto-er en lagspiller, lett å samarbeide med, og et positivt bidrag til et hvert miljø.`}
+    />
+
+    <Parallax bgImage={Image}>
+      <Fade><CenteredText text="Scawesomeness delivered!" /></Fade>
+    </Parallax>
 
     <Section
       title="Hvem er en Sceltoer?"

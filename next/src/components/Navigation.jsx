@@ -1,9 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import {Link as GatsbyLink} from 'gatsby';
 import logo from '../images/logo-green-white-trans.png';
 import MenuIcon from '../images/icons/Scelto–icon-menu.svg';
 import CloseMenu from '../images/icons/Scelto–icon-close-hover.svg';
 import './Navigation.less';
+import Link from './Link';
 
 class Navigation extends React.Component {
   constructor (props) {
@@ -32,7 +33,7 @@ class Navigation extends React.Component {
           {this.state.open &&
             <div className="dropdown-menu">
               <div className="dropdown-menu__bar">
-                <Link
+                <GatsbyLink
                   onClick={() => {
                     this.toggleMenu (false);
                   }}
@@ -40,18 +41,18 @@ class Navigation extends React.Component {
                   className="logo"
                 >
                   <img src={logo} alt="Logo for Scelto" />
-                </Link>
+                </GatsbyLink>
 
-                <div className="">
-                  <button
-                    id="mobile-menu-open"
-                    onClick={() => {
-                      this.toggleMenu ();
-                    }}
-                  >
-                    <img src={CloseMenu} width="50px" alt={`Lukk meny`} />
-                  </button>
-                </div>
+                <button
+                  id="mobile-menu-open"
+                  onClick={() => {
+                    this.toggleMenu ();
+                  }}
+                  className=""
+                >
+                  <img src={CloseMenu} width="50px" alt={`Lukk meny`} />
+                </button>
+
               </div>
               <ul className="dropdown-menu__menu-items">
                 {menuItems.map (item => (
@@ -67,16 +68,22 @@ class Navigation extends React.Component {
                         color: 'black',
                       }}
                     >
-                      <span className="sc-link">{item.title}</span>
+                      {item.title}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>}
           <div className="hide-on-med-and-down">
-            <Link id="logo-container" to="/" className="logo">
+            <GatsbyLink
+              onClick={() => {
+                this.toggleMenu (false);
+              }}
+              to="/"
+              className="logo"
+            >
               <img src={logo} alt="Logo for Scelto" />
-            </Link>
+            </GatsbyLink>
             <ul className="right">
               {menuItems.map (item => (
                 <li>
@@ -105,7 +112,7 @@ class Navigation extends React.Component {
           </div>
           {!this.state.open &&
             <div className="hide-on-large-only">
-              <Link
+              <GatsbyLink
                 onClick={() => {
                   this.toggleMenu ();
                 }}
@@ -113,19 +120,18 @@ class Navigation extends React.Component {
                 className="logo"
               >
                 <img src={logo} alt="Logo for Scelto" />
-              </Link>
+              </GatsbyLink>
 
-              <div className="">
-                <button
-                  id="mobile-menu-open"
-                  onClick={() => {
-                    this.toggleMenu ();
-                  }}
-                  alt="Åpne meny"
-                >
-                  <img src={MenuIcon} width="50px" alt="Åpne meny" />
-                </button>
-              </div>
+              <button
+                id="mobile-menu-open"
+                onClick={() => {
+                  this.toggleMenu ();
+                }}
+                alt="Åpne meny"
+              >
+                <img src={MenuIcon} width="50px" alt="Åpne meny" />
+              </button>
+
             </div>}
         </nav>
       </div>
