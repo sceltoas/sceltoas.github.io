@@ -46,6 +46,7 @@ const FullPageImageWithHeader = ({
           src={ArrowDown}
           width="40px"
           height="40px"
+          alt={`Ikon for ${title}`}
         />
       </Link>}
   </div>

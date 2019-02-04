@@ -1,27 +1,26 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import PropTypes from 'prop-types';
 import LinkedIn from '../images/icons/Scelto–icon-linkedin-footer.svg';
 import Facebook from '../images/icons/Scelto–icon-facebook-footer.svg';
 import Twitter from '../images/icons/Scelto–icon-twitter-footer.svg';
 import styles from './Footer.module.less';
 
-const Footer = ({}) => (
+const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.contact}>
       <div className={styles.contact}>
         <div>Følg oss på sosiale medier: </div>
         <div className={styles.contactSoMe}>
           <Link to="http://scel.to/g/lnkd">
-            <img src={LinkedIn} width="40px" />
+            <img src={LinkedIn} width="40px" alt={`Ikon for linkedin`} />
           </Link>
 
           <Link to="http://scel.to/g/fb/">
-            <img src={Facebook} width="40px" />
+            <img src={Facebook} width="40px" alt={`Ikon for facebook`} />
           </Link>
 
           <Link to="http://scel.to/g/tw">
-            <img src={Twitter} width="40px" />
+            <img src={Twitter} width="40px" alt={`Ikon for twitter`} />
           </Link>
         </div>
       </div>

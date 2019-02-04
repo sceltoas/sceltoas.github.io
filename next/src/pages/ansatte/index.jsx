@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import EmployeeImageLink from '../../components/EmployeeImageLink';
-import Section from '../../components/Section';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
 import SmartPeople from '../../images/smart-people.jpg';

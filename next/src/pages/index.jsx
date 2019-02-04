@@ -19,7 +19,6 @@ import Navigation from '../components/Navigation';
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
-import Link from '../components/Link';
 import {LightButton, DarkButton} from '../components/Button';
 
 const IndexPage = () => (

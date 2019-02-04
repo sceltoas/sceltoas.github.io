@@ -43,9 +43,14 @@ class Navigation extends React.Component {
                 </Link>
 
                 <div className="">
-                  <a id="mobile-menu-open" onClick={this.toggleMenu}>
-                    <img src={CloseMenu} width="50px" />
-                  </a>
+                  <button
+                    id="mobile-menu-open"
+                    onClick={() => {
+                      this.toggleMenu ();
+                    }}
+                  >
+                    <img src={CloseMenu} width="50px" alt={`Lukk meny`} />
+                  </button>
                 </div>
               </div>
               <ul className="dropdown-menu__menu-items">
@@ -111,9 +116,15 @@ class Navigation extends React.Component {
               </Link>
 
               <div className="">
-                <a id="mobile-menu-open" onClick={this.toggleMenu}>
-                  <img src={MenuIcon} width="50px" />
-                </a>
+                <button
+                  id="mobile-menu-open"
+                  onClick={() => {
+                    this.toggleMenu ();
+                  }}
+                  alt="Åpne meny"
+                >
+                  <img src={MenuIcon} width="50px" alt="Åpne meny" />
+                </button>
               </div>
             </div>}
         </nav>

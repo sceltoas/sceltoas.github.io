@@ -72,7 +72,7 @@ const EmployeeIntroWithImage = ({employee}) => (
       className={styles.image}
       src={employee.image}
       width="100%"
-      alt={`Image of ${employee.name}`}
+      alt={`${employee.name}`}
     />
   </div>
 );

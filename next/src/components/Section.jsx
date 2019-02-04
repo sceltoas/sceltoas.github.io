@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
+
 import './Section.less';
+
 const Section = ({id, title, ingress, children, dark = false, style, icon}) => (
   <section
     id={id}
@@ -26,6 +28,7 @@ const Section = ({id, title, ingress, children, dark = false, style, icon}) => (
             maxWidth: '200px',
           }}
           src={icon}
+          alt={`Ikon for ${title}`}
         />}
       {title && <Fade><h1 className="section__header">{title}</h1></Fade>}
       {ingress && <Fade><h5 className="section__ingress">{ingress}</h5></Fade>}
