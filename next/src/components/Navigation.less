@@ -5,6 +5,10 @@
 
   img {
     height: 30px;
+
+    @media (max-width: 500px) {
+      height: 20px;
+    }
   }
 
   button {
@@ -13,6 +17,11 @@
 
     img {
       height: 50px;
+
+      @media (max-width: 500px) {
+        transform: scale(2);
+        height: 20px;
+      }
     }
   }
 
@@ -29,6 +38,9 @@
     }
 
     &__menu-items {
+      margin: 0;
+      padding: 0;
+
       li {
         padding: 20px;
         text-align: center;
@@ -50,7 +62,7 @@
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
   }
 

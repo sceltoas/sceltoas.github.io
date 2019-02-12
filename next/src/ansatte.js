@@ -16,6 +16,9 @@ import LarsFredrik from './images/mugshots/larsfredrik.jpg';
 import Ken from './images/mugshots/ken.jpg';
 import Sean from './images/mugshots/sean.jpg';
 import Vetle from './images/mugshots/vetle.jpg';
+import LarsOlav from './images/mugshots/larsolav.jpg';
+import Terje from './images/mugshots/terje.jpg';
+import Loading from './images/mugshots/loading.jpg';
 
 import OleAndreCV from './cvs/Ole-Andrè_Riga-Johansen.pdf';
 import ErikCV from './cvs/Erik_Salhus.pdf';
@@ -35,6 +38,8 @@ import LarsFredrikCV from './cvs/Lars_Fredrik_Lunde.pdf';
 import FredriksCV from './cvs/Fredrik_Svensen.pdf';
 import FredrikbCV from './cvs/Fredrik_Bjørnøy.pdf';
 import OleTommyCV from './cvs/Ole_Tommy_Lid-Strand.pdf';
+import LarsOlavCV from './cvs/Lars_Olav_Torvik.pdf';
+import TerjeCV from './cvs/Terje_Lonoy.pdf';
 
 import Drinker from './images/drinker.jpeg';
 import Skateboard from './images/skateboard.jpg';
@@ -48,6 +53,8 @@ import Nerd from './images/geek-dark.jpeg';
 import Kode from './images/code_background.jpeg';
 import Scooter from './images/background4.jpg';
 import RustenBil from './images/background2.jpg';
+import Cards from './images/cards.jpeg';
+import Music from './images/music_lover.jpeg';
 
 export const ansatte = {
 	oleandre: {
@@ -493,5 +500,116 @@ export const ansatte = {
 		],
 		linkToCV: FredrikbCV,
 		customImage: RustenBil
-	}
+	},
+	larsolav: {
+		image: LarsOlav,
+		name: 'Lars Olav Torvik',
+		title: 'Seniorkonsulent',
+		firstName: 'Lars Olav',
+		ingress: 'Lars Olav er en dyktig senior systemutvikler med over 14 års erfaring med frontend-utvikling. Han lang erfaring med både små og store webapper ved bruk av moderne rammeverk som React og Angular.',
+		keyFeatures: [
+			'Frontend',
+			'Fullstack',
+			'Java'
+		],
+		email: 'larsolav@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			'Selv om Lars Olav er fullstack utvikler er det frontend-utvikling han virkelig brenner for. Det er viktig for han at webløsningene han lager er brukervennlige med responsivt design og han elsker prosjekter hvor han får laget løsninger som oppfyller kravene til en Progressive Web App (PWA).',
+			'De siste årene har han jobbet for Giant Leap Technologies og deres kunder, som tech lead for webutvikling. Her har han fått være involvert i alle nivåer av løsningsprosessen. Lars Olav er en ansvarsbevisst teammedarbeider og liker å drive utviklingen fremover.På privaten er Lars Olav en meget sosial person som er glad i å trene agility med hundene sine og jobbe med hobbyprosjekter.'
+		],
+		linkToCV: LarsOlavCV,
+		customImage: Cards
+	},
+	terje: {
+		image: Terje,
+		name: 'Terje Lønøy',
+		title: 'Seniorkonsulent',
+		firstName: 'Terje',
+		ingress: 'Terje har stor interesse for moderne teknologi, design og gode brukeropplevelser. Han han har jobbet med utvikling av web og applikasjoner for mobil siden 2012.',
+		keyFeatures: [
+			'iOS',
+			'Android',
+			'Web frontend'
+		],
+		email: 'terje@scelto.no',
+		linkedIn: 'https://www.linkedin.com/in/terje-l%C3%B8n%C3%B8y-a8543165/',
+		twitter: 'https://twitter.com/terjelonoy',
+		github: 'https://github.com/TerjeLon',
+		mainSection: [
+			'Terje har vist sterkt faglig engasjement gjennom å avholde mange kurs og workshops, både internt og eksternt, samt være en aktiv pådriver for interne faggrupper innenfor frontend og mobil.',
+			'Han er en sosial og kreativ person som drives av utfordringer og tørst for kunnskap, selv i stressende situasjoner. Videre er han selvstendig, men jobber godt sammen med andre.'
+		],
+		linkToCV: TerjeCV,
+		customImage: Music
+	},
+	jantore: {
+		image: Loading,
+		name: 'Jan Tore Stølsvik',
+		title: 'Seniorkonsulent',
+		firstName: 'Jan Tore',
+		ingress: 'Jan Tore jobber som systemutvikler med hovedinteresse for React og GraphQL. Han har stort fokus på best practise og smidige metoder.',
+		keyFeatures: [
+			'React',
+			'Frontend',
+			'Java'
+		],
+		email: 'jan.tore@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			'Jan Tore jobber som systemutvikler med hovedinteresse for React og GraphQL. Han har stort fokus på best practise og smidige metoder.',
+			'Som følge av et utvekslingsår i Singapore har han jobbet på flere prosjekter med internasjonale studenter og kommuniserer derfor like godt på engelsk som på norsk. Jan Tore har holdt foredrag mange ganger på f.eks. JavaZone og NDC.',
+			'Jan Tore arbeider hardt, er positiv og løsningsorientert i møte med utfordrende oppgaver. Han er glad i å lære nye ting og jobber godt sammen med andre, samtidig som han er selvstendig.'
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
+	jarle: {
+		image: Loading,
+		name: 'Jarle Berentzen',
+		title: 'Seniorkonsulent',
+		firstName: 'Jarle',
+		ingress: 'Jarle har jobbet i IT-bransjen siden 2004, og har bred erfaring som systemutvikler, teknisk arkitekt og teamleder. Fokuset hans har vært på Java-teknologi og integrasjon mellom systemer men han har også jobbet noe i front-end og med mobil teknologi.',
+		keyFeatures: [
+			'Java',
+			'Integrasjon',
+			'Teknisk Arkitekt'
+		],
+		email: 'jarle@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			'I hans arbeid som systemutvikler har han ofte hatt et sterkt fokus på automatisering av manuelle oppgaver og utvikling av forretningslogikk. Som arkitekt har Jarle hatt høy fokus på modularisering, strukturering og standardisering av kode.',
+			'Jarle er en dedikert teknolog som er faglig interessert og oppdatert på rammeverk og teknologier. Jarle har erfaring med Smidig utvikling både som utvikler og som teamleder/scrum master.',
+			'Jarle er en god og ryddig kommunikator som inngir tillit både for kunden og blant øvrige teammedlemmer. Han evner også å sette seg inn i kundens forretning, mål og planer. Jarle trives veldig godt i dialog med kunden, og han liker å jobbe i selvorganiserende team hvor man han utfylle hverandre.'
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
+	annkatrin: {
+		image: Loading,
+		name: 'Ann-Katrin Gagnat',
+		title: 'Seniorkonsulent',
+		firstName: 'Ann-Katrin',
+		ingress: 'Ann-Katrin er flink',
+		keyFeatures: [
+			'Java',
+			'Integrasjon',
+			'Teknisk Arkitekt'
+		],
+		email: 'annkatrin@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			'Bla bla bla'
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
 };

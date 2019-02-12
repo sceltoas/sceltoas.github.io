@@ -27,7 +27,6 @@ const IndexPage = () => (
       title="I Scelto er de ansatte ansiktet utad og selve merkevaren. Du er en hyggelig, dyktig og erfaren Java-utvikler, .NET-utvikler, eller teknisk arkitekt."
       subtitle="Det vet vi å sette pris på med blant annet en svært god sosial kalender, gode
       forsikringer, godt miljø og ikke minst en av bransjens beste lønnsbetingelser."
-      link="#"
     />
     <div className="why-work-at-scelto">
       <Section dark>

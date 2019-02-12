@@ -1,27 +1,61 @@
 .kontakt {
-    display: flex;
-    max-height: 100vh;
-    max-width: 800px;
-    width: 100%;
+    //display: flex;
+    flex: none;
+    //max-height: 100vh;
+    box-sizing: border-box;
+    //max-width: 800px;
+    //width: 100%;
     margin: auto;
-    padding: 38vh 0 100px;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: baseline;
+    //padding: 38vh 0 100px;
+    //flex-flow: row wrap;
+    //justify-content: center;
+    //align-items: baseline;
     color: white;
+    //height: 100vh;
 
+    @media (max-width: 500px) {
+        //padding: 0;
+    }
+
+    position: relative;
 }
 
 .form {
-    //display: none;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+
+
+    &__container {
+        composes: kontakt;
+
+        &__text {
+
+            font-size: 3em;
+            line-height: 1.6em;
+            word-break: normal;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: baseline;
+            max-width: 600px;
+
+            @media (max-width: 600px) {
+                display: block;
+                font-size: 1.5em;
+            }
+        }
+
+        &__buttons {
+            //composes: kontakt;
+            margin-top: 100px;
+        }
+    }
 }
 
-.formText {
-    composes: kontakt;
-    font-size: 3em;
-    line-height: 1.6em;
-    word-break: normal;
-}
 
 .kvitteringImage {
     margin: 0 50px;
@@ -34,20 +68,38 @@
     margin: 0;
     font-size: 2.3em;
     line-height: 1.5em;
+
+    @media (max-width: 500px) {
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 2.0em;
+    }
 }
 
 .kvitteringTextAuthor {
     margin: 0px;
     font-size: 1.5em;
     font-style: italic;
+
+    @media (max-width: 500px) {
+        text-align: center;
+        font-size: 1.0em;
+        line-height: 2.0em;
+    }
 }
 
 .kvittering {
     composes: kontakt;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    padding: 0 30px;
+
+    @media (max-width: 500px) {
+        text-align: center;
+        font-size: 1.1em;
+    }
 }
 
 .kvitteringWrapper {}

@@ -63,7 +63,7 @@ class IndexPage extends React.Component {
           title="Ønsker du å bli kontaktet av oss?"
           image={Working}
         >
-          <div>
+          <div className={styles.form}>
             {this.state.showKvittering &&
               <Fade>
                 <div className={styles.kvittering}>
@@ -73,7 +73,9 @@ class IndexPage extends React.Component {
                     src={DL}
                   />
                   <div className={styles.kvitteringWrapper}>
-                    <h4 className={styles.kvitteringText}>Jeg ringer deg</h4>
+                    <h4 className={styles.kvitteringText}>
+                      Jeg kontakter deg!
+                    </h4>
                     <h5 className={styles.kvitteringTextAuthor}>
                       - Tor-Eric Sandvik (Daglig leder)
                     </h5>
@@ -82,8 +84,8 @@ class IndexPage extends React.Component {
               </Fade>}
             {!this.state.showKvittering &&
               <Fade>
-                <div className={styles.form}>
-                  <div className={styles.formText}>
+                <div className={styles.form__container}>
+                  <div className={styles.form__container__text}>
                     <div className="">
                       Hei, jeg heter&nbsp;
                     </div>
@@ -99,7 +101,7 @@ class IndexPage extends React.Component {
                       maxLength="8"
                     />
                   </div>
-                  <div className="sc-button-container">
+                  <div className={styles.form__container__buttons}>
                     <LightButton onClick={this.sendMail}>
                       Kontakt meg!
                     </LightButton>

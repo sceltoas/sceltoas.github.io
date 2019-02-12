@@ -10,7 +10,6 @@ import Arkitektur
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
-import Link from '../components/Link';
 import TextWithCircle from '../components/TextWithCircle';
 
 const IndexPage = () => (
@@ -30,13 +29,23 @@ const IndexPage = () => (
         <span>
           Scelto tilbyr ekspertkonsulenter innen
           {' '}
-          <Link to="#systemutvikling">systemutvikling</Link>
+          <a
+            className="sc-link"
+            href="#systemutvikling"
+            alt="Naviger til systemutvikling"
+          >
+            systemutvikling
+          </a>
           {' '}
           og
           {' '}
-          <Link to="#teknisk-arkitektur">
+          <a
+            className="sc-link"
+            href="#teknisk-arkitektur"
+            alt="Naviger til teknisk arkitektur"
+          >
             teknisk arkitektur
-          </Link>
+          </a>
         </span>
       }
       link="#systemutvikling"

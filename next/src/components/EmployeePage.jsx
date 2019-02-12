@@ -11,7 +11,10 @@ import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
 import {LightButton} from './Button';
 
-const currentOrigin = window.location.origin;
+const currentOrigin = typeof window !== `undefined`
+  ? window.location.origin
+  : 'https://scelto.no';
+
 const EmployeePage = props => {
   const name = props.location.pathname
     .replace ('/ansatte/', '')

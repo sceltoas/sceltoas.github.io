@@ -31,7 +31,7 @@ const IndexPage = () => (
         display: 'flex',
         flexFlow: 'row wrap',
         justifyContent: 'center',
-        margin: '100px 50px 0',
+        margin: '50px 20px 0',
       }}
     >
       {Object.keys (ansatte).sort ().map (key => {
