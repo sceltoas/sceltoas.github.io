@@ -74,10 +74,9 @@ function calcScore(participant) {
 
 function calcScoreDeductTwoWorst(participant) {
     // participation = -1, non-participation = -2
-
     var totalScore = 0;
-    var scoreValuesList = participant.scoreValues.length >= 2
-      ? participant.scoreValues.slice(0).sort(compareNumbers).slice(2)
+    var scoreValuesList = participant.scoreValues.length >= 4
+      ? participant.scoreValues.sort(compareNumbers).slice(2)
       : participant.scoreValues;
 
     _.each(scoreValuesList, function(result, i) {
