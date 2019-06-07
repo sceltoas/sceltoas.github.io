@@ -6,7 +6,7 @@ var participants = [
     {name: 'Ivar', results: [PARTICIPATED, PARTICIPATED]},
     {name: 'Jan Erik', results: [PARTICIPATED, PARTICIPATED]},
     {name: 'Herman', results: [NOT_PARTICIPATED, PARTICIPATED]},
-    {name: 'Ole-André', results: [PARTICIPATED, PARTICIPATED]},
+    {name: 'Ole-André', results: [PARTICIPATED, PARTICIPATED, 1, 1, 1, 1]},
     {name: 'Tor Eric', results: [PARTICIPATED, PARTICIPATED]},
     {name: 'Håken', results: [PARTICIPATED, PARTICIPATED]},
     {name: 'Gustav', results: [PARTICIPATED, PARTICIPATED]},
