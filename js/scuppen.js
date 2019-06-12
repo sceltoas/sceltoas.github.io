@@ -12,7 +12,7 @@ var participants = [
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
-      NOT_PARTICIPATED
+      PARTICIPATED
     ]
   },
   {
