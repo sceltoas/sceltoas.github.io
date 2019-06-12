@@ -7,6 +7,15 @@ var participants = [
     results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, PARTICIPATED]
   },
   {
+    name: 'Jørgen',
+    results: [
+      NOT_PARTICIPATED,
+      NOT_PARTICIPATED,
+      NOT_PARTICIPATED,
+      NOT_PARTICIPATED
+    ]
+  },
+  {
     name: 'Ivar',
     results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, NOT_PARTICIPATED]
   },
