@@ -89,24 +89,28 @@ const IndexPage = props => {
       />
       <Navigation />
       <FullPageImageWithHeader
-        title={`En lagspiller, lett å samarbeid med, og et positivt bidrag til et hvert miljø.`}
-        subtitle="Scelto leverer senior- og ekspertkompetanse innen systemutvikling og teknisk arkitektur på både Java og .Net."
+      title={`Tunge på kunnskap. Lette å samarbeide med.`}
+      subtitle="Vi har lang erfaring med å bistå alle type bedrifter innen systemutvikling og teknisk arkitektur med å bygge innovative og strategisk gode løsninger."
         link="#whoarewe"
         image={Employees}
       />
 
-      <TextWithPadding
+    {/* <TextWithPadding
         id="whoarewe"
-        text={`Scelto teller ${Object.keys (ansatte).length} personer og det jobbes aktivt for å rekruttere de beste innenfor våre fagfelt. Menneskene som jobber i Scelto kjennetegnes ved mer enn bare sin faglige styrke og senior erfaring, en Scelto-er en lagspiller, lett å samarbeide med, og et positivt bidrag til et hvert miljø.`}
+      text={`Vi har lang erfaring med å bistå alle type bedrifter innen systemutvikling og teknisk arkitektur med å bygge innovative og strategisk gode løsninger.`}
       />
 
       <Parallax bgImage={Image}>
         <Fade><CenteredText text="Scawesomeness delivered!" /></Fade>
       </Parallax>
-
+ */}
       <Section
-        title="Hvem er en Sceltoer?"
-        ingress="Menneskene i Scelto kjennetegnes ved mer enn bare sin faglig styrke og senior erfaring. En Sceltoer er også fremoverlent, nysgjerrig og aldri redd for å bidra med sin synsvinkel."
+      title="Hva kjennetegner en Scelto-konsulent?"
+      ingress={
+        <React.Fragment>
+          <p>Vi er en gruppe positive og kunnskapsrike mennesker som bruker vår ekspertise for at din bedrift skal kunne yte best mulig. Våre konsulenters evne til å samarbeide tett med våre kunder og kolleger gjør at alle våre tjenester og produkter blir skreddersydd etter kundens ønske.</p>
+          <p>Se alle våre konsulenters biografi for mer utdypende informasjon om vår kompetanse!</p>
+        </React.Fragment>}
       >
         <ListOfEmployees props={props} />
         <div className="sc-button-container">
@@ -138,7 +142,7 @@ const IndexPage = props => {
           <Fade>
             <IconTitleAndIntroLink
               icon={ArkitekturIcon}
-              title="Teknisk Arkitektur"
+            title="Teknisk arkitektur"
               intro="Hyggelige og dyktige tekniske arkitekter med bred kompetanse fra en rekke større og mindre systemer"
             />
           </Fade>

@@ -1,7 +1,7 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import InlineInput from './InlineInput';
-import './SaleryCalculator.less';
+import './SalaryCalculator.less';
 
 class NumberAndDescription extends React.Component {
   constructor (props) {
@@ -44,7 +44,7 @@ class NumberAndDescription extends React.Component {
   }
 }
 
-class SaleryCalculator extends React.Component {
+class SalaryCalculator extends React.Component {
   constructor (props) {
     super (props);
     this.onPriceChanged = this.onPriceChanged.bind (this);
@@ -165,4 +165,4 @@ class SaleryCalculator extends React.Component {
   }
 }
 
-export default SaleryCalculator;
+export default SalaryCalculator;

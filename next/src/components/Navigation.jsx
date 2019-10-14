@@ -20,7 +20,7 @@ class Navigation extends React.Component {
 
   render() {
     const menuItems = [
-      {href: '/jobb', title: 'Hvorfor jobbe i Scelto?'},
+      {href: '/jobbe-i-scelto', title: 'Jobbe i Scelto'},
       {href: '/ansatte', title: 'Menneskene'},
       {href: '/tjenester', title: 'Tjenester'},
       {href: '/kontakt', title: 'Kontakt'},

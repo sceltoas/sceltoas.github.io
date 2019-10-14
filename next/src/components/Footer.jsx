@@ -15,10 +15,6 @@ const Footer = () => (
             <img src={LinkedIn} width="40px" alt={`Ikon for linkedin`} />
           </Link>
 
-          <Link to="http://scel.to/g/fb/">
-            <img src={Facebook} width="40px" alt={`Ikon for facebook`} />
-          </Link>
-
           <Link to="http://scel.to/g/tw">
             <img src={Twitter} width="40px" alt={`Ikon for twitter`} />
           </Link>
@@ -28,7 +24,7 @@ const Footer = () => (
         <a
           className="sc-link"
           href="mailto:post@scelto.no"
-          alt="email to scelto - post@scelto.no"
+          alt="e-mail Scelto - post@scelto.no"
         >
           post@scelto.no
         </a>
