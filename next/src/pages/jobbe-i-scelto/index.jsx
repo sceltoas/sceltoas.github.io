@@ -3,7 +3,6 @@ import Link from 'gatsby-link';
 import DL from '../../images/tor_eric_crop.jpg';
 import Section from '../../components/Section';
 import HeaderImage from '../../images/direction-scelto.jpeg';
-import SalaryCalculator from '../../components/SalaryCalculator';
 import Helmet from 'react-helmet';
 import Favicon from '../../images/favicon.png';
 import Footer from '../../components/Footer';
@@ -32,7 +31,8 @@ const IndexPage = () => (
         <ul className="list">
           <li>Positive og hyggelige mennesker som hjelper hverandre.</li>
           <li>
-            Attraktive og spennende kunder, som bla. NRK, Skatteetaten og Statens vegvesen.
+            Attraktive og spennende kunder, som bla. NRK, Skatteetaten og
+            Statens vegvesen.
           </li>
           <li>
             Gode forsikringsordninger:
@@ -49,7 +49,14 @@ const IndexPage = () => (
           <li>
             Miljø med faglig tyngde – I Scelto er gjennomsnittserfaringen 12 år.
           </li>
-          <li>Gode betingelser <Link to="/lonnskalkulator"><span>🔢</span></Link></li>
+          <li>
+            Gode betingelser{' '}
+            <Link to="/lonnskalkulator">
+              <span role="img" aria-label="Open terms">
+                🔢
+              </span>
+            </Link>
+          </li>
           <li>
             Fokus på sosial kalender:
             <ul className="nested-list">
@@ -62,8 +69,9 @@ const IndexPage = () => (
             </ul>
           </li>
           <li>
-            Og sist, men ikke minst, vi skal ikke bli flere enn 30 personer og vi skal være et lett selskap med
-            lite overhead. Noe som gjør at vi kan fortsette å ha fokus på kulturen, det sosiale og deg som
+            Og sist, men ikke minst, vi skal ikke bli flere enn 30 personer og
+            vi skal være et lett selskap med lite overhead. Noe som gjør at vi
+            kan fortsette å ha fokus på kulturen, det sosiale og deg som
             individ.
           </li>
         </ul>
@@ -80,17 +88,14 @@ const IndexPage = () => (
             src={DL}
           />
           <h5>
-            Ring meg for en uforpliktende prat på tlf
-            {' '}
+            Ring meg for en uforpliktende prat på tlf{' '}
             <a className="sc-link" href="tlf:90 96 90 97">
               90&nbsp;96&nbsp;90&nbsp;97
             </a>
-            .
-            {' '}
+            .{' '}
           </h5>
           <h5>
-            Eller ta kontakt på mail
-            {' '}
+            Eller ta kontakt på mail{' '}
             <a className="sc-link" href="mailto:tor.erik@scelto.no">
               tor.eric@scelto.no
             </a>

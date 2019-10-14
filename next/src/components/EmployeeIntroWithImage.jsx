@@ -21,7 +21,7 @@ const EmployeeIntroWithImage = ({employee, image}) => (
         {employee.name}
       </h1>
       {employee.keyFeatures &&
-        employee.keyFeatures.map (feature => (
+        employee.keyFeatures.map(feature => (
           <p
             className={styles.feature}
             style={{
@@ -41,7 +41,7 @@ const EmployeeIntroWithImage = ({employee, image}) => (
         </a>
       </p>
 
-      {employee.linkedIn &&
+      {employee.linkedIn && (
         <a
           style={{
             marginRight: ' 20px',
@@ -50,9 +50,10 @@ const EmployeeIntroWithImage = ({employee, image}) => (
           href={`https://www.linkedin.com/in/${employee.linkedIn}`}
         >
           <LinkedIn fill="#fff" />
-        </a>}
+        </a>
+      )}
 
-      {employee.twitter &&
+      {employee.twitter && (
         <a
           style={{
             marginRight: ' 20px',
@@ -60,13 +61,14 @@ const EmployeeIntroWithImage = ({employee, image}) => (
           href={`https://twitter.com/${employee.twitter}`}
         >
           <Twitter fill="#fff" />
-        </a>}
+        </a>
+      )}
 
-      {employee.github &&
+      {employee.github && (
         <a href={`https://github.com/${employee.github}`}>
           <Github fill="#fff" />
-        </a>}
-
+        </a>
+      )}
     </div>
     <img
       className={styles.image}

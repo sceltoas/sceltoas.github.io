@@ -9,20 +9,17 @@ import CenteredText from './CenteredText';
 import {Parallax} from 'react-parallax';
 import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
-import {LightButton} from './Button';
+import {LightButtonAnchor} from './Button';
 import {createMetadata} from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/loading.jpg';
-import {graphql} from 'gatsby';
 
-const currentOrigin = typeof window !== `undefined`
-  ? window.location.origin
-  : 'https://scelto.no';
+const currentOrigin =
+  typeof window !== `undefined` ? window.location.origin : 'https://scelto.no';
 
 const EmployeePage = props => {
   const name = props.location.pathname
-    .replace ('/ansatte/', '')
-    .replace ('/', '');
-  console.log (name, props);
+    .replace('/ansatte/', '')
+    .replace('/', '');
 
   const employee = ansatte[name];
   if (!employee) {
@@ -31,14 +28,14 @@ const EmployeePage = props => {
 
   const image =
     props.data &&
-    props.data.EmployeeImages.edges.find (node => node.node.name === name);
+    props.data.EmployeeImages.edges.find(node => node.node.name === name);
 
   return (
     <Fragment>
       <Helmet
         title={`${employee.name} jobber i Scelto AS`}
         meta={[
-          ...createMetadata ({
+          ...createMetadata({
             title: `${employee.name} jobber i Scelto AS`,
             description: employee.ingress,
             image: `${currentOrigin}${employee.image}`,
@@ -57,7 +54,7 @@ const EmployeePage = props => {
             employee={employee}
             image={
               (image && image.node.childImageSharp.fluid.src) ||
-                DefaultEmployeeImage
+              DefaultEmployeeImage
             }
           />
         </Fade>
@@ -73,15 +70,15 @@ const EmployeePage = props => {
       >
         {employee.mainSection &&
           employee.mainSection.length > 1 &&
-          employee.mainSection.map (section => (
+          employee.mainSection.map(section => (
             <Fade>
               <p>{section}</p>
             </Fade>
           ))}
         <div className="sc-button-container">
-          <LightButton
-            href={employee.linkToCV}
-          >{`Last ned ${employee.firstName} sin CV`}</LightButton>
+          <LightButtonAnchor href={employee.linkToCV}>{`Last ned ${
+            employee.firstName
+          } sin CV`}</LightButtonAnchor>
         </div>
       </Section>
       <Parallax bgImage={employee.customImage}>
@@ -91,23 +88,5 @@ const EmployeePage = props => {
     </Fragment>
   );
 };
-
-export const query = graphql`
-  query {
-    EmployeeImages: allFile(sort: {order: ASC, fields: [absolutePath]}, filter: {relativePath: {regex: "/mugshots/.*.jpg/"}}) {
-      edges {
-        node {
-          relativePath
-          name
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default EmployeePage;

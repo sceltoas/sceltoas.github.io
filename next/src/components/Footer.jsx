@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import LinkedIn from '../images/icons/Scelto–icon-linkedin-footer.svg';
-import Facebook from '../images/icons/Scelto–icon-facebook-footer.svg';
 import Twitter from '../images/icons/Scelto–icon-twitter-footer.svg';
 import styles from './Footer.module.less';
 
@@ -37,14 +36,11 @@ const Footer = () => (
         <div>0154 Oslo</div>
       </div>
       <div className="">
+        <div>Org.nr.: 914 757 274 MVA</div>
         <div>
-          Org.nr.: 914 757 274 MVA
-        </div>
-        <div>
-          Telefon: <a className="sc-link" href="tel:+4790969097">
-            (+47)
-            909 69
-            097
+          Telefon:{' '}
+          <a className="sc-link" href="tel:+4790969097">
+            (+47) 909 69 097
           </a>
         </div>
       </div>
