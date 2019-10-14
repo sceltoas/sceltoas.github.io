@@ -187,7 +187,7 @@ export const ansatte = {
 	toreric: {
 		image: TorEric,
 		name: 'Tor Eric Sandvik',
-		title: 'Prosjektleder og daglig leder',
+		title: 'Daglig leder',
 		firstName: 'Tor Eric',
 		ingress: 'Tor Eric er utdannet som Master i Informatikk og har 15 års erfaring i IT-bransjen. Han har bred erfaring som blant annet prosjektleder, Scrum Master, konsulentsjef, rådgiver, styremedlem og produkteier.',
 		keyFeatures: [
@@ -591,7 +591,7 @@ export const ansatte = {
 		linkToCV: "#",
 		customImage: Music
 	},
-	annkatrin: {
+	/*annkatrin: {
 		image: Loading,
 		name: 'Ann-Katrin Gagnat',
 		title: 'Seniorkonsulent',
@@ -611,5 +611,5 @@ export const ansatte = {
 		],
 		linkToCV: "#",
 		customImage: Music
-	},
+	},*/
 };

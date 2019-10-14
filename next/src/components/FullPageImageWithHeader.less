@@ -6,6 +6,13 @@
   transform: translateX(0%);
   -webkit-transform: translateX(0%);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    height: 100vh;
+  }
 
   &__subtitle {
     @media screen and (max-width: 500px) {
@@ -21,28 +28,26 @@
     font-size: 2em;
     margin: 0 auto;
     color: #eee;
-    padding: 2em 50px;
     font-weight: 300;
     font-family: "Sanuk Regular",
     "Courier New",
     serif;
     max-width: 1280px;
+    padding: 20px;
   }
 
   &__title {
     @media (max-width: 500px) {
       font-size: 1.3em;
-      padding: 28vh 50px 0;
+      padding: 20px;
     }
 
     @media (min-width: 501px) and (max-width: 992px) {
       font-size: 2.3em;
-      padding: 34vh 50px 0;
     }
 
     margin: 0 auto;
     color: #fff;
-    padding: 38vh 50px 0;
     font-size: 3em;
     font-weight: 300;
     font-family: "Sanuk",

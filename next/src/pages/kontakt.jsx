@@ -10,6 +10,7 @@ import styles from './kontakt.module.less';
 import DL from '../images/tor_eric_crop.jpg';
 import {LightButton} from '../components/Button';
 import Fade from 'react-reveal/Fade';
+import {createMetadata} from '../utils';
 
 class IndexPage extends React.Component {
   constructor (props) {
@@ -52,10 +53,10 @@ class IndexPage extends React.Component {
       <Fragment>
         <Helmet
           title="Scelto AS"
-          meta={[
-            {name: 'description', content: 'Sample'},
-            {name: 'keywords', content: 'sample, something'},
-          ]}
+          meta={createMetadata ({
+            title: 'Ønsker du å bli kontaktet av oss?',
+            image: Working,
+          })}
           link={[{rel: 'icon', href: Favicon}]}
         />
         <Navigation />

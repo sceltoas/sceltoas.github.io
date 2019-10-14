@@ -3,7 +3,7 @@ import './EmployeeImageLink.less';
 import {Link as GLink} from 'gatsby';
 import Link from './Link';
 
-const EmployeeImageLink = ({name, title, image, to, style}) => (
+const EmployeeImageLink = ({name, title, image, to}) => (
   <GLink className="employee-image-link" to={to}>
     <div className="image">
       <img src={image} width="100%" height="100%" alt={`Bilde av ${name}`} />

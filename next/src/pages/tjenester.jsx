@@ -11,15 +11,16 @@ import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
 import TextWithCircle from '../components/TextWithCircle';
+import {createMetadata} from '../utils';
 
 const IndexPage = () => (
   <Fragment>
     <Helmet
       title="Scelto AS"
-      meta={[
-        {name: 'description', content: 'Sample'},
-        {name: 'keywords', content: 'sample, something'},
-      ]}
+      meta={createMetadata ({
+        title: 'Scelto tilbyr ekspertkonsulenter innen systemutvikling og teknisk arkitektur',
+        image: Puzzle,
+      })}
       link={[{rel: 'icon', href: Favicon}]}
     />
     <Navigation />

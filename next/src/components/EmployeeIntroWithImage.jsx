@@ -5,7 +5,7 @@ import Github from '../components/icons/Github';
 
 import styles from './EmployeeIntroWithImage.module.less';
 
-const EmployeeIntroWithImage = ({employee}) => (
+const EmployeeIntroWithImage = ({employee, image}) => (
   <div className={styles.wrapper}>
     <div
       style={{
@@ -13,7 +13,7 @@ const EmployeeIntroWithImage = ({employee}) => (
       }}
     >
       <h1
-        className="left-align white-text"
+        className={styles.name}
         style={{
           wordBreak: 'all',
         }}
@@ -23,7 +23,7 @@ const EmployeeIntroWithImage = ({employee}) => (
       {employee.keyFeatures &&
         employee.keyFeatures.map (feature => (
           <p
-            className="left-align grey-text"
+            className={styles.feature}
             style={{
               lineHeight: '1em',
             }}
@@ -70,7 +70,7 @@ const EmployeeIntroWithImage = ({employee}) => (
     </div>
     <img
       className={styles.image}
-      src={employee.image}
+      src={image}
       width="100%"
       alt={`${employee.name}`}
     />

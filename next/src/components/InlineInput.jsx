@@ -2,47 +2,64 @@ import React, {Fragment} from 'react';
 import './InlineInput.less';
 
 class InlineInput extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
     this.state = {
       value: props.placeholder,
     };
-    this.onChange = this.onChange.bind (this);
-    this.onKeyUp = this.onKeyUp.bind (this);
+    this.onChange = this.onChange.bind(this);
+    this.onKeyDown = this.onKeyDown.bind(this);
+    this.timeoutListener = undefined;
   }
 
-  componentDidMount () {
-    this.setState ({
-      ...this.state,
-      value: this.inputElement.value,
-      width: this.divElement.clientWidth,
-    });
-  }
-
-  componentWillReceiveProps (nextProps) {
-    this.setState ({
+  componentDidMount() {
+    this.setState({
       ...this.state,
       value: this.inputElement.value,
     });
+    /**
+     * delaying so that the div placeholder is rendered before we calculate the width
+     */
+    this.timeoutListener = setTimeout(() => {
+      if (typeof this.setState === 'function') {
+        this.setState({
+          ...this.state,
+          width: this.divElement.clientWidth,
+        });
+      }
+    }, 50);
   }
 
-  onKeyUp (event) {
-    this.setState ({
-      ...this.state,
-      width: this.divElement.clientWidth === 0
-        ? 100
-        : this.divElement.clientWidth,
-    });
+  componentWillUnmount() {
+    if (this.timeoutListener !== undefined) {
+      clearTimeout(this.timeoutListener);
+    }
   }
-  onChange (event) {
-    this.setState ({
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
       ...this.state,
       value: this.inputElement.value,
     });
-    this.props.onChange (event);
   }
 
-  render () {
+  onKeyDown(event) {
+    setTimeout(() => {
+      this.setState({
+        ...this.state,
+        width: this.divElement.clientWidth,
+      });
+    }, 1);
+  }
+  onChange(event) {
+    this.setState({
+      ...this.state,
+      value: this.inputElement.value,
+    });
+    this.props.onChange(event);
+  }
+
+  render() {
     const {id, placeholder, maxLength, className} = this.props;
 
     return (
@@ -52,7 +69,7 @@ class InlineInput extends React.Component {
           ref={ref => (this.divElement = ref)}
           className="inline inline-input__input"
         >
-          {this.state.value}
+          {this.state.value || placeholder}
         </div>
         <input
           id={id}
@@ -66,9 +83,9 @@ class InlineInput extends React.Component {
           ref={ref => (this.inputElement = ref)}
           maxLength={maxLength}
           aria-autocomplete="none"
-          onKeyUp={this.onKeyUp}
+          onKeyDown={this.onKeyDown}
           onChange={this.onChange}
-          autoComplete="off"
+          autoComplete="on"
           autoCorrect="false"
         />
       </Fragment>

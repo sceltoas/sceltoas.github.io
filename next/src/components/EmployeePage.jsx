@@ -10,6 +10,9 @@ import {Parallax} from 'react-parallax';
 import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
 import {LightButton} from './Button';
+import {createMetadata} from '../utils';
+import DefaultEmployeeImage from '../images/mugshots/loading.jpg';
+import {graphql} from 'gatsby';
 
 const currentOrigin = typeof window !== `undefined`
   ? window.location.origin
@@ -19,33 +22,45 @@ const EmployeePage = props => {
   const name = props.location.pathname
     .replace ('/ansatte/', '')
     .replace ('/', '');
+  console.log (name, props);
 
   const employee = ansatte[name];
-  console.log (Object.keys (ansatte).length);
   if (!employee) {
-    console.log ('Could not find ansatt', name);
     return null;
   }
+
+  const image =
+    props.data &&
+    props.data.EmployeeImages.edges.find (node => node.node.name === name);
 
   return (
     <Fragment>
       <Helmet
         title={`${employee.name} jobber i Scelto AS`}
         meta={[
-          {name: 'description', content: employee.ingress},
-          {name: 'og:title', content: `${employee.name} jobber i Scelto AS`},
-          {name: 'og:description', content: employee.ingress},
+          ...createMetadata ({
+            title: `${employee.name} jobber i Scelto AS`,
+            description: employee.ingress,
+            image: `${currentOrigin}${employee.image}`,
+          }),
           {
-            name: 'og:image',
-            content: `${currentOrigin}${employee.image}`,
+            name: 'og:url',
+            content: `${currentOrigin}/ansatte/${name}`,
           },
-          {name: 'og:url', content: `${currentOrigin}/ansatte/${name}`},
         ]}
         link={[{rel: 'icon', href: Favicon}]}
       />
       <Navigation />
       <Section dark={true}>
-        <Fade><EmployeeIntroWithImage employee={employee} /></Fade>
+        <Fade>
+          <EmployeeIntroWithImage
+            employee={employee}
+            image={
+              (image && image.node.childImageSharp.fluid.src) ||
+                DefaultEmployeeImage
+            }
+          />
+        </Fade>
       </Section>
 
       <Section
@@ -76,5 +91,23 @@ const EmployeePage = props => {
     </Fragment>
   );
 };
+
+export const query = graphql`
+  query {
+    EmployeeImages: allFile(sort: {order: ASC, fields: [absolutePath]}, filter: {relativePath: {regex: "/mugshots/.*.jpg/"}}) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default EmployeePage;

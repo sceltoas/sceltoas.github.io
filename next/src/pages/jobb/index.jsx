@@ -10,15 +10,17 @@ import Navigation from '../../components/Navigation';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 
 import './index.less';
+import {createMetadata} from '../../utils';
 
 const IndexPage = () => (
   <Fragment>
     <Helmet
       title="Scelto AS"
-      meta={[
-        {name: 'description', content: 'Sample'},
-        {name: 'keywords', content: 'sample, something'},
-      ]}
+      meta={createMetadata ({
+        title: 'I Scelto er de ansatte ansiktet utad og selve merkevaren. Du er en hyggelig, dyktig og erfaren Java-utvikler, .NET-utvikler, eller teknisk arkitekt.',
+        description: 'Det vet vi å sette pris på med blant annet en svært god sosial kalender, gode forsikringer, godt miljø og ikke minst en av bransjens beste lønnsbetingelser.',
+        image: HeaderImage,
+      })}
       link={[{rel: 'icon', href: Favicon}]}
     />
     <Navigation />

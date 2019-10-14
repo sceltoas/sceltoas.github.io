@@ -37,8 +37,8 @@ const Footer = () => (
     <div className={styles.addressAndOtherInfo}>
       <div className={styles.addressAndOtherInfoAddress}>
         <div>Scelto AS</div>
-        <div>Rosenkrantz' gate 7</div>
-        <div>0159 Oslo</div>
+        <div>Karl Johans gate 16</div>
+        <div>0154 Oslo</div>
       </div>
       <div className="">
         <div>
