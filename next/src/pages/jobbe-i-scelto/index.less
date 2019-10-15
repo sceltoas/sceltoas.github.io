@@ -1,2 +1,59 @@
 .why-work-at-scelto {
 }
+
+.kunder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: white;
+    fill: white;
+    stroke: white;
+
+    .icon {
+        max-width: 150px;
+        max-height: 120px;
+        width: 100%;
+        height: 100%;
+        margin: 1em;
+        padding: 1em;
+        align-self: center;
+    }
+}
+
+.forsikringsordning__wrapper {
+    padding: 3em;
+
+    h3 {
+        margin-top: 0;
+    }
+}
+.forsikringsordning {
+    @media (min-width: 600px) {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+.forsikringsordning__column {
+    width: 100%;
+    @media (min-width: 600px) {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+    }
+}
+.forsikringsordning__entry {
+    font-size: 16px;
+    margin: 5px 5px 5px 0;
+
+    &::before {
+        content: '✓';
+        color: currentColor;
+        border: 2px solid currentColor;
+        border-radius: 20px;
+        padding: 2px 5px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        margin-right: 10px;
+    }
+}

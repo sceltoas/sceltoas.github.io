@@ -8,6 +8,7 @@ import Favicon from '../../images/favicon.png'
 import Footer from '../../components/Footer'
 import Navigation from '../../components/Navigation'
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader'
+import { kunder } from '../../kunder'
 import './index.less'
 
 const IndexPage = () => (
@@ -24,8 +25,29 @@ const IndexPage = () => (
         <FullPageImageWithHeader
             image={HeaderImage}
             title="Scelto er en arbeidsplass hvor både det faglige og sosiale står i fokus."
-            subtitle="Vi jobber med noen av Norges mest spennende bedrifter og organisasjoner, og vi er alltid på jakt etter nye mennesker som kan være med å utvikle både selskapet og hverandre som mennesker. Vi mener det sosiale danner grunnlaget for et godt arbeidsmiljø, og derfor samles vi ofte gjennom året for blant annet turer innen- og utlands, møtes til en hyggelig lunsj, har Scelto-kvelder med aktiviteter, sommerfest og julebord, og i det hele tatt gjør ting sammen for å bli bedre kjent med hverandre."
         />
+        <Section dark>
+            <h5>
+                Vi jobber med noen av Norges mest spennende bedrifter og
+                organisasjoner, og vi er alltid på jakt etter nye mennesker som
+                kan være med å utvikle både selskapet og hverandre som
+                mennesker.
+            </h5>
+            <h5>
+                Vi mener det sosiale danner grunnlaget for et godt arbeidsmiljø,
+                og derfor samles vi ofte gjennom året for blant annet turer
+                innen- og utlands, møtes til en hyggelig lunsj, har
+                Scelto-kvelder med aktiviteter, sommerfest og julebord, og i det
+                hele tatt gjør ting sammen for å bli bedre kjent med hverandre.
+            </h5>
+        </Section>
+        <Section ingress="Attraktive og spennende kunder">
+            <div className="kunder">
+            {kunder.map(kunde => (
+                <img className="icon" alt={kunde.name} src={kunde.icon} />
+            ))}
+            </div>
+        </Section>
         <div className="why-work-at-scelto">
             <Section title="Hvorfor jobbe i Scelto?">
                 <ul className="list">
@@ -35,18 +57,6 @@ const IndexPage = () => (
                     <li>
                         Attraktive og spennende kunder, som bla. NRK,
                         Skatteetaten og Statens vegvesen.
-                    </li>
-                    <li>
-                        Gode forsikringsordninger:
-                        <ul className="nested-list">
-                            <li>Yrkesskade</li>
-                            <li>Reise til og fra arbeid</li>
-                            <li>Fritidsulykke</li>
-                            <li>Invaliditet og uførhet pga. sykdom</li>
-                            <li>Helseforsikring Super</li>
-                            <li>Reiseforsikring Super</li>
-                            <li>Familiemedlemskap i Volvat</li>
-                        </ul>
                     </li>
                     <li>
                         Miljø med faglig tyngde – I Scelto er
@@ -80,6 +90,34 @@ const IndexPage = () => (
                         kulturen, det sosiale og deg som individ.
                     </li>
                 </ul>
+            </Section>
+            <Section className="forsikringsordning__wrapper">
+                <h3>Gode forsikringsordninger</h3>
+                <div className="forsikringsordning">
+                    <div className="forsikringsordning__column">
+                        <p className="forsikringsordning__entry">
+                            Fritidsulykke
+                        </p>
+                        <p className="forsikringsordning__entry">Yrkesskade</p>
+                        <p className="forsikringsordning__entry">
+                            Reise til og fra arbeid
+                        </p>
+                        <p className="forsikringsordning__entry">
+                            Invaliditet og uførhet pga. sykdom
+                        </p>
+                    </div>
+                    <div className="forsikringsordning__column">
+                        <p className="forsikringsordning__entry">
+                            Helseforsikring Super
+                        </p>
+                        <p className="forsikringsordning__entry">
+                            Reiseforsikring Super
+                        </p>
+                        <p className="forsikringsordning__entry">
+                            Familiemedlemskap i Volvat
+                        </p>
+                    </div>
+                </div>
             </Section>
             <Section dark>
                 <div style={{ textAlign: 'center' }}>

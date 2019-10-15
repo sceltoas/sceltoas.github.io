@@ -12,10 +12,11 @@ const Section = ({
     dark = false,
     style,
     icon,
+    className,
 }) => (
     <section
         id={id}
-        className="section"
+        className={`section ${className}`}
         style={{
             backgroundColor: dark ? '#333' : '#fff',
             color: dark ? '#fff' : '#333',
@@ -60,6 +61,7 @@ Section.propTypes = {
     ingress: PropTypes.string,
     children: PropTypes.element,
     dark: PropTypes.bool,
+    className: PropTypes.string,
 }
 
 export default Section

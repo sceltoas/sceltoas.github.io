@@ -4,7 +4,7 @@
     width: 100%;
 
     img {
-        height: 30px;
+        height: 25px;
 
         @media (max-width: 500px) {
             height: 20px;
@@ -16,11 +16,11 @@
         border: none;
 
         img {
-            height: 50px;
+            height: 40px;
 
             @media (max-width: 500px) {
-                transform: scale(2);
-                height: 20px;
+                //transform: scale(2);
+                //height: 20px;
             }
         }
     }
@@ -58,12 +58,16 @@
     .hide-on-large-only,
     .hide-on-med-and-down {
         position: relative;
-        padding: 50px 50px;
+        padding: 2em 0.5em 2em 2em;
         height: 100%;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
+
+        @media (min-width: 500px) {
+            padding: 2em 1.4em 2em 3.2em;
+        }
     }
 
     @media only screen and (min-width: 0px) and (max-width: 992px) {
@@ -90,6 +94,7 @@
 
         ul {
             float: right;
+            margin: 0;
         }
 
         .hide-on-large-only {
