@@ -26,10 +26,10 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop -H 0.0.0.0",
-    "serve": "gatsby serve -o -H 0.0.0.0",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.jsx?\"",
+    "build": "yarn format && gatsby build",
+    "start": "gatsby develop -H 0.0.0.0",
+    "start:prod": "gatsby build && gatsby serve -o -H 0.0.0.0",
+    "format": "prettier  --write \"src/**/*\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
