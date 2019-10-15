@@ -127,7 +127,7 @@ const IndexPage = props => {
       >
         <ListOfEmployees props={props} />
         <div className="sc-button-container">
-          <DarkButton to="/ansatte">Se alle sceltoerne</DarkButton>
+          <DarkButton to="/ansatte">Se alle konsulentene</DarkButton>
         </div>
       </Section>
 
