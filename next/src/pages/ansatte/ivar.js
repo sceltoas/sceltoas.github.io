@@ -1,4 +1,5 @@
 import Employee from "../../components/EmployeePage";
+import { graphql } from 'gatsby';
 
 /** TODO: make this work dynamically */
 export const query = graphql `
