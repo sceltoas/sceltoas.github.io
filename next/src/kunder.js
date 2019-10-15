@@ -3,7 +3,8 @@ import StatensVegvesen from './images/customers/Vegvesen_LOGO_farger_pos_RGB.png
 import Skatteetaten from './images/customers/skatteetaten.svg'
 import Fremtind from './images/customers/fremtind.png'
 
-export const kunder = [{
+export const kunder = [
+    {
         icon: NRK,
         name: 'NRK',
     },

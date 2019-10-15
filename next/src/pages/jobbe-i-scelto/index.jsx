@@ -43,9 +43,9 @@ const IndexPage = () => (
         </Section>
         <Section ingress="Attraktive og spennende kunder">
             <div className="kunder">
-            {kunder.map(kunde => (
-                <img className="icon" alt={kunde.name} src={kunde.icon} />
-            ))}
+                {kunder.map(kunde => (
+                    <img className="icon" alt={kunde.name} src={kunde.icon} />
+                ))}
             </div>
         </Section>
         <div className="why-work-at-scelto">
