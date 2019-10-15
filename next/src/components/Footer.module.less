@@ -1,58 +1,57 @@
 .footer {
-  background: #111;
-  padding: 100px 50px;
-  color: #bbb;
+    background: #111;
+    padding: 100px 50px;
+    color: #bbb;
 }
 
 .contact {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 
-  &SoMe {
-    margin: 10px 20px;
-  }
+    &SoMe {
+        margin: 10px 20px;
+    }
 
-  @media (max-width: 600px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .email {
-  @media (max-width: 600px) {
-    padding: 50px 0;
-  }
+    @media (max-width: 600px) {
+        padding: 50px 0;
+    }
 }
 
 .addressAndOtherInfo {
-  margin: 20px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 500px) {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-  }
+    align-items: center;
+    justify-content: space-between;
 
-  &Address {
     @media (max-width: 500px) {
-      margin: 0px 50px 50px;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
     }
-  }
+
+    &Address {
+        @media (max-width: 500px) {
+            margin: 0px 50px 50px;
+        }
+    }
 }
 
 .copyright {
-  margin: 50px 0;
+    margin: 50px 0;
 
-  @media (max-width: 600px) {
-    text-align: center;
-
-  }
+    @media (max-width: 600px) {
+        text-align: center;
+    }
 }

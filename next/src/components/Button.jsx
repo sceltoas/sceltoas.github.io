@@ -1,47 +1,47 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {Link} from 'gatsby';
-import styles from './Button.module.less';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
+import styles from './Button.module.less'
 
-export const LightButton = ({text, to, className, children, ...rest}) => (
-  <Link
-    to={to}
-    className={`${className ? className : ''} ${styles.buttonLight}`}
-    {...rest}
-  >
-    {text || children}
-  </Link>
-);
+export const LightButton = ({ text, to, className, children, ...rest }) => (
+    <Link
+        to={to}
+        className={`${className ? className : ''} ${styles.buttonLight}`}
+        {...rest}
+    >
+        {text || children}
+    </Link>
+)
 export const LightButtonAnchor = ({
-  text,
-  href,
-  className,
-  children,
-  ...rest
+    text,
+    href,
+    className,
+    children,
+    ...rest
 }) => (
-  <a
-    href={href}
-    className={`${className ? className : ''} ${styles.buttonLight}`}
-    {...rest}
-  >
-    {text || children}
-  </a>
-);
+    <a
+        href={href}
+        className={`${className ? className : ''} ${styles.buttonLight}`}
+        {...rest}
+    >
+        {text || children}
+    </a>
+)
 
 LightButton.propTypes = {
-  text: PropTypes.string.isRequired,
-};
+    text: PropTypes.string.isRequired,
+}
 
-export const DarkButton = ({text, to, className, children, ...rest}) => (
-  <Link
-    to={to}
-    className={`${className ? className : ''} ${styles.buttonDark}`}
-    {...rest}
-  >
-    {text || children}
-  </Link>
-);
+export const DarkButton = ({ text, to, className, children, ...rest }) => (
+    <Link
+        to={to}
+        className={`${className ? className : ''} ${styles.buttonDark}`}
+        {...rest}
+    >
+        {text || children}
+    </Link>
+)
 
 DarkButton.propTypes = {
-  text: PropTypes.string.isRequired,
-};
+    text: PropTypes.string.isRequired,
+}

@@ -1,9 +1,6 @@
-export const createMetadata = ({
-    image,
-    title,
-    description,
-}) => {
-    return [{
+export const createMetadata = ({ image, title, description }) => {
+    return [
+        {
             name: 'title',
             content: title,
         },
@@ -13,7 +10,7 @@ export const createMetadata = ({
         },
         {
             name: 'image',
-            content: `https://www.scelto.no${image}`
+            content: `https://www.scelto.no${image}`,
         },
         {
             name: 'og:title',
@@ -25,7 +22,7 @@ export const createMetadata = ({
         },
         {
             name: 'og:image',
-            content: `https://www.scelto.no${image}`
+            content: `https://www.scelto.no${image}`,
         },
-    ];
-};
+    ]
+}

@@ -29,7 +29,7 @@
     "build": "yarn format && gatsby build",
     "start": "gatsby develop -H 0.0.0.0",
     "start:prod": "gatsby build && gatsby serve -o -H 0.0.0.0",
-    "format": "prettier  --write \"src/**/*\"",
+    "format": "prettier  --write \"src/**/*.{js,jsx,less}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
