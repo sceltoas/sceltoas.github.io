@@ -19,6 +19,7 @@ import FredrikS from './images/mugshots/fredriks.jpg';
 import Terje from './images/mugshots/terje.jpg';
 import LarsOlav from './images/mugshots/larsolav.jpg';
 import Loading from './images/mugshots/loading.jpg';
+import NoPicYet from './images/mugshots/no-pic-yet.jpg';
 
 import TorEricCV from './cvs/Tor_Eric_Sandvik.pdf';
 import OleTommyCV from './cvs/Ole_Tommy_Lid-Strand.pdf';
@@ -566,7 +567,7 @@ export const ansatte = {
 		customImage: Cards
 	},
 	jarle: {
-		image: Loading,
+		image: NoPicYet,
 		name: 'Jarle Berentzen',
 		title: 'Seniorkonsulent',
 		endOfContract: '2019-12-31',
@@ -590,7 +591,7 @@ export const ansatte = {
 		customImage: Music
 	},
 	jantore: {
-		image: Loading,
+		image: NoPicYet,
 		name: 'Jan Tore Stølsvik',
 		title: 'Seniorkonsulent',
 		endOfContract: '2019-12-31',
@@ -613,25 +614,137 @@ export const ansatte = {
 		linkToCV: "#",
 		customImage: Music
 	},
-	/*annkatrin: {
-		image: Loading,
+	annkatrin: {
+		image: NoPicYet,
 		name: 'Ann-Katrin Gagnat',
 		title: 'Seniorkonsulent',
 		firstName: 'Ann-Katrin',
-		ingress: 'Ann-Katrin er flink',
+		ingress: '',
 		keyFeatures: [
-			'Java',
-			'Integrasjon',
-			'Teknisk Arkitekt'
+			''
 		],
-		email: 'annkatrin@scelto.no',
+		email: 'ann.katrin@scelto.no',
 		linkedIn: '',
 		twitter: '',
 		github: '',
 		mainSection: [
-			'Bla bla bla'
+			''
 		],
 		linkToCV: "#",
 		customImage: Music
-	},*/
+	},
+	kristoffer: {
+		image: NoPicYet,
+		name: 'Kristoffer Mysen',
+		title: 'Seniorkonsulent',
+		firstName: 'Kristoffer',
+		ingress: '',
+		keyFeatures: [
+			''
+		],
+		email: 'kristoffer@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			''
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
+	jorgen: {
+		image: NoPicYet,
+		name: 'Jørgen Ringen',
+		title: 'Seniorkonsulent',
+		firstName: 'Jørgen',
+		ingress: '',
+		keyFeatures: [
+			''
+		],
+		email: 'jorgen@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			''
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
+	baard: {
+		image: NoPicYet,
+		name: 'Bård Kristensen',
+		title: 'Seniorkonsulent',
+		firstName: 'Bård',
+		ingress: '',
+		keyFeatures: [
+			''
+		],
+		email: 'bard@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			''
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
+	andreas: {
+		image: NoPicYet,
+		name: 'Andreas Nilsen',
+		title: 'Seniorkonsulent',
+		firstName: 'Andreas',
+		ingress: '',
+		keyFeatures: [
+			''
+		],
+		email: 'andreas@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			''
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
+	hallvard: {
+		image: NoPicYet,
+		name: 'Hallvard Stark',
+		title: 'Seniorkonsulent',
+		firstName: 'Hallvard',
+		ingress: '',
+		keyFeatures: [
+			''
+		],
+		email: 'hallvard@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			''
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
+	ismar: {
+		image: NoPicYet,
+		name: 'Ismar Slomic',
+		title: 'Seniorkonsulent',
+		firstName: 'Ismar',
+		ingress: '',
+		keyFeatures: [
+			''
+		],
+		email: 'ismar@scelto.no',
+		linkedIn: '',
+		twitter: '',
+		github: '',
+		mainSection: [
+			''
+		],
+		linkToCV: "#",
+		customImage: Music
+	},
 };

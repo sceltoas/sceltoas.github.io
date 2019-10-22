@@ -11,7 +11,7 @@ import Fade from 'react-reveal/Fade'
 import Footer from './Footer'
 import { LightButtonAnchor } from './Button'
 import { createMetadata } from '../utils'
-import DefaultEmployeeImage from '../images/mugshots/loading.jpg'
+import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg'
 
 const currentOrigin =
     typeof window !== `undefined` ? window.location.origin : 'https://scelto.no'
@@ -78,7 +78,7 @@ const EmployeePage = props => {
                 <div className="sc-button-container">
                     <LightButtonAnchor href={employee.linkToCV}>{`Last ned ${
                         employee.firstName
-                    } sin CV`}</LightButtonAnchor>
+                        } sin CV`}</LightButtonAnchor>
                 </div>
             </Section>
             <Parallax bgImage={employee.customImage}>
