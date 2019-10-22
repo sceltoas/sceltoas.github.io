@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import ArrowDown from '../images/icons/Scelto–icon-arrow-down-dark-bg.svg'
-import Fade from 'react-reveal/Fade'
-import './FullPageImageWithHeader.less'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import ArrowDown from '../images/icons/Scelto–icon-arrow-down-dark-bg.svg';
+import Fade from 'react-reveal/Fade';
+import './FullPageImageWithHeader.less';
 
 const FullPageImageWithHeader = ({
     image,
@@ -31,14 +31,16 @@ const FullPageImageWithHeader = ({
             </Fade>
         )}
 
-    {children && (
-      <div className="full-page-image-with-header__content">{children}</div>
-    )}
+        {children && (
+            <div className="full-page-image-with-header__content">
+                {children}
+            </div>
+        )}
 
         {!!contactMeHref && (
             <h5 className="contact-form-link">
                 <a href={contactMeHref} className="sc-link">
-          Ønsker du å bli kontaktet av oss?
+                    Ønsker du å bli kontaktet av oss?
                 </a>
             </h5>
         )}
@@ -60,7 +62,7 @@ const FullPageImageWithHeader = ({
             </Link>
         )}
     </div>
-)
+);
 
 FullPageImageWithHeader.propTypes = {
     image: PropTypes.object,
@@ -68,6 +70,6 @@ FullPageImageWithHeader.propTypes = {
     subtitle: PropTypes.string,
     link: PropTypes.bool,
     contactMeHref: PropTypes.string,
-}
+};
 
-export default FullPageImageWithHeader
+export default FullPageImageWithHeader;

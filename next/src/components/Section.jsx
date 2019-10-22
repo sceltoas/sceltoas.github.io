@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Fade from 'react-reveal/Fade'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Fade from 'react-reveal/Fade';
 
-import './Section.less'
+import './Section.less';
 
 const Section = ({
     id,
@@ -53,7 +53,7 @@ const Section = ({
             {children}
         </div>
     </section>
-)
+);
 
 Section.propTypes = {
     id: PropTypes.string,
@@ -62,6 +62,6 @@ Section.propTypes = {
     children: PropTypes.element,
     dark: PropTypes.bool,
     className: PropTypes.string,
-}
+};
 
-export default Section
+export default Section;

@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styles from './SectionWithIcon.module.less'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './SectionWithIcon.module.less';
 
 const SectionWithIcon = ({
     id,
@@ -32,10 +32,10 @@ const SectionWithIcon = ({
             </div>
         </div>
     </section>
-)
+);
 
 SectionWithIcon.propTypes = {
     dark: PropTypes.bool,
-}
+};
 
-export default SectionWithIcon
+export default SectionWithIcon;

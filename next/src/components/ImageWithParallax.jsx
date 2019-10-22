@@ -1,5 +1,5 @@
-import React from 'react'
-import { Parallax } from 'react-parallax'
+import React from 'react';
+import { Parallax } from 'react-parallax';
 
 const ImageWithParallax = ({ src, text }) => (
     <Parallax bgImage={src}>
@@ -22,6 +22,6 @@ const ImageWithParallax = ({ src, text }) => (
             </h1>
         </div>
     </Parallax>
-)
+);
 
-export default ImageWithParallax
+export default ImageWithParallax;

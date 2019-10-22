@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const EmployeeImageLink = ({ name, title, image, to }) => (
     <div
@@ -36,6 +36,6 @@ const EmployeeImageLink = ({ name, title, image, to }) => (
             </div>
         </Link>
     </div>
-)
+);
 
-export default EmployeeImageLink
+export default EmployeeImageLink;

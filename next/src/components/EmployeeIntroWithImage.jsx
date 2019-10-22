@@ -1,9 +1,9 @@
-import React from 'react'
-import Twitter from '../components/icons/Twitter'
-import LinkedIn from '../components/icons/LinkedIn'
-import Github from '../components/icons/Github'
+import React from 'react';
+import Twitter from '../components/icons/Twitter';
+import LinkedIn from '../components/icons/LinkedIn';
+import Github from '../components/icons/Github';
 
-import styles from './EmployeeIntroWithImage.module.less'
+import styles from './EmployeeIntroWithImage.module.less';
 
 const EmployeeIntroWithImage = ({ employee, image }) => (
     <div className={styles.wrapper}>
@@ -77,6 +77,6 @@ const EmployeeIntroWithImage = ({ employee, image }) => (
             alt={`${employee.name}`}
         />
     </div>
-)
+);
 
-export default EmployeeIntroWithImage
+export default EmployeeIntroWithImage;

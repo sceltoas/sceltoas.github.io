@@ -1,23 +1,23 @@
-import React, { Fragment } from 'react'
-import { graphql } from 'gatsby'
-import EmployeeImageLink from '../components/EmployeeImageLink'
-import SystemutviklingIcon from '../images/icons/Scelto–illustration-systemutvikling-dark-bg-tjenester.svg'
-import ArkitekturIcon from '../images/icons/Scelto–illustration-arkitektur-dark-bg-frontpage.svg'
-import Section from '../components/Section'
-import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink'
-import FullPageImageWithHeader from '../components/FullPageImageWithHeader'
-import Employees from '../images/man-headphones-working.jpeg'
-import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg'
-import { ansatte } from '../ansatte'
-import Fade from 'react-reveal/Fade'
-import Navigation from '../components/Navigation'
-import Helmet from 'react-helmet'
-import Favicon from '../images/favicon.png'
-import Footer from '../components/Footer'
-import { LightButton, DarkButton } from '../components/Button'
-import { createMetadata } from '../utils'
+import React, { Fragment } from 'react';
+import { graphql } from 'gatsby';
+import EmployeeImageLink from '../components/EmployeeImageLink';
+import SystemutviklingIcon from '../images/icons/Scelto–illustration-systemutvikling-dark-bg-tjenester.svg';
+import ArkitekturIcon from '../images/icons/Scelto–illustration-arkitektur-dark-bg-frontpage.svg';
+import Section from '../components/Section';
+import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink';
+import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
+import Employees from '../images/man-headphones-working.jpeg';
+import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
+import { ansatte } from '../ansatte';
+import Fade from 'react-reveal/Fade';
+import Navigation from '../components/Navigation';
+import Helmet from 'react-helmet';
+import Favicon from '../images/favicon.png';
+import Footer from '../components/Footer';
+import { LightButton, DarkButton } from '../components/Button';
+import { createMetadata } from '../utils';
 
-import '../layouts/scelto.less'
+import '../layouts/scelto.less';
 
 const ListOfEmployees = ({ props }) => {
     return (
@@ -32,10 +32,10 @@ const ListOfEmployees = ({ props }) => {
                 .sort()
                 .slice(0, 3)
                 .map((key, index) => {
-                    const { name, title } = ansatte[key]
+                    const { name, title } = ansatte[key];
                     const image = props.data.EmployeeImages.edges.find(
                         node => node.node.name === key
-                    )
+                    );
                     return (
                         <EmployeeImageLink
                             key={index}
@@ -48,11 +48,11 @@ const ListOfEmployees = ({ props }) => {
                             title={title}
                             to={`/ansatte/${key}`}
                         />
-                    )
+                    );
                 })}
         </div>
-    )
-}
+    );
+};
 
 export const query = graphql`
     query {
@@ -73,10 +73,10 @@ export const query = graphql`
             }
         }
     }
-`
+`;
 
 const IndexPage = props => {
-    console.log(props)
+    console.log(props);
 
     return (
         <Fragment>
@@ -129,7 +129,7 @@ const IndexPage = props => {
             >
                 <ListOfEmployees props={props} />
                 <div className="sc-button-container">
-          <DarkButton to="/ansatte">Se alle konsulentene</DarkButton>
+                    <DarkButton to="/ansatte">Se alle konsulentene</DarkButton>
                 </div>
             </Section>
 
@@ -149,7 +149,7 @@ const IndexPage = props => {
                         <IconTitleAndIntroLink
                             icon={SystemutviklingIcon}
                             title="Systemutvikling"
-              intro="Systemutviklerne i Scelto har et høyt kompetansenivå på de fleste områder innen utvikling og metodikk."
+                            intro="Systemutviklerne i Scelto har et høyt kompetansenivå på de fleste områder innen utvikling og metodikk."
                         />
                     </Fade>
                     <Fade>
@@ -168,7 +168,7 @@ const IndexPage = props => {
             </Section>
             <Footer />
         </Fragment>
-    )
-}
+    );
+};
 
-export default IndexPage
+export default IndexPage;

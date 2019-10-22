@@ -1,25 +1,25 @@
-import React from 'react'
-import CountUp from 'react-countup'
-import InlineInput from './InlineInput'
-import './SalaryCalculator.less'
+import React from 'react';
+import CountUp from 'react-countup';
+import InlineInput from './InlineInput';
+import './SalaryCalculator.less';
 
 class NumberAndDescription extends React.Component {
     constructor(props) {
-        super(props)
-        this.state = { prev: 0 }
+        super(props);
+        this.state = { prev: 0 };
     }
     shouldComponentUpdate(nextProps, nextState) {
-        return nextState.prev !== nextProps.number
+        return nextState.prev !== nextProps.number;
     }
 
     componentDidUpdate(prevProps, prevState) {
         if (this.state.prev !== prevProps.prev) {
-            this.setState({ prev: this.props.number })
+            this.setState({ prev: this.props.number });
         }
     }
 
     render() {
-        const { number, description } = this.props
+        const { number, description } = this.props;
 
         return (
             <div className="calculator-result">
@@ -40,21 +40,21 @@ class NumberAndDescription extends React.Component {
                     {description}
                 </div>
             </div>
-        )
+        );
     }
 }
 
 class SalaryCalculator extends React.Component {
     constructor(props) {
-        super(props)
-        this.onPriceChanged = this.onPriceChanged.bind(this)
-        this.onHoursChanged = this.onHoursChanged.bind(this)
-        this.doCalc = this.doCalc.bind(this)
+        super(props);
+        this.onPriceChanged = this.onPriceChanged.bind(this);
+        this.onHoursChanged = this.onHoursChanged.bind(this);
+        this.doCalc = this.doCalc.bind(this);
 
         this.state = this.doCalc({
             price: 1000,
             numHours: 157,
-        })
+        });
     }
     onPriceChanged(event) {
         this.setState(
@@ -62,7 +62,7 @@ class SalaryCalculator extends React.Component {
                 ...this.state,
                 price: Number(event.target.value.replace(/,/g, '.')),
             })
-        )
+        );
     }
     onHoursChanged(event) {
         this.setState(
@@ -70,12 +70,12 @@ class SalaryCalculator extends React.Component {
                 ...this.state,
                 numHours: Number(event.target.value.replace(/,/g, '.')),
             })
-        )
+        );
     }
 
     doCalc(state) {
-        const hours = Number(state.numHours)
-        const moneys = Number(state.price)
+        const hours = Number(state.numHours);
+        const moneys = Number(state.price);
 
         if (isNaN(hours) || isNaN(moneys)) {
             return {
@@ -85,15 +85,15 @@ class SalaryCalculator extends React.Component {
                 bruttoInntjeningMnd: 0,
                 bruttoLonnMnd: 0,
                 feriepengerMnd: 0,
-            }
+            };
         }
-        const nettoLonnMnd = Math.round(0.6 * hours * moneys)
-        const nettoLonnAr = nettoLonnMnd * 11
-        const bruttoInntjeningMnd = Math.round(hours * moneys)
-        const bruttoLonnMnd = Math.round((0.6 * hours * moneys) / 1.12)
+        const nettoLonnMnd = Math.round(0.6 * hours * moneys);
+        const nettoLonnAr = nettoLonnMnd * 11;
+        const bruttoInntjeningMnd = Math.round(hours * moneys);
+        const bruttoLonnMnd = Math.round((0.6 * hours * moneys) / 1.12);
         const feriepengerMnd = Math.round(
             ((0.6 * hours * moneys) / 1.12) * 0.12
-        )
+        );
 
         return {
             ...state,
@@ -102,14 +102,16 @@ class SalaryCalculator extends React.Component {
             bruttoInntjeningMnd,
             bruttoLonnMnd,
             feriepengerMnd,
-        }
+        };
     }
 
     formatMoneys(n) {
         // https://stackoverflow.com/a/14428340/957731
         return ('' + n).replace(/./g, function(c, i, a) {
-            return i && c !== '.' && (a.length - i) % 3 === 0 ? '\u00A0' + c : c
-        })
+            return i && c !== '.' && (a.length - i) % 3 === 0
+                ? '\u00A0' + c
+                : c;
+        });
     }
 
     render() {
@@ -165,8 +167,8 @@ class SalaryCalculator extends React.Component {
                     />
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default SalaryCalculator
+export default SalaryCalculator;

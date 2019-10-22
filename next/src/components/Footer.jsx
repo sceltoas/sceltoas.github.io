@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import LinkedIn from '../images/icons/Scelto–icon-linkedin-footer.svg'
-import Twitter from '../images/icons/Scelto–icon-twitter-footer.svg'
-import styles from './Footer.module.less'
+import React from 'react';
+import { Link } from 'gatsby';
+import LinkedIn from '../images/icons/Scelto–icon-linkedin-footer.svg';
+import Twitter from '../images/icons/Scelto–icon-twitter-footer.svg';
+import styles from './Footer.module.less';
 
 const Footer = () => (
     <footer className={styles.footer}>
@@ -55,8 +55,8 @@ const Footer = () => (
         </div>
         <div className={styles.copyright}>Scelto AS &copy; 2016</div>
     </footer>
-)
+);
 
-Footer.propTypes = {}
+Footer.propTypes = {};
 
-export default Footer
+export default Footer;

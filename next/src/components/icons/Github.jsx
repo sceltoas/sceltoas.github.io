@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Github = ({ fill }) => (
     <svg
@@ -24,6 +24,6 @@ const Github = ({ fill }) => (
 	c0,0.4,0.3,0.9,1.1,0.8C27.4,29.5,32,23.5,32,16.4C32,7.6,24.8,0.4,16,0.4z"
         />
     </svg>
-)
+);
 
-export default Github
+export default Github;

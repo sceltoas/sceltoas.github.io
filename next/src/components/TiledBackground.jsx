@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import img1 from '../images/background1.jpg'
-import img2 from '../images/background2.jpg'
-import img3 from '../images/background4.jpg'
-import img4 from '../images/bicycle_sea.jpeg'
-import img5 from '../images/city-panorama.jpeg'
-import img6 from '../images/drinker.jpeg'
+import img1 from '../images/background1.jpg';
+import img2 from '../images/background2.jpg';
+import img3 from '../images/background4.jpg';
+import img4 from '../images/bicycle_sea.jpeg';
+import img5 from '../images/city-panorama.jpeg';
+import img6 from '../images/drinker.jpeg';
 
 const images = [
     img1,
@@ -58,7 +58,7 @@ const images = [
     img4,
     img5,
     img6,
-]
+];
 
 const TiledBackground = () => (
     <div className="tiled-background">
@@ -66,25 +66,25 @@ const TiledBackground = () => (
             <img className="image" src={image} aria-label="Image" />
         ))}
     </div>
-)
+);
 
 export const AltTiledBackground = () => {
-    const columns = Math.round(images.length / 4)
-    let columnIndex = 0
+    const columns = Math.round(images.length / 4);
+    let columnIndex = 0;
 
-    const columnizedImages = []
-    let currentColumn = []
+    const columnizedImages = [];
+    let currentColumn = [];
 
     images.forEach((image, index) => {
         if (columnIndex < columns - 1) {
-            currentColumn.push(image)
-            columnIndex++
+            currentColumn.push(image);
+            columnIndex++;
         } else if (columnIndex === columns - 1) {
-            columnizedImages.push(currentColumn)
-            columnIndex = 0
-            currentColumn = []
+            columnizedImages.push(currentColumn);
+            columnIndex = 0;
+            currentColumn = [];
         }
-    })
+    });
 
     const tmp = columnizedImages.map(column => {
         return (
@@ -93,8 +93,8 @@ export const AltTiledBackground = () => {
                     <img src={image} aria-label="Image" />
                 ))}
             </div>
-        )
-    })
+        );
+    });
 
     return (
         <div className="tiled-background ">
@@ -102,7 +102,7 @@ export const AltTiledBackground = () => {
                 <div className="row-erik">{item}</div>
             ))}
         </div>
-    )
-}
+    );
+};
 
-export default AltTiledBackground
+export default AltTiledBackground;

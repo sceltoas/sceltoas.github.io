@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const LinkedIn = ({ fill }) => (
     <svg
@@ -20,6 +20,6 @@ const LinkedIn = ({ fill }) => (
 	c0.6-1.2,2.2-2.5,4.5-2.5c4.8,0,5.7,3.2,5.7,7.3V27.3z"
         />
     </svg>
-)
+);
 
-export default LinkedIn
+export default LinkedIn;

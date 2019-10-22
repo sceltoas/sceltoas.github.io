@@ -1,7 +1,7 @@
-import React from 'react'
-import './EmployeeImageLink.less'
-import { Link as GLink } from 'gatsby'
-import Link from './Link'
+import React from 'react';
+import './EmployeeImageLink.less';
+import { Link as GLink } from 'gatsby';
+import Link from './Link';
 
 const EmployeeImageLink = ({ name, title, image, to }) => (
     <GLink className="employee-image-link" to={to}>
@@ -20,6 +20,6 @@ const EmployeeImageLink = ({ name, title, image, to }) => (
             <p>{title}</p>
         </div>
     </GLink>
-)
+);
 
-export default EmployeeImageLink
+export default EmployeeImageLink;

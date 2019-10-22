@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const FullPageImageWithContent = ({ image, children }) => (
     <div
@@ -13,11 +13,11 @@ const FullPageImageWithContent = ({ image, children }) => (
     >
         {children}
     </div>
-)
+);
 
 FullPageImageWithContent.propTypes = {
     image: PropTypes.object,
     children: PropTypes.element,
-}
+};
 
-export default FullPageImageWithContent
+export default FullPageImageWithContent;

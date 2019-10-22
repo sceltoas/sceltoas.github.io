@@ -24,5 +24,5 @@ export const createMetadata = ({ image, title, description }) => {
             name: 'og:image',
             content: `https://www.scelto.no${image}`,
         },
-    ]
-}
+    ];
+};

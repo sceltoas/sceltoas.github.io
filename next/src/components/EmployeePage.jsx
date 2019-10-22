@@ -1,34 +1,36 @@
-import React, { Fragment } from 'react'
-import EmployeeIntroWithImage from './EmployeeIntroWithImage'
-import Navigation from './Navigation'
-import Section from './Section'
-import { ansatte } from '../ansatte'
-import Helmet from 'react-helmet'
-import Favicon from '../images/favicon.png'
-import CenteredText from './CenteredText'
-import { Parallax } from 'react-parallax'
-import Fade from 'react-reveal/Fade'
-import Footer from './Footer'
-import { LightButtonAnchor } from './Button'
-import { createMetadata } from '../utils'
-import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg'
+import React, { Fragment } from 'react';
+import EmployeeIntroWithImage from './EmployeeIntroWithImage';
+import Navigation from './Navigation';
+import Section from './Section';
+import { ansatte } from '../ansatte';
+import Helmet from 'react-helmet';
+import Favicon from '../images/favicon.png';
+import CenteredText from './CenteredText';
+import { Parallax } from 'react-parallax';
+import Fade from 'react-reveal/Fade';
+import Footer from './Footer';
+import { LightButtonAnchor } from './Button';
+import { createMetadata } from '../utils';
+import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 
 const currentOrigin =
-    typeof window !== `undefined` ? window.location.origin : 'https://scelto.no'
+    typeof window !== `undefined`
+        ? window.location.origin
+        : 'https://scelto.no';
 
 const EmployeePage = props => {
     const name = props.location.pathname
         .replace('/ansatte/', '')
-        .replace('/', '')
+        .replace('/', '');
 
-    const employee = ansatte[name]
+    const employee = ansatte[name];
     if (!employee) {
-        return null
+        return null;
     }
 
     const image =
         props.data &&
-        props.data.EmployeeImages.edges.find(node => node.node.name === name)
+        props.data.EmployeeImages.edges.find(node => node.node.name === name);
 
     return (
         <Fragment>
@@ -76,9 +78,9 @@ const EmployeePage = props => {
                         </Fade>
                     ))}
                 <div className="sc-button-container">
-                    <LightButtonAnchor href={employee.linkToCV}>{`Last ned ${
-                        employee.firstName
-                        } sin CV`}</LightButtonAnchor>
+                    <LightButtonAnchor
+                        href={employee.linkToCV}
+                    >{`Last ned ${employee.firstName} sin CV`}</LightButtonAnchor>
                 </div>
             </Section>
             <Parallax bgImage={employee.customImage}>
@@ -89,7 +91,7 @@ const EmployeePage = props => {
             </Parallax>
             <Footer />
         </Fragment>
-    )
-}
+    );
+};
 
-export default EmployeePage
+export default EmployeePage;

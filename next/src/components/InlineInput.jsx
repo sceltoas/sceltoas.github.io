@@ -1,22 +1,22 @@
-import React, { Fragment } from 'react'
-import './InlineInput.less'
+import React, { Fragment } from 'react';
+import './InlineInput.less';
 
 class InlineInput extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             value: props.placeholder,
-        }
-        this.onChange = this.onChange.bind(this)
-        this.onKeyDown = this.onKeyDown.bind(this)
-        this.timeoutListener = undefined
+        };
+        this.onChange = this.onChange.bind(this);
+        this.onKeyDown = this.onKeyDown.bind(this);
+        this.timeoutListener = undefined;
     }
 
     componentDidMount() {
         this.setState({
             ...this.state,
             value: this.inputElement.value,
-        })
+        });
         /**
          * delaying so that the div placeholder is rendered before we calculate the width
          */
@@ -25,14 +25,14 @@ class InlineInput extends React.Component {
                 this.setState({
                     ...this.state,
                     width: this.divElement.clientWidth,
-                })
+                });
             }
-        }, 50)
+        }, 50);
     }
 
     componentWillUnmount() {
         if (this.timeoutListener !== undefined) {
-            clearTimeout(this.timeoutListener)
+            clearTimeout(this.timeoutListener);
         }
     }
 
@@ -40,7 +40,7 @@ class InlineInput extends React.Component {
         this.setState({
             ...this.state,
             value: this.inputElement.value,
-        })
+        });
     }
 
     onKeyDown(event) {
@@ -48,19 +48,19 @@ class InlineInput extends React.Component {
             this.setState({
                 ...this.state,
                 width: this.divElement.clientWidth,
-            })
-        }, 1)
+            });
+        }, 1);
     }
     onChange(event) {
         this.setState({
             ...this.state,
             value: this.inputElement.value,
-        })
-        this.props.onChange(event)
+        });
+        this.props.onChange(event);
     }
 
     render() {
-        const { id, placeholder, maxLength, className } = this.props
+        const { id, placeholder, maxLength, className } = this.props;
 
         return (
             <Fragment>
@@ -89,8 +89,8 @@ class InlineInput extends React.Component {
                     autoCorrect="false"
                 />
             </Fragment>
-        )
+        );
     }
 }
 
-export default InlineInput
+export default InlineInput;

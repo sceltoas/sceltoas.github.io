@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Twitter = ({ fill }) => (
     <svg
@@ -21,6 +21,6 @@ const Twitter = ({ fill }) => (
 			c0-0.3,0-0.6,0-0.8C30,8.5,31.1,7.4,32,6.1z"
         />
     </svg>
-)
+);
 
-export default Twitter
+export default Twitter;

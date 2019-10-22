@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react'
-import SectionWithIcon from '../components/SectionWithIcon'
-import FullPageImageWithHeader from '../components/FullPageImageWithHeader'
-import Navigation from '../components/Navigation'
-import Puzzle from '../images/puzzle.jpeg'
-import Systemutvikling from '../images/icons/Scelto–illustration-systemutvikling-light-bg-tjenester.svg'
-import Arkitektur from '../images/icons/Scelto–illustration-arkitektur-dark-bg-big-tjenester.svg'
-import Helmet from 'react-helmet'
-import Favicon from '../images/favicon.png'
-import Footer from '../components/Footer'
-import TextWithCircle from '../components/TextWithCircle'
-import { createMetadata } from '../utils'
+import React, { Fragment } from 'react';
+import SectionWithIcon from '../components/SectionWithIcon';
+import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
+import Navigation from '../components/Navigation';
+import Puzzle from '../images/puzzle.jpeg';
+import Systemutvikling from '../images/icons/Scelto–illustration-systemutvikling-light-bg-tjenester.svg';
+import Arkitektur from '../images/icons/Scelto–illustration-arkitektur-dark-bg-big-tjenester.svg';
+import Helmet from 'react-helmet';
+import Favicon from '../images/favicon.png';
+import Footer from '../components/Footer';
+import TextWithCircle from '../components/TextWithCircle';
+import { createMetadata } from '../utils';
 
 const IndexPage = () => (
     <Fragment>
@@ -70,6 +70,6 @@ const IndexPage = () => (
         </SectionWithIcon>
         <Footer />
     </Fragment>
-)
+);
 
-export default IndexPage
+export default IndexPage;

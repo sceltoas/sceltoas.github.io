@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react'
-import Link from 'gatsby-link'
-import DL from '../../images/tor_eric_crop.jpg'
-import Section from '../../components/Section'
-import HeaderImage from '../../images/direction-scelto.jpeg'
-import Helmet from 'react-helmet'
-import Favicon from '../../images/favicon.png'
-import Footer from '../../components/Footer'
-import Navigation from '../../components/Navigation'
-import FullPageImageWithHeader from '../../components/FullPageImageWithHeader'
-import { kunder } from '../../kunder'
-import './index.less'
+import React, { Fragment } from 'react';
+import Link from 'gatsby-link';
+import DL from '../../images/tor_eric_crop.jpg';
+import Section from '../../components/Section';
+import HeaderImage from '../../images/direction-scelto.jpeg';
+import Helmet from 'react-helmet';
+import Favicon from '../../images/favicon.png';
+import Footer from '../../components/Footer';
+import Navigation from '../../components/Navigation';
+import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
+import { kunder } from '../../kunder';
+import './index.less';
 
 const IndexPage = () => (
     <Fragment>
@@ -148,6 +148,6 @@ const IndexPage = () => (
         </div>
         <Footer />
     </Fragment>
-)
+);
 
-export default IndexPage
+export default IndexPage;

@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const IconTitleAndIntroLink = ({ icon, title, intro }) => (
     <div
@@ -20,6 +20,6 @@ const IconTitleAndIntroLink = ({ icon, title, intro }) => (
 
         <p style={{}}>{intro}</p>
     </div>
-)
+);
 
-export default IconTitleAndIntroLink
+export default IconTitleAndIntroLink;

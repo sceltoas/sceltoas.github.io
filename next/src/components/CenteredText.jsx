@@ -1,6 +1,6 @@
-import React from 'react'
-import Fade from 'react-reveal/Fade'
-import './CenteredText.less'
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import './CenteredText.less';
 
 const CenteredText = ({ text, fullpage = false }) => (
     <Fade>
@@ -14,6 +14,6 @@ const CenteredText = ({ text, fullpage = false }) => (
             </h2>
         </div>
     </Fade>
-)
+);
 
-export default CenteredText
+export default CenteredText;

@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import styles from './Button.module.less'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import styles from './Button.module.less';
 
 export const LightButton = ({ text, to, className, children, ...rest }) => (
     <Link
@@ -11,7 +11,7 @@ export const LightButton = ({ text, to, className, children, ...rest }) => (
     >
         {text || children}
     </Link>
-)
+);
 export const LightButtonAnchor = ({
     text,
     href,
@@ -26,11 +26,11 @@ export const LightButtonAnchor = ({
     >
         {text || children}
     </a>
-)
+);
 
 LightButton.propTypes = {
     text: PropTypes.string.isRequired,
-}
+};
 
 export const DarkButton = ({ text, to, className, children, ...rest }) => (
     <Link
@@ -40,8 +40,8 @@ export const DarkButton = ({ text, to, className, children, ...rest }) => (
     >
         {text || children}
     </Link>
-)
+);
 
 DarkButton.propTypes = {
     text: PropTypes.string.isRequired,
-}
+};

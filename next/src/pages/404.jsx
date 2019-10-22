@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react'
-import Navigation from '../components/Navigation'
-import Helmet from 'react-helmet'
-import Favicon from '../images/favicon.png'
-import Footer from '../components/Footer'
-import NavigationImage from '../images/navigation.jpeg'
-import FullPageImageWithHeader from '../components/FullPageImageWithHeader'
-import CountUp from 'react-countup'
+import React, { Fragment } from 'react';
+import Navigation from '../components/Navigation';
+import Helmet from 'react-helmet';
+import Favicon from '../images/favicon.png';
+import Footer from '../components/Footer';
+import NavigationImage from '../images/navigation.jpeg';
+import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
+import CountUp from 'react-countup';
 
 const NotFoundPage = () => (
     <Fragment>
@@ -25,6 +25,6 @@ const NotFoundPage = () => (
         />
         <Footer />
     </Fragment>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

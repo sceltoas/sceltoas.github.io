@@ -1,21 +1,21 @@
-import React from 'react'
-import { Link as GatsbyLink } from 'gatsby'
-import logo from '../images/logo-green-white-trans.png'
-import MenuIcon from '../images/icons/Scelto–icon-menu.svg'
-import CloseMenu from '../images/icons/Scelto–icon-close-hover.svg'
-import './Navigation.less'
-import Link from './Link'
+import React from 'react';
+import { Link as GatsbyLink } from 'gatsby';
+import logo from '../images/logo-green-white-trans.png';
+import MenuIcon from '../images/icons/Scelto–icon-menu.svg';
+import CloseMenu from '../images/icons/Scelto–icon-close-hover.svg';
+import './Navigation.less';
+import Link from './Link';
 
 class Navigation extends React.Component {
     constructor(props) {
-        super(props)
-        this.state = { open: false }
-        this.toggleMenu = this.toggleMenu.bind(this)
+        super(props);
+        this.state = { open: false };
+        this.toggleMenu = this.toggleMenu.bind(this);
     }
 
     toggleMenu(force) {
-        this.setState({ open: force !== undefined ? force : !this.state.open })
-        console.log(!this.state.open)
+        this.setState({ open: force !== undefined ? force : !this.state.open });
+        console.log(!this.state.open);
     }
 
     render() {
@@ -24,7 +24,7 @@ class Navigation extends React.Component {
             { href: '/ansatte', title: 'Menneskene' },
             { href: '/tjenester', title: 'Tjenester' },
             { href: '/kontakt', title: 'Kontakt' },
-        ]
+        ];
 
         return (
             <div id="index-banner">
@@ -34,7 +34,7 @@ class Navigation extends React.Component {
                             <div className="dropdown-menu__bar">
                                 <GatsbyLink
                                     onClick={() => {
-                                        this.toggleMenu(false)
+                                        this.toggleMenu(false);
                                     }}
                                     to="/"
                                     className="logo"
@@ -45,8 +45,8 @@ class Navigation extends React.Component {
                                 <button
                                     id="mobile-menu-open"
                                     onClick={event => {
-                                        this.toggleMenu()
-                                        event.stopPropagation()
+                                        this.toggleMenu();
+                                        event.stopPropagation();
                                     }}
                                     className=""
                                 >
@@ -62,7 +62,7 @@ class Navigation extends React.Component {
                                     <li key={index}>
                                         <Link
                                             onClick={() => {
-                                                this.toggleMenu(false)
+                                                this.toggleMenu(false);
                                             }}
                                             to={item.href}
                                             activeStyle={{
@@ -87,7 +87,7 @@ class Navigation extends React.Component {
                                 <li key={index}>
                                     <Link
                                         onClick={() => {
-                                            this.toggleMenu(false)
+                                            this.toggleMenu(false);
                                         }}
                                         to={item.href}
                                         activeStyle={{
@@ -117,7 +117,7 @@ class Navigation extends React.Component {
                             <button
                                 id="mobile-menu-open"
                                 onClick={() => {
-                                    this.toggleMenu()
+                                    this.toggleMenu();
                                 }}
                                 alt="Åpne meny"
                             >
@@ -131,8 +131,8 @@ class Navigation extends React.Component {
                     )}
                 </nav>
             </div>
-        )
+        );
     }
 }
 
-export default Navigation
+export default Navigation;
