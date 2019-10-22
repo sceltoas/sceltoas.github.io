@@ -129,7 +129,7 @@ const IndexPage = props => {
             >
                 <ListOfEmployees props={props} />
                 <div className="sc-button-container">
-                    <DarkButton to="/ansatte">Se alle konsulentene</DarkButton>
+          <DarkButton to="/ansatte">Se alle konsulentene</DarkButton>
                 </div>
             </Section>
 
@@ -149,9 +149,7 @@ const IndexPage = props => {
                         <IconTitleAndIntroLink
                             icon={SystemutviklingIcon}
                             title="Systemutvikling"
-                            intro="Systemutviklerne i Scelto har et høyt kompetansenivå på de fleste
-                            områder innen
-                            utvikling og metodikk."
+              intro="Systemutviklerne i Scelto har et høyt kompetansenivå på de fleste områder innen utvikling og metodikk."
                         />
                     </Fade>
                     <Fade>

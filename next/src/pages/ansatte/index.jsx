@@ -12,14 +12,16 @@ import { createMetadata } from '../../utils'
 import { graphql } from 'gatsby'
 
 const IndexPage = props => {
+  const title = "Hva kjennetegner en Scelto-konsulent?";
+  const description = "Vi er en gruppe positive og kunnskapsrike mennesker som bruker vår ekspertise for at din bedrift skal kunne yte best mulig. Våre konsulenters evne til å samarbeide tett med våre kunder og kolleger gjør at alle våre tjenester og produkter blir skreddersydd etter kundens ønske.";
     return (
         <Fragment>
             <Helmet
                 title="Ansatte i Scelto AS"
                 meta={[
                     createMetadata({
-                        title: 'Det er de ansatte som utgjør Scelto',
-                        description:
+            title,
+            description,
                             'Menneskene i Scelto kjennetegnes ved mer enn bare sin faglig styrke og senior erfaring. En Sceltoer er også fremoverlent, nysgjerrig og aldri redd for å bidra med sin synsvinkel.',
                         image: SmartPeople,
                     }),
@@ -29,10 +31,12 @@ const IndexPage = props => {
             <Navigation />
             <FullPageImageWithHeader
                 image={SmartPeople}
-                title="Det er de ansatte som utgjør Scelto"
-                subtitle="Menneskene i Scelto kjennetegnes ved mer enn bare sin faglig styrke og senior erfaring. En Sceltoer er også fremoverlent, nysgjerrig og aldri redd for å bidra med sin synsvinkel."
+        title={title}
+        subtitle={description}
                 link="#ansatte"
-            />
+      >
+        Se alle våre konsulenters biografi for mer utdypende informasjon om vår kompetanse!
+      </FullPageImageWithHeader>
 
             <div
                 style={{

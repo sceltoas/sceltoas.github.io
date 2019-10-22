@@ -31,12 +31,14 @@ const FullPageImageWithHeader = ({
             </Fade>
         )}
 
-        {children}
+    {children && (
+      <div className="full-page-image-with-header__content">{children}</div>
+    )}
 
         {!!contactMeHref && (
             <h5 className="contact-form-link">
                 <a href={contactMeHref} className="sc-link">
-                    Ønsker du å bli kontaktet av oss?
+          Ønsker du å bli kontaktet av oss?
                 </a>
             </h5>
         )}

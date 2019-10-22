@@ -102,7 +102,7 @@ class IndexPage extends React.Component {
                                             onChange={this.onNameChanged}
                                             maxLength="20"
                                         />
-                                        <div className="">
+                    <div className="">og mitt telefonnummer er&nbsp;</div>
                                             &nbsp;og mitt telefonnummer er&nbsp;
                                         </div>
                                         <InlineInput
