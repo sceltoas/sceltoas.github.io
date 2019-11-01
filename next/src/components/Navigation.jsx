@@ -25,6 +25,7 @@ class Navigation extends React.Component {
             { href: '/kontakt', title: 'Kontakt' },
         ];
 
+        console.log('y u no show?', this.state.open);
         return (
             <div id="index-banner">
                 <nav className="navigation" role="navigation">
@@ -100,8 +101,9 @@ class Navigation extends React.Component {
                                             borderBottom: '2px solid #C5D200',
                                             color: '#C5D200',
                                         }}
-                                        text={item.title}
-                                    />
+                                    >
+                                        {item.title}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
