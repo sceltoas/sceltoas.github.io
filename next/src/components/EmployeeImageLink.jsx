@@ -4,14 +4,16 @@ import { Link as GLink } from 'gatsby';
 import Link from './Link';
 
 const EmployeeImageLink = ({ name, title, image, to }) => (
-    <GLink className="employee-image-link" to={to}>
+    <div className="employee-image-link">
         <div className="image">
-            <img
-                src={image}
-                width="100%"
-                height="100%"
-                alt={`Bilde av ${name}`}
-            />
+            <GLink to={to}>
+                <img
+                    src={image}
+                    width="100%"
+                    height="100%"
+                    alt={`Bilde av ${name}`}
+                />
+            </GLink>
         </div>
         <div className="employee-image-link__text-container">
             <h5>
@@ -19,7 +21,7 @@ const EmployeeImageLink = ({ name, title, image, to }) => (
             </h5>
             <p>{title}</p>
         </div>
-    </GLink>
+    </div>
 );
 
 export default EmployeeImageLink;

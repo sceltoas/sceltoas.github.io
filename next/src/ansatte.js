@@ -18,7 +18,6 @@ import FredrikB from './images/mugshots/fredrikb.jpg';
 import FredrikS from './images/mugshots/fredriks.jpg';
 import Terje from './images/mugshots/terje.jpg';
 import LarsOlav from './images/mugshots/larsolav.jpg';
-import Loading from './images/mugshots/loading.jpg';
 import NoPicYet from './images/mugshots/no-pic-yet.jpg';
 
 import TorEricCV from './cvs/Tor_Eric_Sandvik.pdf';
@@ -62,7 +61,9 @@ export const ansatte = {
         image: TorEric,
         name: 'Tor Eric Sandvik',
         title: 'Daglig leder',
-        endOfContract: '2019-12-31',
+        endOfContract: null,
+        showOnFirstPage: false,
+        isConsultant: false,
         firstName: 'Tor Eric',
         ingress:
             'Tor Eric er utdannet som Master i Informatikk og har 15 års erfaring i IT-bransjen. Han har bred erfaring som blant annet prosjektleder, Scrum Master, konsulentsjef, rådgiver, styremedlem og produkteier.',
@@ -373,7 +374,7 @@ export const ansatte = {
         image: Vetle,
         name: 'Vetle Valebjørg',
         title: 'Seniorkonsulent',
-        endOfContract: '2019-12-31',
+        endOfContract: '2020-01-31',
         firstName: 'Vetle',
         ingress:
             'Vetle Valebjørg er en erfaren systemutvikler med hovedfokus på javabaserte systemer. Hans erfaring omfatter design og utvikling av applikasjoner med webbaserte grensesnitt, de siste årene hos oppdragsgivere innen bank og forsikring.',
@@ -445,7 +446,7 @@ export const ansatte = {
         github: 'kenglxn',
         mainSection: [
             'Ken er dyktig i flere programmeringsspråk og er sertifisert Oracle Java utvikler. Han har erfaring fra flere store prosjekter og kodebaser, og kjenner det som må til for å gjøre kode vedlikeholdbar og robust nok til å tåle tidens tann.' +
-                'Ken har lang erfaring med DevOps og kontinuerlig utrulling av store systemer.',
+            'Ken har lang erfaring med DevOps og kontinuerlig utrulling av store systemer.',
             'Ken er hyggelig og flink til å kommunisere både med kunder og teknikere. Han er mottakerbevisst, og har en god evne til å finne frem til løsninger som gir mest verdi for innsatsen. Ken er en OSS entusiast og har bidratt til flere kjente Open Source biblioteker, samt publisert en del av sine egne. Hans mest populære, som ble publisert i 2012, har over 800 stjerner på github.',
             'Ellers er Ken en blid og hyggelig person som på fritiden driver med karate og bygger ting til sine to døtre.',
         ],
@@ -708,3 +709,5 @@ export const ansatte = {
         customImage: Music,
     },
 };
+
+export const ansatteArray = () => Object.keys(ansatte).map(key => { let ansatt = ansatte[key]; ansatt.key = key; return ansatt; });

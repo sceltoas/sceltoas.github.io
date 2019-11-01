@@ -4,6 +4,7 @@ import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
 import SmartPeople from '../../images/smart-people.jpg';
 import { ansatte } from '../../ansatte';
+import { showAvailableConsultantsFirst } from '../../utils';
 import Favicon from '../../images/favicon.png';
 import Helmet from 'react-helmet';
 import Footer from '../../components/Footer';
@@ -45,10 +46,10 @@ const IndexPage = props => {
                     flexFlow: 'row wrap',
                     justifyContent: 'center',
                     margin: '50px 20px 0',
-                }}
+                }}  
             >
                 {Object.keys(ansatte)
-                    .sort()
+                    .sort(showAvailableConsultantsFirst)
                     .map(key => {
                         const { name, title } = ansatte[key];
                         const image = props.data.EmployeeImages.edges.find(
@@ -73,6 +74,7 @@ const IndexPage = props => {
         </Fragment>
     );
 };
+
 export const query = graphql`
     query {
         EmployeeImages: allFile(

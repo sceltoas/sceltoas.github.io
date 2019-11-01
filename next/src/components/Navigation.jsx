@@ -15,7 +15,6 @@ class Navigation extends React.Component {
 
     toggleMenu(force) {
         this.setState({ open: force !== undefined ? force : !this.state.open });
-        console.log(!this.state.open);
     }
 
     render() {
@@ -101,9 +100,8 @@ class Navigation extends React.Component {
                                             borderBottom: '2px solid #C5D200',
                                             color: '#C5D200',
                                         }}
-                                    >
-                                        {item.title}
-                                    </Link>
+                                        text={item.title}
+                                    />
                                 </li>
                             ))}
                         </ul>

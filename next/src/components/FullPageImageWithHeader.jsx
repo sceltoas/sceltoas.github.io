@@ -68,7 +68,7 @@ FullPageImageWithHeader.propTypes = {
     image: PropTypes.object,
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    link: PropTypes.bool,
+    link: PropTypes.string,
     contactMeHref: PropTypes.string,
 };
 

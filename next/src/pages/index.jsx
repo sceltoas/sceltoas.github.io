@@ -8,14 +8,14 @@ import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink';
 import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
 import Employees from '../images/man-headphones-working.jpeg';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
-import { ansatte } from '../ansatte';
+import { ansatte, ansatteArray } from '../ansatte';
 import Fade from 'react-reveal/Fade';
 import Navigation from '../components/Navigation';
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
 import { LightButton, DarkButton } from '../components/Button';
-import { createMetadata } from '../utils';
+import { createMetadata, showAvailableConsultantsFirst } from '../utils';
 
 import '../layouts/scelto.less';
 
@@ -28,13 +28,13 @@ const ListOfEmployees = ({ props }) => {
                 justifyContent: 'center',
             }}
         >
-            {Object.keys(ansatte)
-                .sort()
+            {ansatteArray()
+                .sort(showAvailableConsultantsFirst)
                 .slice(0, 3)
-                .map((key, index) => {
-                    const { name, title } = ansatte[key];
+                .map((ansatt, index) => {
+                    const { name, title } = ansatt;
                     const image = props.data.EmployeeImages.edges.find(
-                        node => node.node.name === key
+                        node => node.node.name === ansatt.key
                     );
                     return (
                         <EmployeeImageLink
@@ -46,7 +46,7 @@ const ListOfEmployees = ({ props }) => {
                             }
                             name={name}
                             title={title}
-                            to={`/ansatte/${key}`}
+                            to={`/ansatte/${ansatt.key}`}
                         />
                     );
                 })}
@@ -76,8 +76,6 @@ export const query = graphql`
 `;
 
 const IndexPage = props => {
-    console.log(props);
-
     return (
         <Fragment>
             <Helmet
@@ -99,38 +97,25 @@ const IndexPage = props => {
                 image={Employees}
             />
 
-            {/* <TextWithPadding
-        id="whoarewe"
-      text={`Vi har lang erfaring med å bistå alle type bedrifter innen systemutvikling og teknisk arkitektur med å bygge innovative og strategisk gode løsninger.`}
-      />
-
-      <Parallax bgImage={Image}>
-        <Fade><CenteredText text="Scawesomeness delivered!" /></Fade>
-      </Parallax>
- */}
             <Section
                 title="Hva kjennetegner en Scelto-konsulent?"
-                ingress={
-                    <React.Fragment>
-                        <p>
-                            Vi er en gruppe positive og kunnskapsrike mennesker
+                ingress="Vi er en gruppe positive og kunnskapsrike mennesker
                             som bruker vår ekspertise for at din bedrift skal
                             kunne yte best mulig. Våre konsulenters evne til å
                             samarbeide tett med våre kunder og kolleger gjør at
                             alle våre tjenester og produkter blir skreddersydd
-                            etter kundens ønske.
-                        </p>
-                        <p>
+                            etter kundens ønske."
+            >
+                <Fragment>
+                        <h5>
                             Se alle våre konsulenters biografi for mer utdypende
                             informasjon om vår kompetanse!
-                        </p>
-                    </React.Fragment>
-                }
-            >
-                <ListOfEmployees props={props} />
-                <div className="sc-button-container">
-                    <DarkButton to="/ansatte">Se alle konsulentene</DarkButton>
-                </div>
+                        </h5>
+                    <ListOfEmployees props={props} />
+                    <div className="sc-button-container">
+                        <DarkButton to="/ansatte" text="Se alle konsulentene" />
+                    </div>
+                </Fragment>
             </Section>
 
             <Section
@@ -138,6 +123,7 @@ const IndexPage = props => {
                 title="Hva gjør vi?"
                 ingress="Scelto tilbyr konsulentutleie innen systemutvikling og teknisk arkitektur. Alle konsulentene hos oss er seniorprofiler med bred teknisk og forretningsmessig erfaring."
             >
+            <Fragment>
                 <div
                     style={{
                         display: 'flex',
@@ -161,10 +147,9 @@ const IndexPage = props => {
                     </Fade>
                 </div>
                 <div className="sc-button-container">
-                    <LightButton to="/tjenester">
-                        Les mer om våre tjenester
-                    </LightButton>
+                    <LightButton to="/tjenester" text="Les mer om våre tjenester" />
                 </div>
+                </Fragment>
             </Section>
             <Footer />
         </Fragment>

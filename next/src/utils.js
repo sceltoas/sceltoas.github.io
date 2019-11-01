@@ -26,3 +26,30 @@ export const createMetadata = ({ image, title, description }) => {
         },
     ];
 };
+
+
+export function showAvailableConsultantsFirst(a, b) {
+    const employeeA = a;
+    const employeeB = b;
+
+    let employeeAScore = generateEmployeeSortScore(employeeA);
+    let employeeBScore = generateEmployeeSortScore(employeeB);
+
+    return employeeAScore - employeeBScore;
+};
+
+function generateEmployeeSortScore(employee) {
+    let score = 0;
+    if (employee.isConsultant === false) {
+        score = 99999999;
+    } else {
+        score = 1;
+
+        if (employee.endOfContract) {
+            const endOfContractAsNumber = Number.parseInt(employee.endOfContract.replace(/-/gi, ''));
+            if (!Number.isNaN(endOfContractAsNumber))
+                score = endOfContractAsNumber;
+        }
+    }
+    return score;
+}

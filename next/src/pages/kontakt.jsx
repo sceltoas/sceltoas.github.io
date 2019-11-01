@@ -26,7 +26,6 @@ class IndexPage extends React.Component {
         this.setState({ ...this.state, number: event.target.value });
     }
     sendMail = event => {
-        console.log('Shiiiiiet! %o', this.state);
         this.setState({ ...this.state, showKvittering: true });
 
         /* function mail(name, number, success, error) {
