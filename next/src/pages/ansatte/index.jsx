@@ -8,7 +8,7 @@ import { showAvailableConsultantsFirst } from '../../utils';
 import Favicon from '../../images/favicon.png';
 import Helmet from 'react-helmet';
 import Footer from '../../components/Footer';
-import DefaultEmployeeImage from '../../images/mugshots/loading.jpg';
+import DefaultEmployeeImage from '../../images/mugshots/no-pic-yet.jpg';
 import { createMetadata } from '../../utils';
 import { graphql } from 'gatsby';
 
