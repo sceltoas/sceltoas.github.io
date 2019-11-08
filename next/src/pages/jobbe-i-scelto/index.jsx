@@ -80,7 +80,11 @@ const IndexPage = () => (
                             <li>Høsttur til storby med Michelin-stjerner</li>
                             <li>Julebord på en bedre restaurant</li>
                             <li>Månedlig felles lunsj</li>
-                            <li>Kvartalsvis Sceltokveld med aktivitet</li>
+                            <li>
+                                <Link to="/jobbe-i-scelto/scuppen">
+                                    Kvartalsvis Sceltokveld med aktivitet (#scuppen)
+                                </Link>
+                            </li>
                         </ul>
                     </li>
                     <li>
