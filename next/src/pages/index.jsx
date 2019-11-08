@@ -8,7 +8,7 @@ import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink';
 import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
 import Employees from '../images/man-headphones-working.jpeg';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
-import { ansatte, ansatteArray } from '../ansatte';
+import { ansatteArray } from '../ansatte';
 import Fade from 'react-reveal/Fade';
 import Navigation from '../components/Navigation';
 import Helmet from 'react-helmet';

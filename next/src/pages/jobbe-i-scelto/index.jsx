@@ -70,7 +70,7 @@ const IndexPage = () => (
                             </span>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         Fokus på sosial kalender:
                         <ul className="nested-list">
                             <li>
@@ -82,17 +82,23 @@ const IndexPage = () => (
                             <li>Månedlig felles lunsj</li>
                             <li>
                                 <Link to="/jobbe-i-scelto/scuppen">
-                                    Kvartalsvis Sceltokveld med aktivitet (#scuppen)
+                                    Kvartalsvis Sceltokveld med aktivitet
+                                    (#scuppen)
                                 </Link>
                             </li>
                         </ul>
-                    </li>
+                    </li> */}
                     <li>
+                        Fokus på sosial kalender med bl.a. sommerfest, månedlige
+                        felleslunsjer og{' '}
+                        <Link to="/jobbe-i-scelto/scuppen">#scuppen</Link>
+                    </li>
+                    {/* <li>
                         Og sist, men ikke minst, vi skal ikke bli flere enn 30
                         personer og vi skal være et lett selskap med lite
                         overhead. Noe som gjør at vi kan fortsette å ha fokus på
                         kulturen, det sosiale og deg som individ.
-                    </li>
+                    </li> */}
                 </ul>
             </Section>
             <Section className="forsikringsordning__wrapper">
@@ -119,6 +125,9 @@ const IndexPage = () => (
                         </p>
                         <p className="forsikringsordning__entry">
                             Familiemedlemskap i Volvat
+                        </p>
+                        <p className="forsikringsordning__entry">
+                            Årlig helsekontroll hos Volvat
                         </p>
                     </div>
                 </div>
