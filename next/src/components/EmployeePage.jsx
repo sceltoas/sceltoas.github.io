@@ -78,9 +78,9 @@ const EmployeePage = props => {
                         </Fade>
                     ))}
                 <div className="sc-button-container">
-                    <LightButtonAnchor href={employee.linkToCV}>{`Last ned ${
-                        employee.firstName
-                    } sin CV`}</LightButtonAnchor>
+                    <LightButtonAnchor
+                        href={employee.linkToCV}
+                    >{`Last ned ${employee.firstName} sin CV`}</LightButtonAnchor>
                 </div>
             </Section>
             <Parallax bgImage={employee.customImage}>
