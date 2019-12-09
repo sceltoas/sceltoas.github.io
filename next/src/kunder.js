@@ -6,7 +6,7 @@ import Fremtind from './images/customers/fremtind.png';
 import Tomra from './images/customers/tomra.png';
 import Ruter from './images/customers/ruter.png';
 import Nav from './images/customers/nav.png';
-import Vy from './images/customers/vy.png';
+import Vy from './images/customers/vy.pnga';
 import Norwegian from './images/customers/norwegian.png';
 
 export const kunder = [
