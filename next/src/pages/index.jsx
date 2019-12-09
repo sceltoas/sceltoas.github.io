@@ -65,26 +65,15 @@ const IndexPage = props => {
                         {ansatteArray()
                             .sort(showAvailableConsultantsFirst)
                             .slice(0, 3)
-                            .map(({ name, title, key }) => {
-                                const image = props.data.EmployeeImages.edges.find(
-                                    node => node.node.name === key
-                                );
-
-                                return (
-                                    <EmployeeImageLink
-                                        key={key}
-                                        image={
-                                            (image &&
-                                                image.node.childImageSharp.fluid
-                                                    .src) ||
-                                            DefaultEmployeeImage
-                                        }
-                                        name={name}
-                                        title={title}
-                                        to={`/ansatte/${key}`}
-                                    />
-                                );
-                            })}
+                            .map(({ name, title, key, image }) => (
+                                <EmployeeImageLink
+                                    key={key}
+                                    image={image || DefaultEmployeeImage}
+                                    name={name}
+                                    title={title}
+                                    to={`/ansatte/${key}`}
+                                />
+                            ))}
                     </div>
                     <div className="sc-button-container">
                         <DarkButton to="/ansatte" text="Se alle konsulentene" />
