@@ -51,10 +51,10 @@ const IndexPage = props => {
                             etter kundens ønske."
             >
                 <Fragment>
-                    <p>
+                    <h5>
                         Se alle våre konsulenters biografi for mer utdypende
                         informasjon om vår kompetanse!
-                    </p>
+                    </h5>
                     <div
                         style={{
                             display: 'flex',
