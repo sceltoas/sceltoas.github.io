@@ -41,7 +41,7 @@ const IndexPage = () => (
                 hele tatt gjør ting sammen for å bli bedre kjent med hverandre.
             </h5>
         </Section>
-        <Section ingress="Attraktive og spennende kunder">
+        <Section title="Attraktive og spennende kunder">
             <div className="kunder">
                 {kunder.map(kunde => (
                     <img className="icon" alt={kunde.name} src={kunde.icon} />
@@ -56,16 +56,16 @@ const IndexPage = () => (
                             <h5>Menneskene</h5>
                             <div>
                                 Positive og hyggelige mennesker som hjelper
-                                hverandre.
+                                hverandre
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="li-content">
-                            <h5>Spennende kunder</h5>
+                            <h5>Attraktive og spennende kunder</h5>
                             <div>
-                                Attraktive og spennende kunder, som bla. NRK,
-                                Skatteetaten og Statens vegvesen.
+                                Scelto har avtaler med bla. Fremtind, SpareBank 1, NRK,
+                                Skatteetaten og Statens vegvesen
                             </div>
                         </div>
                     </li>
@@ -73,7 +73,7 @@ const IndexPage = () => (
                         <div className="li-content">
                             <h5>Faglig tyngde</h5>
                             <div>
-                                I Scelto er gjennomsnitts-erfaringen 12 år.
+                                I Scelto er gjennomsnitts-erfaringen 12 år
                             </div>
                         </div>
                     </li>
@@ -81,13 +81,13 @@ const IndexPage = () => (
                         <div className="li-content">
                             <h5>Gode betingelser</h5>
                             <div>
-                                Gode betingelser{' '}
+                                (
                                 <Link className="sc-link" to="/lonnskalkulator">
-                                    <span
-                                        role="img"
-                                        aria-label="Open terms"
-                                    ></span>
+                                    <span role="img" aria-label="Open terms">
+                                        kalkulator
+                                    </span>
                                 </Link>
+                                )
                             </div>
                         </div>
                     </li>
