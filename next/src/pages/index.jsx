@@ -15,6 +15,7 @@ import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
 import { LightButton, DarkButton } from '../components/Button';
 import { createMetadata, showAvailableConsultantsFirst } from '../utils';
+import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 
 import '../layouts/scelto.less';
 
@@ -73,7 +74,10 @@ const IndexPage = props => {
                                     <EmployeeImageLink
                                         key={key}
                                         image={
-                                            image.node.childImageSharp.fluid.src
+                                            (image &&
+                                                image.node.childImageSharp.fluid
+                                                    .src) ||
+                                            DefaultEmployeeImage
                                         }
                                         name={name}
                                         title={title}
