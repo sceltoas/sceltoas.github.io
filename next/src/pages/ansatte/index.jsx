@@ -3,12 +3,11 @@ import EmployeeImageLink from '../../components/EmployeeImageLink';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
 import SmartPeople from '../../images/smart-people.jpg';
-import { ansatte } from '../../ansatte';
+import { ansatteArray } from '../../ansatte';
 import { showAvailableConsultantsFirst } from '../../utils';
 import Favicon from '../../images/favicon.png';
 import Helmet from 'react-helmet';
 import Footer from '../../components/Footer';
-import DefaultEmployeeImage from '../../images/mugshots/no-pic-yet.jpg';
 import { createMetadata } from '../../utils';
 import { graphql } from 'gatsby';
 
@@ -20,13 +19,11 @@ const IndexPage = props => {
         <Fragment>
             <Helmet
                 title="Ansatte i Scelto AS"
-                meta={[
-                    createMetadata({
-                        title,
-                        description,
-                        image: SmartPeople,
-                    }),
-                ]}
+                meta={createMetadata({
+                    title,
+                    description,
+                    image: SmartPeople,
+                })}
                 link={[{ rel: 'icon', href: Favicon }]}
             />
             <Navigation />
@@ -48,20 +45,21 @@ const IndexPage = props => {
                     margin: '50px 20px 0',
                 }}
             >
-                {Object.keys(ansatte)
+                {ansatteArray()
                     .sort(showAvailableConsultantsFirst)
-                    .map(key => {
-                        const { name, title } = ansatte[key];
-                        const image = props.data.EmployeeImages.edges.find(
+                    .map(({ name, title, image, key }) => {
+                        /* const image = props.data.EmployeeImages.edges.find(
                             node => node.node.name === key
-                        );
+                        ); */
 
                         return (
                             <EmployeeImageLink
+                                key={key}
                                 image={
-                                    (image &&
+                                    image
+                                    /* (image &&
                                         image.node.childImageSharp.fluid.src) ||
-                                    DefaultEmployeeImage
+                                    DefaultEmployeeImage */
                                 }
                                 name={name}
                                 title={title}

@@ -21,8 +21,9 @@ const EmployeeIntroWithImage = ({ employee, image }) => (
                 {employee.name}
             </h1>
             {employee.keyFeatures &&
-                employee.keyFeatures.map(feature => (
+                employee.keyFeatures.map((feature, index) => (
                     <p
+                        key={index}
                         className={styles.feature}
                         style={{
                             lineHeight: '1em',

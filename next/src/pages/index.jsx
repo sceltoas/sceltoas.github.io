@@ -7,7 +7,6 @@ import Section from '../components/Section';
 import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink';
 import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
 import Employees from '../images/man-headphones-working.jpeg';
-import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 import { ansatteArray } from '../ansatte';
 import Fade from 'react-reveal/Fade';
 import Navigation from '../components/Navigation';
@@ -65,23 +64,14 @@ const IndexPage = props => {
                         {ansatteArray()
                             .sort(showAvailableConsultantsFirst)
                             .slice(0, 3)
-                            .map((ansatt, index) => {
-                                const { name, title } = ansatt;
-                                const image = props.data.EmployeeImages.edges.find(
-                                    node => node.node.name === ansatt.key
-                                );
+                            .map(({ name, title, image, key }) => {
                                 return (
                                     <EmployeeImageLink
-                                        key={index}
-                                        image={
-                                            (image &&
-                                                image.node.childImageSharp.fluid
-                                                    .src) ||
-                                            DefaultEmployeeImage
-                                        }
+                                        key={key}
+                                        image={image}
                                         name={name}
                                         title={title}
-                                        to={`/ansatte/${ansatt.key}`}
+                                        to={`/ansatte/${key}`}
                                     />
                                 );
                             })}

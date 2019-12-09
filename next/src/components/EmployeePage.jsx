@@ -72,8 +72,8 @@ const EmployeePage = props => {
             >
                 {employee.mainSection &&
                     employee.mainSection.length > 1 &&
-                    employee.mainSection.map(section => (
-                        <Fade>
+                    employee.mainSection.map((section, index) => (
+                        <Fade key={index}>
                             <p>{section}</p>
                         </Fade>
                     ))}

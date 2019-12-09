@@ -10,7 +10,7 @@ export const createMetadata = ({ image, title, description }) => {
         },
         {
             name: 'image',
-            content: `https://www.scelto.no${image}`,
+            content: image,
         },
         {
             name: 'og:title',
@@ -22,7 +22,7 @@ export const createMetadata = ({ image, title, description }) => {
         },
         {
             name: 'og:image',
-            content: `https://www.scelto.no${image}`,
+            content: image,
         },
     ];
 };
@@ -38,19 +38,19 @@ export function showAvailableConsultantsFirst(a, b) {
 }
 
 function generateEmployeeSortScore(employee) {
-    let score = 0;
     if (employee.isConsultant === false) {
-        score = 99999999;
-    } else {
-        score = 1;
-
-        if (employee.endOfContract) {
-            const endOfContractAsNumber = Number.parseInt(
-                employee.endOfContract.replace(/-/gi, '')
-            );
-            if (!Number.isNaN(endOfContractAsNumber))
-                score = endOfContractAsNumber;
-        }
+        return 99999999;
     }
-    return score;
+
+    if (employee.endOfContract) {
+        const endOfContractAsNumber = Number.parseInt(
+            employee.endOfContract.replace(/-/gi, '')
+        );
+        if (!Number.isNaN(endOfContractAsNumber)) {
+            return endOfContractAsNumber;
+        }
+        return 1;
+    }
+
+    return 0;
 }
