@@ -1,6 +1,39 @@
 .why-work-at-scelto {
 }
 
+ol.list {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.li-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem 1rem 1rem;
+}
+.li-content > h5 {
+    margin: 0;
+}
+
+ol.list li {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    @media screen and (min-width: 800px) {
+        width: 50%;
+    }
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+ol.list li::before {
+    font-family: 'Sanuk Thin';
+    content: '0' counter(my-awesome-counter);
+    font-size: 4.5rem;
+}
+
 .kunder {
     display: flex;
     flex-flow: row wrap;
@@ -56,4 +89,31 @@
         text-align: center;
         margin-right: 10px;
     }
+}
+
+ul.forsikringsordning {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.forsikringsordning li {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    @media screen and (min-width: 800px) {
+        width: 50%;
+    }
+    font-size: 16px;
+    margin: 5px 0;
+}
+ul.forsikringsordning li::before {
+    content: '✓';
+    color: currentColor;
+    border: 2px solid currentColor;
+    border-radius: 20px;
+    padding: 3px 5px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-right: 10px;
 }

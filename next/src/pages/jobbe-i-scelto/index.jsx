@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Link from 'gatsby-link';
 import DL from '../../images/tor_eric_crop.jpg';
 import Section from '../../components/Section';
-import HeaderImage from '../../images/direction-scelto.jpeg';
+import HeaderImage from '../../images/silver-laptop-computer-next-to-ceramic-cup-42408.jpg';
 import Helmet from 'react-helmet';
 import Favicon from '../../images/favicon.png';
 import Footer from '../../components/Footer';
@@ -49,26 +49,59 @@ const IndexPage = () => (
             </div>
         </Section>
         <div className="why-work-at-scelto">
-            <Section title="Hvorfor jobbe i Scelto?">
-                <ul className="list">
+            <Section dark title="Hvorfor jobbe i Scelto?">
+                <ol className="list">
                     <li>
-                        Positive og hyggelige mennesker som hjelper hverandre.
+                        <div className="li-content">
+                            <h5>Menneskene</h5>
+                            <div>
+                                Positive og hyggelige mennesker som hjelper
+                                hverandre.
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        Attraktive og spennende kunder, som bla. NRK,
-                        Skatteetaten og Statens vegvesen.
+                        <div className="li-content">
+                            <h5>Spennende kunder</h5>
+                            <div>
+                                Attraktive og spennende kunder, som bla. NRK,
+                                Skatteetaten og Statens vegvesen.
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        Miljø med faglig tyngde – I Scelto er
-                        gjennomsnittserfaringen 12 år.
+                        <div className="li-content">
+                            <h5>Faglig tyngde</h5>
+                            <div>
+                                I Scelto er gjennomsnitts-erfaringen 12 år.
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        Gode betingelser{' '}
-                        <Link to="/lonnskalkulator">
-                            <span role="img" aria-label="Open terms">
-                                🔢
-                            </span>
-                        </Link>
+                        <div className="li-content">
+                            <h5>Gode betingelser</h5>
+                            <div>
+                                Gode betingelser{' '}
+                                <Link className="sc-link" to="/lonnskalkulator">
+                                    <span
+                                        role="img"
+                                        aria-label="Open terms"
+                                    ></span>
+                                </Link>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="li-content">
+                            <h5>Sosialt</h5>
+                            <div>
+                                Fokus på sosial kalender med bl.a. sommerfest,
+                                månedlige felleslunsjer og{' '}
+                                <Link to="/scuppen" className="sc-link">
+                                    #scuppen
+                                </Link>
+                            </div>
+                        </div>
                     </li>
                     {/* <li>
                         Fokus på sosial kalender:
@@ -88,49 +121,28 @@ const IndexPage = () => (
                             </li>
                         </ul>
                     </li> */}
-                    <li>
-                        Fokus på sosial kalender med bl.a. sommerfest, månedlige
-                        felleslunsjer og{' '}
-                        <Link to="/jobbe-i-scelto/scuppen">#scuppen</Link>
-                    </li>
                     {/* <li>
                         Og sist, men ikke minst, vi skal ikke bli flere enn 30
                         personer og vi skal være et lett selskap med lite
                         overhead. Noe som gjør at vi kan fortsette å ha fokus på
                         kulturen, det sosiale og deg som individ.
                     </li> */}
-                </ul>
+                </ol>
             </Section>
-            <Section className="forsikringsordning__wrapper">
-                <h3>Gode forsikringsordninger</h3>
-                <div className="forsikringsordning">
-                    <div className="forsikringsordning__column">
-                        <p className="forsikringsordning__entry">
-                            Fritidsulykke
-                        </p>
-                        <p className="forsikringsordning__entry">Yrkesskade</p>
-                        <p className="forsikringsordning__entry">
-                            Reise til og fra arbeid
-                        </p>
-                        <p className="forsikringsordning__entry">
-                            Invaliditet og uførhet pga. sykdom
-                        </p>
-                    </div>
-                    <div className="forsikringsordning__column">
-                        <p className="forsikringsordning__entry">
-                            Helseforsikring Super
-                        </p>
-                        <p className="forsikringsordning__entry">
-                            Reiseforsikring Super
-                        </p>
-                        <p className="forsikringsordning__entry">
-                            Familiemedlemskap i Volvat
-                        </p>
-                        <p className="forsikringsordning__entry">
-                            Årlig helsekontroll hos Volvat
-                        </p>
-                    </div>
-                </div>
+            <Section
+                title="Gode forsikringsordninger"
+                className="forsikringsordning__wrapper"
+            >
+                <ul className="forsikringsordning">
+                    <li>Fritidsulykke</li>
+                    <li>Yrkesskade</li>
+                    <li>Reise til og fra arbeid</li>
+                    <li>Invaliditet og uførhet pga. sykdom</li>
+                    <li>Helseforsikring Super</li>
+                    <li>Reiseforsikring Super</li>
+                    <li>Familiemedlemskap i Volvat</li>
+                    <li>Årlig helsekontroll hos Volvat</li>
+                </ul>
             </Section>
             <Section dark>
                 <div style={{ textAlign: 'center' }}>
