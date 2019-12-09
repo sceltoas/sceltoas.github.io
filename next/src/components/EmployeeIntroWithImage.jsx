@@ -50,7 +50,7 @@ const EmployeeIntroWithImage = ({ employee, image }) => (
                     }}
                     href={`https://www.linkedin.com/in/${employee.linkedIn}`}
                 >
-                    <LinkedIn fill="#fff" />
+                    <LinkedIn className={styles.some} />
                 </a>
             )}
 
@@ -61,13 +61,13 @@ const EmployeeIntroWithImage = ({ employee, image }) => (
                     }}
                     href={`https://twitter.com/${employee.twitter}`}
                 >
-                    <Twitter fill="#fff" />
+                    <Twitter className={styles.some} />
                 </a>
             )}
 
             {employee.github && (
                 <a href={`https://github.com/${employee.github}`}>
-                    <Github fill="#fff" />
+                    <Github className={styles.some} />
                 </a>
             )}
         </div>

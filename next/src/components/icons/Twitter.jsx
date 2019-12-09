@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Twitter = ({ fill }) => (
+const Twitter = ({ fill, className }) => (
     <svg
         version="1.1"
         id="Layer_1"
@@ -11,6 +11,7 @@ const Twitter = ({ fill }) => (
         height="32px"
         viewBox="0 0 32 32"
         enableBackground="new 0 0 32 32"
+        className={className}
     >
         <path
             fill={fill}
