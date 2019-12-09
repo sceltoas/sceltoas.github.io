@@ -19,62 +19,6 @@ import { createMetadata, showAvailableConsultantsFirst } from '../utils';
 
 import '../layouts/scelto.less';
 
-const ListOfEmployees = ({ props }) => {
-    return (
-        <div
-            style={{
-                display: 'flex',
-                flexFlow: 'row wrap',
-                justifyContent: 'center',
-            }}
-        >
-            {ansatteArray()
-                .sort(showAvailableConsultantsFirst)
-                .slice(0, 3)
-                .map((ansatt, index) => {
-                    const { name, title } = ansatt;
-                    const image = props.data.EmployeeImages.edges.find(
-                        node => node.node.name === ansatt.key
-                    );
-                    return (
-                        <EmployeeImageLink
-                            key={index}
-                            image={
-                                (image &&
-                                    image.node.childImageSharp.fluid.src) ||
-                                DefaultEmployeeImage
-                            }
-                            name={name}
-                            title={title}
-                            to={`/ansatte/${ansatt.key}`}
-                        />
-                    );
-                })}
-        </div>
-    );
-};
-
-export const query = graphql`
-    query {
-        EmployeeImages: allFile(
-            sort: { order: ASC, fields: [absolutePath] }
-            filter: { relativePath: { regex: "/mugshots/.*.jpg/" } }
-        ) {
-            edges {
-                node {
-                    relativePath
-                    name
-                    childImageSharp {
-                        fluid(maxWidth: 500) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
-
 const IndexPage = props => {
     return (
         <Fragment>
@@ -107,11 +51,41 @@ const IndexPage = props => {
                             etter kundens ønske."
             >
                 <Fragment>
-                        <h5>
-                            Se alle våre konsulenters biografi for mer utdypende
-                            informasjon om vår kompetanse!
-                        </h5>
-                    <ListOfEmployees props={props} />
+                    <h5>
+                        Se alle våre konsulenters biografi for mer utdypende
+                        informasjon om vår kompetanse!
+                    </h5>
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexFlow: 'row wrap',
+                            justifyContent: 'center',
+                        }}
+                    >
+                        {ansatteArray()
+                            .sort(showAvailableConsultantsFirst)
+                            .slice(0, 3)
+                            .map((ansatt, index) => {
+                                const { name, title } = ansatt;
+                                const image = props.data.EmployeeImages.edges.find(
+                                    node => node.node.name === ansatt.key
+                                );
+                                return (
+                                    <EmployeeImageLink
+                                        key={index}
+                                        image={
+                                            (image &&
+                                                image.node.childImageSharp.fluid
+                                                    .src) ||
+                                            DefaultEmployeeImage
+                                        }
+                                        name={name}
+                                        title={title}
+                                        to={`/ansatte/${ansatt.key}`}
+                                    />
+                                );
+                            })}
+                    </div>
                     <div className="sc-button-container">
                         <DarkButton to="/ansatte" text="Se alle konsulentene" />
                     </div>
@@ -123,37 +97,61 @@ const IndexPage = props => {
                 title="Hva gjør vi?"
                 ingress="Scelto tilbyr konsulentutleie innen systemutvikling og teknisk arkitektur. Alle konsulentene hos oss er seniorprofiler med bred teknisk og forretningsmessig erfaring."
             >
-            <Fragment>
-                <div
-                    style={{
-                        display: 'flex',
-                        flexFlow: 'row wrap',
-                        justifyContent: 'center',
-                    }}
-                >
-                    <Fade>
-                        <IconTitleAndIntroLink
-                            icon={SystemutviklingIcon}
-                            title="Systemutvikling"
-                            intro="Systemutviklerne i Scelto har et høyt kompetansenivå på de fleste områder innen utvikling og metodikk."
+                <Fragment>
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexFlow: 'row wrap',
+                            justifyContent: 'center',
+                        }}
+                    >
+                        <Fade>
+                            <IconTitleAndIntroLink
+                                icon={SystemutviklingIcon}
+                                title="Systemutvikling"
+                                intro="Systemutviklerne i Scelto har et høyt kompetansenivå på de fleste områder innen utvikling og metodikk."
+                            />
+                        </Fade>
+                        <Fade>
+                            <IconTitleAndIntroLink
+                                icon={ArkitekturIcon}
+                                title="Teknisk arkitektur"
+                                intro="Hyggelige og dyktige tekniske arkitekter med bred kompetanse fra en rekke større og mindre systemer"
+                            />
+                        </Fade>
+                    </div>
+                    <div className="sc-button-container">
+                        <LightButton
+                            to="/tjenester"
+                            text="Les mer om våre tjenester"
                         />
-                    </Fade>
-                    <Fade>
-                        <IconTitleAndIntroLink
-                            icon={ArkitekturIcon}
-                            title="Teknisk arkitektur"
-                            intro="Hyggelige og dyktige tekniske arkitekter med bred kompetanse fra en rekke større og mindre systemer"
-                        />
-                    </Fade>
-                </div>
-                <div className="sc-button-container">
-                    <LightButton to="/tjenester" text="Les mer om våre tjenester" />
-                </div>
+                    </div>
                 </Fragment>
             </Section>
             <Footer />
         </Fragment>
     );
 };
+
+export const query = graphql`
+    query {
+        EmployeeImages: allFile(
+            sort: { order: ASC, fields: [absolutePath] }
+            filter: { relativePath: { regex: "/mugshots/.*.jpg/" } }
+        ) {
+            edges {
+                node {
+                    relativePath
+                    name
+                    childImageSharp {
+                        fluid(maxWidth: 500) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+            }
+        }
+    }
+`;
 
 export default IndexPage;

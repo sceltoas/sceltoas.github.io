@@ -71,8 +71,7 @@ export const ansatte = {
         showOnFirstPage: false,
         isConsultant: false,
         firstName: 'Tor Eric',
-        ingress:
-            'Tor Eric er utdannet som Master i Informatikk og har 15 års erfaring i IT-bransjen. Han har bred erfaring som blant annet prosjektleder, Scrum Master, konsulentsjef, rådgiver, styremedlem og produkteier.',
+        ingress: 'Tor Eric er utdannet som Master i Informatikk og har 15 års erfaring i IT-bransjen. Han har bred erfaring som blant annet prosjektleder, Scrum Master, konsulentsjef, rådgiver, styremedlem og produkteier.',
         keyFeatures: [
             'Daglig leder',
             'Prosjektleder',
@@ -98,8 +97,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Ole Tommy',
-        ingress:
-            'Ole Tommy har over 12 års erfaring fra IT bransjen. Er utdannet Master of Informatics. og opparbeidet seg har bred erfaring fra etablering og innføring av IT løsninger for flere ulike bransjer. Han har fungert i rollen som utvikler/arkitekt i flere prosjekter for kunder som Eidsiva Energi, Hafslund og Canal Digital og Eika Alliansen. En stor tilhenger av åpen kildekode og av å gjøre ting enkelt.',
+        ingress: 'Ole Tommy har over 12 års erfaring fra IT bransjen. Er utdannet Master of Informatics. og opparbeidet seg har bred erfaring fra etablering og innføring av IT løsninger for flere ulike bransjer. Han har fungert i rollen som utvikler/arkitekt i flere prosjekter for kunder som Eidsiva Energi, Hafslund og Canal Digital og Eika Alliansen. En stor tilhenger av åpen kildekode og av å gjøre ting enkelt.',
         keyFeatures: [
             'Integrasjonsspesialist',
             'Java-utvikler',
@@ -126,8 +124,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Herman',
-        ingress:
-            'Herman ønsker stadig å utvikle seg, og deler også mer enn gjerne sin egen kunnskap. Han har i tidligere arbeidsforhold hatt lederoppgaver, både som faggruppeleder for Microsoft/.NET, og som gruppeleder med personalansvar.',
+        ingress: 'Herman ønsker stadig å utvikle seg, og deler også mer enn gjerne sin egen kunnskap. Han har i tidligere arbeidsforhold hatt lederoppgaver, både som faggruppeleder for Microsoft/.NET, og som gruppeleder med personalansvar.',
         keyFeatures: ['.NET', 'Systemutvikling', 'Teknisk arkitekt', 'DevOps'],
         email: 'herman@scelto.no',
         linkedIn: 'hermancs',
@@ -148,8 +145,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2020-12-31',
         firstName: 'Håken',
-        ingress:
-            'Håken Stark har 12 års erfaring fra IT bransjen, og har lang erfaring med utvikling av moderne webapplikasjoner i rollen som både utvikler og prosjektleder. Han er spesielt interessert i utvikling, brukerdesign og smidige prosjektmetoder.',
+        ingress: 'Håken Stark har 12 års erfaring fra IT bransjen, og har lang erfaring med utvikling av moderne webapplikasjoner i rollen som både utvikler og prosjektleder. Han er spesielt interessert i utvikling, brukerdesign og smidige prosjektmetoder.',
         keyFeatures: [
             'Java',
             'Angular & Frontend',
@@ -175,8 +171,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2020-08-31',
         firstName: 'Marius',
-        ingress:
-            'Marius har jobbet som utvikler i over 10 år, med over 8 års erfaring fra energi bransjen. Han er en potet og liker like godt å drive med utvikling som å sette opp infrastruktur.',
+        ingress: 'Marius har jobbet som utvikler i over 10 år, med over 8 års erfaring fra energi bransjen. Han er en potet og liker like godt å drive med utvikling som å sette opp infrastruktur.',
         keyFeatures: [
             'Teknisk arkitekt',
             'Java',
@@ -201,8 +196,7 @@ export const ansatte = {
         firstName: 'Ole André',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
-        ingress:
-            'Ole-André er ekspert på moderne webapplikasjoner og nettskyarkitektur. Han har opparbeidet god forståelse og erfaring med evaluering og utvikling av slike systemer fra bakside til fremside, og er sertifisert innen .NET, JavaScript og Java.',
+        ingress: 'Ole-André er ekspert på moderne webapplikasjoner og nettskyarkitektur. Han har opparbeidet god forståelse og erfaring med evaluering og utvikling av slike systemer fra bakside til fremside, og er sertifisert innen .NET, JavaScript og Java.',
         keyFeatures: [
             'Java / .NET',
             'FullStack',
@@ -228,8 +222,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Gustav',
-        ingress:
-            'Gustav er en erfaren systemutvikler, team-leader og arkitekt. Han har over 15 års erfaring med utvikling av javabaserte systemer fra både offentlig, bla. PDMT, og privat sektor.',
+        ingress: 'Gustav er en erfaren systemutvikler, team-leader og arkitekt. Han har over 15 års erfaring med utvikling av javabaserte systemer fra både offentlig, bla. PDMT, og privat sektor.',
         keyFeatures: ['Systemutvikling', 'Teamleder', 'Teknisk arkitekt'],
         email: 'gustav@scelto.no',
         linkedIn: 'gbilben',
@@ -248,8 +241,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Erlend',
-        ingress:
-            'Erlend er en erfaren arkitekt og systemutvikler som trives med å være høyt og lavt. Forståelse for kundens domene og forretning er alltid fundamentet – mer effektive og treffsikre it-løsninger er alltid målet.',
+        ingress: 'Erlend er en erfaren arkitekt og systemutvikler som trives med å være høyt og lavt. Forståelse for kundens domene og forretning er alltid fundamentet – mer effektive og treffsikre it-løsninger er alltid målet.',
         keyFeatures: [
             'Teknisk arkitekt',
             'Integrasjonsutvikling',
@@ -273,8 +265,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Richard',
-        ingress:
-            'Richard er en dreven og pragmatisk fullstack-programmerer med DevOps-kompetanse. Teamleder og miljøskaper. Forkjærlighet for gode og brukervennlige frontend-løsninger',
+        ingress: 'Richard er en dreven og pragmatisk fullstack-programmerer med DevOps-kompetanse. Teamleder og miljøskaper. Forkjærlighet for gode og brukervennlige frontend-løsninger',
         keyFeatures: [
             'Java',
             'Javascript',
@@ -300,9 +291,8 @@ export const ansatte = {
         name: 'Erik Salhus',
         firstName: 'Erik',
         title: 'Seniorkonsulent',
-        endOfContract: '2019-12-31',
-        ingress:
-            'Erik er en engasjert senior systemutvikler med meget god kompetanse på både frontend- og backend-utvikling. Erik har mye erfaring ved bruk av moderne webrammeverk og har fokus på å skrive lesbar kode med funksjonell nytte',
+        endOfContract: '2020-06-30',
+        ingress: 'Erik er en engasjert senior systemutvikler med meget god kompetanse på både frontend- og backend-utvikling. Erik har mye erfaring ved bruk av moderne webrammeverk og har fokus på å skrive lesbar kode med funksjonell nytte',
         keyFeatures: [
             'FullStack',
             'Javascript',
@@ -328,8 +318,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Jan Erik',
-        ingress:
-            'Jan Erik er en fullstack systemutvikler med bred erfaring fra flere nyere front-end/JS rammeverk.',
+        ingress: 'Jan Erik er en fullstack systemutvikler med bred erfaring fra flere nyere front-end/JS rammeverk.',
         keyFeatures: [
             'Java',
             'Systemutvikler',
@@ -354,8 +343,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Ivar',
-        ingress:
-            'Ivar har en master i informasjonsteknologi fra NTNU og har 10 års erfaring som utvikler. Han har jobbet på både store og små prosjekter og med mange forskjellige teknologier.',
+        ingress: 'Ivar har en master i informasjonsteknologi fra NTNU og har 10 års erfaring som utvikler. Han har jobbet på både store og små prosjekter og med mange forskjellige teknologier.',
         keyFeatures: [
             'Javascript',
             'ECMAScript 2015',
@@ -382,8 +370,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2020-01-31',
         firstName: 'Vetle',
-        ingress:
-            'Vetle Valebjørg er en erfaren systemutvikler med hovedfokus på javabaserte systemer. Hans erfaring omfatter design og utvikling av applikasjoner med webbaserte grensesnitt, de siste årene hos oppdragsgivere innen bank og forsikring.',
+        ingress: 'Vetle Valebjørg er en erfaren systemutvikler med hovedfokus på javabaserte systemer. Hans erfaring omfatter design og utvikling av applikasjoner med webbaserte grensesnitt, de siste årene hos oppdragsgivere innen bank og forsikring.',
         keyFeatures: [
             'Teknisk arkitekt',
             'Systemutvikler',
@@ -408,8 +395,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Seán',
-        ingress:
-            'Seán er en JavaScript-ekspert som primært har jobbet med mobile flater — både native og web. Han er opptatt av å holde seg oppdatert faglig, noe han viser ved å være aktiv i Open Source-miljøet og inneha flere sertifiseringer relevante for sitt fagområde.',
+        ingress: 'Seán er en JavaScript-ekspert som primært har jobbet med mobile flater — både native og web. Han er opptatt av å holde seg oppdatert faglig, noe han viser ved å være aktiv i Open Source-miljøet og inneha flere sertifiseringer relevante for sitt fagområde.',
         keyFeatures: [
             'GraphQL',
             'React',
@@ -436,8 +422,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2020-12-31',
         firstName: 'Ken',
-        ingress:
-            'Ken er en selvdreven, kvalitetsbevisst og disiplinert full-stack utvikler med over ti års erfaring innen systemutvikling. Han jobber med utvikling, design og arkitektur, og har en nese for gode brukeropplevelser.',
+        ingress: 'Ken er en selvdreven, kvalitetsbevisst og disiplinert full-stack utvikler med over ti års erfaring innen systemutvikling. Han jobber med utvikling, design og arkitektur, og har en nese for gode brukeropplevelser.',
         keyFeatures: [
             'Java',
             'Javascript',
@@ -465,8 +450,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2020-08-31',
         firstName: 'Lars Fredrik',
-        ingress:
-            'Lars Fredrik er en fremadstormende og engasjert systemutvikler som har spesialisert seg på utvikling og vedlikehold av løsninger basert på C#.',
+        ingress: 'Lars Fredrik er en fremadstormende og engasjert systemutvikler som har spesialisert seg på utvikling og vedlikehold av løsninger basert på C#.',
         keyFeatures: ['Systemutvikler', '.Net', 'Fullstack', 'Webteknologier'],
         email: 'vetle@scelto.no',
         linkedIn: '',
@@ -486,8 +470,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Fredrik',
-        ingress:
-            'Fredrik har lang erfaring innen systemutvikling og hans spesialkompetanse er på Java-platformen. Han har erfaring fra flere store komplekse prosjekter i offentlig og privat sektor som Statens Vegvesen, Telenor og SPK.',
+        ingress: 'Fredrik har lang erfaring innen systemutvikling og hans spesialkompetanse er på Java-platformen. Han har erfaring fra flere store komplekse prosjekter i offentlig og privat sektor som Statens Vegvesen, Telenor og SPK.',
         keyFeatures: ['Systemutvikler', 'Java', 'Teknisk arkitekt'],
         email: 'fredrikb@scelto.no',
         linkedIn: '',
@@ -506,8 +489,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Fredrik',
-        ingress:
-            'Fredrik er en dyktig senior systemutvikler med bred kompetanse gjennom hele .Net-stacken. Han har god erfaring med både små webapper og større nett-løsninger ved bruk av moderne rammeverk som Angular og Unity3D.',
+        ingress: 'Fredrik er en dyktig senior systemutvikler med bred kompetanse gjennom hele .Net-stacken. Han har god erfaring med både små webapper og større nett-løsninger ved bruk av moderne rammeverk som Angular og Unity3D.',
         keyFeatures: [
             'Systemutvikler',
             '.Net',
@@ -533,8 +515,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Terje',
-        ingress:
-            'Terje har stor interesse for moderne teknologi, design og gode brukeropplevelser. Han han har jobbet med utvikling av web og applikasjoner for mobil siden 2012.',
+        ingress: 'Terje har stor interesse for moderne teknologi, design og gode brukeropplevelser. Han han har jobbet med utvikling av web og applikasjoner for mobil siden 2012.',
         keyFeatures: ['iOS', 'Android', 'Web frontend'],
         email: 'terje@scelto.no',
         linkedIn: 'https://www.linkedin.com/in/terje-l%C3%B8n%C3%B8y-a8543165/',
@@ -553,8 +534,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Lars Olav',
-        ingress:
-            'Lars Olav er en dyktig senior systemutvikler med over 14 års erfaring med frontend-utvikling. Han lang erfaring med både små og store webapper ved bruk av moderne rammeverk som React og Angular.',
+        ingress: 'Lars Olav er en dyktig senior systemutvikler med over 14 års erfaring med frontend-utvikling. Han lang erfaring med både små og store webapper ved bruk av moderne rammeverk som React og Angular.',
         keyFeatures: ['Frontend', 'Fullstack', 'Java'],
         email: 'larsolav@scelto.no',
         linkedIn: '',
@@ -573,8 +553,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Jarle',
-        ingress:
-            'Jarle har jobbet i IT-bransjen siden 2004, og har bred erfaring som systemutvikler, teknisk arkitekt og teamleder. Fokuset hans har vært på Java-teknologi og integrasjon mellom systemer men han har også jobbet noe i front-end og med mobil teknologi.',
+        ingress: 'Jarle har jobbet i IT-bransjen siden 2004, og har bred erfaring som systemutvikler, teknisk arkitekt og teamleder. Fokuset hans har vært på Java-teknologi og integrasjon mellom systemer men han har også jobbet noe i front-end og med mobil teknologi.',
         keyFeatures: ['Java', 'Integrasjon', 'Teknisk Arkitekt'],
         email: 'jarle@scelto.no',
         linkedIn: '',
@@ -594,8 +573,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Jan Tore',
-        ingress:
-            'Jan Tore jobber som systemutvikler med hovedinteresse for React og GraphQL. Han har stort fokus på best practise og smidige metoder.',
+        ingress: 'Jan Tore jobber som systemutvikler med hovedinteresse for React og GraphQL. Han har stort fokus på best practise og smidige metoder.',
         keyFeatures: ['React', 'Frontend', 'Java'],
         email: 'jan.tore@scelto.no',
         linkedIn: '',
@@ -623,7 +601,8 @@ export const ansatte = {
         mainSection: [
             'Siden starten av karrieren i 2005 har hun jobbet med programmering, og hun trives både frontend og backend.',
             'Hun blir gjerne med i alle faser fra kravspesifikasjon til forvaltning av systemene, og har tilegnet seg god evne til å se helheten i løsningene.',
-            'Som person har Ann Katrin en positiv innstilling, og hun jobber godt både i team og selvstendig.'],
+            'Som person har Ann Katrin en positiv innstilling, og hun jobber godt både i team og selvstendig.'
+        ],
         linkToCV: AnnKatrinCV,
         customImage: Music,
     },
@@ -654,7 +633,7 @@ export const ansatte = {
         title: 'Seniorkonsulent',
         firstName: 'Jørgen',
         ingress: 'Jørgen har erfaring fra 2011 som systemutvikler og teknisk arkitekt. Han har solid erfaring fra flere store komplekse prosjekter i offentlig og privat sektor som Statens Vegvesen, Telenor, NAV og Ruter.',
-        keyFeatures: ['Systemutvikler Java', 'Teknisk arkitekt', 'Applikasjonsarkitektur',  'Mikrotjenester', 'Cloudteknologi'],
+        keyFeatures: ['Systemutvikler Java', 'Teknisk arkitekt', 'Applikasjonsarkitektur', 'Mikrotjenester', 'Cloudteknologi'],
         email: 'jorgen@scelto.no',
         linkedIn: 'https://no.linkedin.com/in/jorgenringen',
         twitter: 'https://twitter.com/jorgenringen?lang=en',
@@ -744,4 +723,8 @@ export const ansatte = {
     },
 };
 
-export const ansatteArray = () => Object.keys(ansatte).map(key => { let ansatt = ansatte[key]; ansatt.key = key; return ansatt; });
+export const ansatteArray = () => Object.keys(ansatte).map(key => {
+    let ansatt = ansatte[key];
+    ansatt.key = key;
+    return ansatt;
+});
