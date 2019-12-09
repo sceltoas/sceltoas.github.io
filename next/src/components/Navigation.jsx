@@ -25,7 +25,6 @@ class Navigation extends React.Component {
             { href: '/kontakt', title: 'Kontakt' },
         ];
 
-        console.log('y u no show?', this.state.open);
         return (
             <div id="index-banner">
                 <nav className="navigation" role="navigation">

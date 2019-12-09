@@ -6,8 +6,9 @@ import Favicon from '../../images/favicon.png';
 import Footer from '../../components/Footer';
 import { createMetadata } from '../../utils';
 import Section from '../../components/Section';
-import { getScores } from '../../scuppen';
-import './scuppen.less';
+import { getScores } from '../../scores';
+
+import './index.less';
 
 const IndexPage = () => (
     <Fragment>
@@ -37,18 +38,15 @@ const IndexPage = () => (
                     </tr>
                 </thead>
                 <tbody id="results-table">
-                    {getScores().map((score, index) => {
-                        console.log(score);
-                        return (
-                            <tr class="scuppen-scores-entry">
-                                <td>{index + 1}</td>
-                                <td>{score.name}</td>
-                                <td>{score.resultList}</td>
-                                <td>{score.countingScore}</td>
-                                <td style={{ opacity: '.5' }}>{score.score}</td>
-                            </tr>
-                        );
-                    })}
+                    {getScores().map((score, index) => (
+                        <tr class="scuppen-scores-entry">
+                            <td>{index + 1}</td>
+                            <td>{score.name}</td>
+                            <td>{score.resultList}</td>
+                            <td>{score.countingScore}</td>
+                            <td style={{ opacity: '.5' }}>{score.score}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
             <p style={{ fontSize: '0.6em' }}>D=Deltatt, F=Feilet i å møte</p>

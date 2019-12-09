@@ -31,16 +31,16 @@ class IndexPage extends React.Component {
         /* function mail(name, number, success, error) {
   $.ajax({
     url: 'https://formspree.io/post@scelto.no',
-    method: 'POST',
+            method: 'POST',
     data: {
       name: name,
       number: number,
       _subject: 'Kontakt meg (fra scelto.no)'
-    },
+            },
     dataType: "json",
     success: success,
     error: error
-  });
+        });
   return true;
 } */
 

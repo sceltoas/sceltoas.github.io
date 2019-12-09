@@ -10,6 +10,7 @@ import Helmet from 'react-helmet';
 import Footer from '../../components/Footer';
 import { createMetadata } from '../../utils';
 import { graphql } from 'gatsby';
+import DefaultEmployeeImage from '../../images/mugshots/no-pic-yet.jpg';
 
 const IndexPage = props => {
     const title = 'Hva kjennetegner en Scelto-konsulent?';
@@ -47,19 +48,18 @@ const IndexPage = props => {
             >
                 {ansatteArray()
                     .sort(showAvailableConsultantsFirst)
-                    .map(({ name, title, image, key }) => {
-                        /* const image = props.data.EmployeeImages.edges.find(
+                    .map(({ name, title, key }) => {
+                        const image = props.data.EmployeeImages.edges.find(
                             node => node.node.name === key
-                        ); */
+                        );
 
                         return (
                             <EmployeeImageLink
                                 key={key}
                                 image={
-                                    image
-                                    /* (image &&
+                                    (image &&
                                         image.node.childImageSharp.fluid.src) ||
-                                    DefaultEmployeeImage */
+                                    DefaultEmployeeImage
                                 }
                                 name={name}
                                 title={title}

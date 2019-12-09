@@ -50,10 +50,10 @@ const IndexPage = props => {
                             etter kundens ønske."
             >
                 <Fragment>
-                    <h5>
+                    <p>
                         Se alle våre konsulenters biografi for mer utdypende
                         informasjon om vår kompetanse!
-                    </h5>
+                    </p>
                     <div
                         style={{
                             display: 'flex',
@@ -64,11 +64,17 @@ const IndexPage = props => {
                         {ansatteArray()
                             .sort(showAvailableConsultantsFirst)
                             .slice(0, 3)
-                            .map(({ name, title, image, key }) => {
+                            .map(({ name, title, key }) => {
+                                const image = props.data.EmployeeImages.edges.find(
+                                    node => node.node.name === key
+                                );
+
                                 return (
                                     <EmployeeImageLink
                                         key={key}
-                                        image={image}
+                                        image={
+                                            image.node.childImageSharp.fluid.src
+                                        }
                                         name={name}
                                         title={title}
                                         to={`/ansatte/${key}`}

@@ -27,7 +27,7 @@ import Andreas from './images/mugshots/no-pic-yet.jpg';
 import Hallvard from './images/mugshots/no-pic-yet.jpg';
 import Bard from './images/mugshots/no-pic-yet.jpg';
 import Ismar from './images/mugshots/no-pic-yet.jpg';
-import NoPicYet from './images/mugshots/no-pic-yet.jpg';
+/*import NoPicYet from './images/mugshots/no-pic-yet.jpg';*/
 
 import TorEricCV from './cvs/Tor_Eric_Sandvik.pdf';
 import OleTommyCV from './cvs/Ole_Tommy_Lid-Strand.pdf';
@@ -566,9 +566,9 @@ export const ansatte = {
             'Lars Olav er en dyktig senior systemutvikler med over 14 års erfaring med frontend-utvikling. Han lang erfaring med både små og store webapper ved bruk av moderne rammeverk som React og Angular.',
         keyFeatures: ['Frontend', 'Fullstack', 'Java'],
         email: 'larsolav@scelto.no',
-        linkedIn: '',
+        linkedIn: 'larsolavtorvik',
         twitter: '',
-        github: '',
+        github: 'lotorvik',
         mainSection: [
             'Selv om Lars Olav er fullstack utvikler er det frontend-utvikling han virkelig brenner for. Det er viktig for han at webløsningene han lager er brukervennlige med responsivt design og han elsker prosjekter hvor han får laget løsninger som oppfyller kravene til en Progressive Web App (PWA).',
             'De siste årene har han jobbet for Giant Leap Technologies og deres kunder, som tech lead for webutvikling. Her har han fått være involvert i alle nivåer av løsningsprosessen. Lars Olav er en ansvarsbevisst teammedarbeider og liker å drive utviklingen fremover.På privaten er Lars Olav en meget sosial person som er glad i å trene agility med hundene sine og jobbe med hobbyprosjekter.',
@@ -586,9 +586,9 @@ export const ansatte = {
             'Jarle har jobbet i IT-bransjen siden 2004, og har bred erfaring som systemutvikler, teknisk arkitekt og teamleder. Fokuset hans har vært på Java-teknologi og integrasjon mellom systemer men han har også jobbet noe i front-end og med mobil teknologi.',
         keyFeatures: ['Java', 'Integrasjon', 'Teknisk Arkitekt'],
         email: 'jarle@scelto.no',
-        linkedIn: '',
-        twitter: '',
-        github: '',
+        linkedIn: 'jarle-berentzen-59a23821',
+        twitter: 'jberentzen',
+        github: 'jarledb',
         mainSection: [
             'I hans arbeid som systemutvikler har han ofte hatt et sterkt fokus på automatisering av manuelle oppgaver og utvikling av forretningslogikk. Som arkitekt har Jarle hatt høy fokus på modularisering, strukturering og standardisering av kode.',
             'Jarle er en dedikert teknolog som er faglig interessert og oppdatert på rammeverk og teknologier. Jarle har erfaring med Smidig utvikling både som utvikler og som teamleder/scrum master.',
@@ -607,9 +607,9 @@ export const ansatte = {
             'Jan Tore jobber som systemutvikler med hovedinteresse for React og GraphQL. Han har stort fokus på best practise og smidige metoder.',
         keyFeatures: ['React', 'Frontend', 'Java'],
         email: 'jan.tore@scelto.no',
-        linkedIn: '',
+        linkedIn: 'jan-tore-stølsvik-49320a81',
         twitter: '',
-        github: '',
+        github: 'jantorestolsvik',
         mainSection: [
             'Jan Tore jobber som systemutvikler med hovedinteresse for React og GraphQL. Han har stort fokus på best practise og smidige metoder.',
             'Som følge av et utvekslingsår i Singapore har han jobbet på flere prosjekter med internasjonale studenter og kommuniserer derfor like godt på engelsk som på norsk. Jan Tore har holdt foredrag mange ganger på f.eks. JavaZone og NDC.',

@@ -120,7 +120,10 @@ var participants = [
             NOT_PARTICIPATED,
         ],
     },
-    { name: 'Fredrik B', results: [4, PARTICIPATED, 1, 1, PARTICIPATED] },
+    {
+        name: 'Fredrik B',
+        results: [4, PARTICIPATED, 1, 1, PARTICIPATED],
+    },
     {
         name: 'Fredrik S',
         results: [
@@ -249,32 +252,33 @@ var participants = [
     },
 ];
 
-/* var participantsTemplate = _.template(
-    '<% _.forEach(participants, function(p,i) { %><tr><td><%= i+1 %></td><td><%- p.name %></td><td>[<%- p.resultList %>]</td><td><%- p.countingScore %></td><td style="opacity: .5"><%- p.score %></td></tr><% }); %>'
-); */
-
 var rounds = [
-    { head: 'PingPong', points: [500, 400, 300, 200], participationScore: 100 },
     {
-        head: 'BONUSRUNDE: Vinsmaking',
-        points: [150, 120, 100, 80, 50, 30, 0],
-        participationScore: 0,
+        head: 'Lynsjakk',
+        points: [500, 400, 300, 200],
+        participationScore: 100,
     },
-    { head: 'Kokkekamp', points: [300], participationScore: 100 },
-    { head: 'HatTrick', points: [500, 400, 300, 200], participationScore: 100 },
     {
-        head: 'Hafjell Poker',
-        points: [250, 200, 150, 100],
-        participationScore: 0,
+        head: 'Darts',
+        points: [500, 400, 300, 200],
+        participationScore: 100,
     },
-    { head: 'Fekting', points: [550, 450, 0, 300], participationScore: 100 }, // delt 4. plass
-    { head: 'Quiz', points: [450, 350, 250], participationScore: 100 },
-    { head: 'SCIPT', points: [250, 200, 150, 100], participationScore: 50 },
+    {
+        head: 'Poker',
+        points: [500, 400, 300, 200],
+        participationScore: 100,
+    },
+    {
+        head: 'Seiling',
+        points: [300, 0, 0, 0],
+        participationScore: 100,
+    },
+    {
+        head: 'CS:Go',
+        points: [300, 0, 0, 0],
+        participationScore: 100,
+    },
 ];
-
-/* $(document).ready(function() {
-    renderScores();
-}); */
 
 function calcScore(participant) {
     // participation = -1, non-participation = -2
