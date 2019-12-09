@@ -40,6 +40,12 @@ import FredrikbCV from './cvs/Fredrik_Bjørnøy.pdf';
 import FredriksCV from './cvs/Fredrik_Svensen.pdf';
 import TerjeCV from './cvs/Terje_Lonoy.pdf';
 import LarsOlavCV from './cvs/Lars_Olav_Torvik.pdf';
+import AnnKatrinCV from './cvs/Ann-Katrin_Gagnat.pdf';
+import KristofferCV from './cvs/Kristoffer_Hoeegh_Mysen.pdf';
+import JoergenCV from './cvs/Joergen_Ringen.pdf';
+import AndreasCV from './cvs/Andreas_Nilsen.pdf';
+import HallvardCV from './cvs/Hallvard_Andreas_Stark.pdf';
+import IsmarCV from './cvs/Ismar_Slomic.pdf';
 
 import Drinker from './images/drinker.jpeg';
 import Skateboard from './images/skateboard.jpg';
@@ -608,14 +614,17 @@ export const ansatte = {
         name: 'Ann-Katrin Gagnat',
         title: 'Seniorkonsulent',
         firstName: 'Ann-Katrin',
-        ingress: '',
-        keyFeatures: [''],
+        ingress: 'Ann Katrin har en mastergrad i informatikk, og er en engasjert systemutvikler med bransjeerfaring innen forsikring, luftfart, pensjon og e-handel.',
+        keyFeatures: ['Systemutvikling Java', 'Fullstack utvikler'],
         email: 'ann.katrin@scelto.no',
-        linkedIn: '',
-        twitter: '',
-        github: '',
-        mainSection: [''],
-        linkToCV: '#',
+        linkedIn: 'https://no.linkedin.com/in/akgagnat',
+        twitter: 'https://twitter.com/akgagnat?lang=en',
+        github: 'https://github.com/akgagnat',
+        mainSection: [
+            'Siden starten av karrieren i 2005 har hun jobbet med programmering, og hun trives både frontend og backend.',
+            'Hun blir gjerne med i alle faser fra kravspesifikasjon til forvaltning av systemene, og har tilegnet seg god evne til å se helheten i løsningene.',
+            'Som person har Ann Katrin en positiv innstilling, og hun jobber godt både i team og selvstendig.'],
+        linkToCV: AnnKatrinCV,
         customImage: Music,
     },
     kristoffer: {
@@ -623,14 +632,20 @@ export const ansatte = {
         name: 'Kristoffer Mysen',
         title: 'Seniorkonsulent',
         firstName: 'Kristoffer',
-        ingress: '',
-        keyFeatures: [''],
+        ingress: 'Kristoffer er en erfaren og dyktig seniorkonsulent med erfaring siden 2006. Som akademisk bakgrunn har han en Master of Science ved Universitetet i Oslo.',
+        keyFeatures: ['Systemutvikling Java', 'Fullstack utvikler', 'Teknisk Arkitektur'],
         email: 'kristoffer@scelto.no',
-        linkedIn: '',
+        linkedIn: 'https://no.linkedin.com/in/kristoffer-mysen',
         twitter: '',
-        github: '',
-        mainSection: [''],
-        linkToCV: '#',
+        github: 'https://github.com/KrisMysen',
+        mainSection: [
+            'Siden starten av sin karriere i 2006 har han kontinuerlig jobbet som utvikler og arkitekt, primært med backend-løsninger basert på Java. Samtidig  har han opparbeidet seg en solid frontend-erfaring og jobber nå som fullstack utvikler.',
+            'Kristoffer er genuint opptatt av fag og trives med komplekse oppgaver gjerne med tett dialog med forretningssiden. Han har lang erfaring med å ta en idé fra tegnebordet til kjørbar løsning gjennom å samarbeide tett med kunde, ha god forståelse for prosjektplanlegging og riktig gjennomføring/leveranse.',
+            'Kristoffer er spesielt opptatt av å utvikle langsiktige løsninger. Hans lange erfaring som utvikler av en produktportefølje, har gjort han opptatt av engasjement og produkteierskap. Det vil si at han brenner for å lage løsninger som er enkle å vedlikeholde, inneholder tydelig og lettleselig kode, har gode nok tester og er godt dokumentert.',
+            'Som person er Kristoffer åpen, tillitvekkende og flink til å kommunisere. Han har hatt mye ansvar i sine prosjekter og liker å lære bort til andre teammedlemmer. Kristoffer er veldig allsidig og løsningsorientert, og han tror på at ett tett og åpent samarbeid med ærlige tilbakemeldinger er viktig.',
+            'På privaten er Kristoffer en hyggelig familiemann som setter like stor pris på en lang joggetur i skogen så vel som en god bok foran peisen.'
+        ],
+        linkToCV: KristofferCV,
         customImage: Music,
     },
     jorgen: {
@@ -638,14 +653,19 @@ export const ansatte = {
         name: 'Jørgen Ringen',
         title: 'Seniorkonsulent',
         firstName: 'Jørgen',
-        ingress: '',
-        keyFeatures: [''],
+        ingress: 'Jørgen har erfaring fra 2011 som systemutvikler og teknisk arkitekt. Han har solid erfaring fra flere store komplekse prosjekter i offentlig og privat sektor som Statens Vegvesen, Telenor, NAV og Ruter.',
+        keyFeatures: ['Systemutvikler Java', 'Teknisk arkitekt', 'Applikasjonsarkitektur',  'Mikrotjenester', 'Cloudteknologi'],
         email: 'jorgen@scelto.no',
-        linkedIn: '',
-        twitter: '',
-        github: '',
-        mainSection: [''],
-        linkToCV: '#',
+        linkedIn: 'https://no.linkedin.com/in/jorgenringen',
+        twitter: 'https://twitter.com/jorgenringen?lang=en',
+        github: 'https://github.com/JorgenRingen',
+        mainSection: [
+            'Han er en engasjert utvikler som brenner for faget. Han har sine primære kompetanseområder innenfor java og økosystemet rundt teknologien hvor han har tatt en rekke sertifiseringer på ulike nivåer. Han har også høy kompetanse og interesse innenfor mikrotjenestearkitektur, hendelsesdrevet arkitektur, cloudteknologi, DevOps, smidig arbeidsmetodikk og software craftsmanship.',
+            'Jørgen er lidenskapelig opptatt av hvordan teknologi og digitalisering kan skape verdi hos sluttbruker. Han er forkjemper for at noe av det aller viktigste som skal til for å kunne bygge virkelig gode tekniske løsninger, som står seg over tid, er at man har dyp innsikt i kundens unike domene og forretningsprosesser.',
+            'Jørgen har høy arbeidskapasitet, er strukturert og forutsigbar og opptatt av å levere resultater. Han jobber selvstendig, men er også åpen og lett å samarbeide med. Han har hatt flere roller på prosjekter hvor han har vært ansvarlig for opplæring og coaching av andre, blant annet som development lead hos Telenor og som teknisk arkitekt i SCRUM-team.',
+            'På fritiden er Jørgen en sosial person. Han er interessert i friluftsliv og har stor interesse for løping, langrenn og seiling.'
+        ],
+        linkToCV: JoergenCV,
         customImage: Music,
     },
     baard: {
@@ -668,14 +688,17 @@ export const ansatte = {
         name: 'Andreas Nilsen',
         title: 'Seniorkonsulent',
         firstName: 'Andreas',
-        ingress: '',
-        keyFeatures: [''],
+        ingress: 'Andreas er en seniorkonsulent med erfaring fra 2011. Han har i sin karriere jobbet med mange forskjellige teknologier innenfor forskjellige sektorer og domener som blant annet forsvar, elmarked, bank og finans, landbruk, helse, jordbruk, Statens Vegvesen og NAV.',
+        keyFeatures: ['Systemutvikler Java'],
         email: 'andreas@scelto.no',
-        linkedIn: '',
+        linkedIn: 'https://no.linkedin.com/in/andreas-nilsen-54bba941',
         twitter: '',
         github: '',
-        mainSection: [''],
-        linkToCV: '#',
+        mainSection: [
+            'Andreas er en erfaren DevOps/full-stack utvikler med hovedtyngde på teknologier i Java økosystemet. Han har nå hovedfokuset på Kotlin, Kafka og Kubernetes. Andreas har en spesiell interesse for nettsky, mikrotjenester og hendelsesbasert arkitektur.',
+            'Andreas liker å jobbe tett med kunden, for på denne måten skape et mest mulig verdiøkende tjenestetilbud som er lønnsomt for alle parter. Han er en engasjert person som lett å samarbebide med, han er aktiv i fagmiljø og opptatt av å lære seg nye ting. Ingen utfordring er for stor, det er bare mer motiverende.'
+        ],
+        linkToCV: AndreasCV,
         customImage: Music,
     },
     hallvard: {
@@ -683,14 +706,18 @@ export const ansatte = {
         name: 'Hallvard Stark',
         title: 'Seniorkonsulent',
         firstName: 'Hallvard',
-        ingress: '',
-        keyFeatures: [''],
+        ingress: 'Hallvard har jobbet med webutvikling siden 2011, i en rekke prosjekter i forskjellige sektorer. Han er vant til å jobbe tett sammen med design og UX for å skape gode og brukervennlige løsninger på nett og mobil.',
+        keyFeatures: ['Frontendutvikler', 'React', 'NodeJS', 'HTML5/CSS3', 'Gatsby'],
         email: 'hallvard@scelto.no',
         linkedIn: '',
-        twitter: '',
-        github: '',
-        mainSection: [''],
-        linkToCV: '#',
+        twitter: 'https://twitter.com/ehallvard',
+        github: 'https://github.com/ehallvard',
+        mainSection: [
+            'Konsulentjobben har gjort at han er godt til å samarbeide og tilpasse seg ulike miljøer. I reMarkable har han hatt rollen som utvikler med ansvar for den helhetlige utviklingen av selskapets nettsider og nettbutikk. Hallvard har god kjennskap og erfaring med universell utforming.',
+            'Han er en imøtekommende, hyggelig og rolig person som er opptatt av å gjøre godt og grundig arbeid som han kan være stolt av. Han er alltid nysgjerrig på å lære mer innenfor fagfeltet, og han lærer villig bort av sin egen kunnskap.',
+            'På fritiden liker Hallvard å lage mat, reise og oppleve nye destinasjoner og ta seg en løpetur så fort anledningen byr seg.'
+        ],
+        linkToCV: HallvardCV,
         customImage: Music,
     },
     ismar: {
@@ -698,14 +725,21 @@ export const ansatte = {
         name: 'Ismar Slomic',
         title: 'Seniorkonsulent',
         firstName: 'Ismar',
-        ingress: '',
-        keyFeatures: [''],
+        ingress: 'Ismar har 11 års erfaring som systemutvikler, senior teknisk arkitekt og teknisk teamleder med solid erfaring fra store og komplekse prosjekter innenfor offentlig og privat sektor som Sparebank 1, Statens Vegvesen, Statnett, Telenor og NAV.',
+        keyFeatures: ['Fullstack utvikler', 'Senior teknisk arkitekt', 'Agile/DevOps Coach', 'Mikrotjenester', 'Cloud-teknologi'],
         email: 'ismar@scelto.no',
-        linkedIn: '',
+        linkedIn: 'https://no.linkedin.com/in/ismarslomic',
         twitter: '',
-        github: '',
-        mainSection: [''],
-        linkToCV: '#',
+        github: 'https://github.com/ismarslomic',
+        mainSection: [
+            'Han er en engasjert utvikler som brenner for faget og streber etter kontinuerlig kompetanseheving samtidig som han deler denne med andre rundt seg. Selv om Ismar har lang erfaring som teknisk arkitekt er han opptatt av å være hands-on på teknologien og har benyttet enhver anledning til  scripting og programmering, både på prosjekter og i fritiden slik at han vedlikeholder og utvikler sine programmerinsferdigheter.',
+            'Han er en full-stack utvikler, som håndterer like godt front-end som back-end. Han brenner for mikrotjenestearkitektur, Domain Driven Design, kontainerarkitektur, hendelsesdrevet arkitektur, Cloudteknologi, DevOps, Lean og software craftmanship.',
+            'Han setter brukeren i sentrum og fokuserer på å forstå forretningsbehovene før han anbefaler og implementerer teknisk løsning. Ismar er opptatt av kvalitet gjennom hele arbeidsprosessen og er flink til å komme med forslag til forbedringstiltak. Han har også erfaring med håndtering av teknisk gjeld og prioritering av tekniske brukerhistorier for å redusere disse.',
+            'Ismar har høy arbeidskapasitet, er strukturert og ansvarsfull og opptatt av å levere resultater til avtalt tid. Han jobber selvstendig, men er også åpen og lett å samarbeide med. Han har hatt flere roller på prosjekter hvor han har hatt ansvar for opplæring og coaching av andre.',
+            'Ismar er opptatt av å se helheten og evner å bevege seg i ulike abstraksjonsnivåer og kommunisere komplekse problemstillinger på forståelig måte med ulike interessenter. Han har flere kurs og sertifiseringer innenfor teknisk arkitektur, som f.eks Togaf 9, Archimate 2, Domain Driven Design og  CQRS.',
+            'På fritiden liker han å se på nye smarthus-løsninger og er en nyfrelst yoga entusiast.'
+        ],
+        linkToCV: IsmarCV,
         customImage: Music,
     },
 };
