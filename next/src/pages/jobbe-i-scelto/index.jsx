@@ -64,8 +64,8 @@ const IndexPage = () => (
                         <div className="li-content">
                             <h5>Attraktive og spennende kunder</h5>
                             <div>
-                                Scelto har avtaler med bla. Fremtind, SpareBank 1, NRK,
-                                Skatteetaten og Statens vegvesen
+                                Scelto har avtaler med bla. Fremtind, SpareBank
+                                1, NRK, Skatteetaten og Statens vegvesen
                             </div>
                         </div>
                     </li>
