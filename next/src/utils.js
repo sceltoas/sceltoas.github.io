@@ -27,7 +27,6 @@ export const createMetadata = ({ image, title, description }) => {
     ];
 };
 
-
 export function showAvailableConsultantsFirst(a, b) {
     const employeeA = a;
     const employeeB = b;
@@ -36,7 +35,7 @@ export function showAvailableConsultantsFirst(a, b) {
     let employeeBScore = generateEmployeeSortScore(employeeB);
 
     return employeeAScore - employeeBScore;
-};
+}
 
 function generateEmployeeSortScore(employee) {
     let score = 0;
@@ -46,7 +45,9 @@ function generateEmployeeSortScore(employee) {
         score = 1;
 
         if (employee.endOfContract) {
-            const endOfContractAsNumber = Number.parseInt(employee.endOfContract.replace(/-/gi, ''));
+            const endOfContractAsNumber = Number.parseInt(
+                employee.endOfContract.replace(/-/gi, '')
+            );
             if (!Number.isNaN(endOfContractAsNumber))
                 score = endOfContractAsNumber;
         }

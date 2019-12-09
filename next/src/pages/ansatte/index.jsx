@@ -46,7 +46,7 @@ const IndexPage = props => {
                     flexFlow: 'row wrap',
                     justifyContent: 'center',
                     margin: '50px 20px 0',
-                }}  
+                }}
             >
                 {Object.keys(ansatte)
                     .sort(showAvailableConsultantsFirst)
