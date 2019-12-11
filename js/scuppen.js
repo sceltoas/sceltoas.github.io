@@ -9,7 +9,8 @@ var participants = [
       PARTICIPATED,
       PARTICIPATED,
       PARTICIPATED,
-      PARTICIPATED
+      PARTICIPATED,
+      NOT_PARTICIPATED
     ]
   },
   {
@@ -18,6 +19,7 @@ var participants = [
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
+      PARTICIPATED,
       PARTICIPATED,
       PARTICIPATED
     ]
@@ -29,7 +31,8 @@ var participants = [
       PARTICIPATED,
       PARTICIPATED,
       NOT_PARTICIPATED,
-      PARTICIPATED
+      PARTICIPATED,
+      NOT_PARTICIPATED
     ]
   },
   {
@@ -39,6 +42,7 @@ var participants = [
       PARTICIPATED,
       PARTICIPATED,
       NOT_PARTICIPATED,
+      PARTICIPATED,
       PARTICIPATED
     ]
   },
@@ -49,32 +53,68 @@ var participants = [
       PARTICIPATED,
       PARTICIPATED,
       NOT_PARTICIPATED,
+      PARTICIPATED,
       PARTICIPATED
     ]
   },
   {
     name: 'Ole-André',
-    results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, 1, NOT_PARTICIPATED]
+    results: [
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      1,
+      NOT_PARTICIPATED,
+      PARTICIPATED
+    ]
   },
   {
     name: 'Tor Eric',
-    results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, PARTICIPATED, 1]
+    results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, PARTICIPATED, 1, 3]
   },
   {
     name: 'Håken',
-    results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, 1, PARTICIPATED]
+    results: [
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      1,
+      PARTICIPATED,
+      PARTICIPATED
+    ]
   },
   {
     name: 'Gustav',
-    results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, 1, PARTICIPATED]
+    results: [
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      1,
+      PARTICIPATED,
+      NOT_PARTICIPATED
+    ]
   },
   {
     name: 'Erlend',
-    results: [NOT_PARTICIPATED, PARTICIPATED, PARTICIPATED, NOT_PARTICIPATED, 1]
+    results: [
+      NOT_PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      NOT_PARTICIPATED,
+      1,
+      PARTICIPATED
+    ]
   },
   {
     name: 'Marius',
-    results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, PARTICIPATED, 1]
+    results: [
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      1,
+      PARTICIPATED
+    ]
   },
   {
     name: 'Erik',
@@ -83,12 +123,20 @@ var participants = [
       NOT_PARTICIPATED,
       PARTICIPATED,
       NOT_PARTICIPATED,
+      PARTICIPATED,
       PARTICIPATED
     ]
   },
   {
     name: 'Richard',
-    results: [NOT_PARTICIPATED, 3, PARTICIPATED, PARTICIPATED, PARTICIPATED]
+    results: [
+      NOT_PARTICIPATED,
+      3,
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED
+    ]
   },
   {
     name: 'Lars Fredrik',
@@ -97,47 +145,55 @@ var participants = [
       NOT_PARTICIPATED,
       PARTICIPATED,
       NOT_PARTICIPATED,
-      NOT_PARTICIPATED
+      NOT_PARTICIPATED,
+      PARTICIPATED
     ]
   },
-  { name: 'Fredrik B', results: [4, PARTICIPATED, 1, 1, PARTICIPATED] },
+  {
+    name: 'Fredrik B',
+    results: [4, PARTICIPATED, 1, 1, PARTICIPATED, PARTICIPATED]
+  },
   {
     name: 'Fredrik S',
-    results: [NOT_PARTICIPATED, 4, PARTICIPATED, NOT_PARTICIPATED, PARTICIPATED]
+    results: [
+      NOT_PARTICIPATED,
+      4,
+      PARTICIPATED,
+      NOT_PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED
+    ]
   },
   {
     name: 'Vetle',
-    results: [PARTICIPATED, 2, 3, NOT_PARTICIPATED, PARTICIPATED]
+    results: [PARTICIPATED, 2, 3, NOT_PARTICIPATED, PARTICIPATED, 1]
   },
   {
     name: 'Ken',
-    results: [NOT_PARTICIPATED, PARTICIPATED, PARTICIPATED, 1, 1]
-  },
-  {
-    name: 'Seán',
-    results: [2, PARTICIPATED, PARTICIPATED, NOT_PARTICIPATED, PARTICIPATED]
-  },
-  {
-    name: 'Lars Olav',
-    results: [1, PARTICIPATED, PARTICIPATED, PARTICIPATED, PARTICIPATED]
-  },
-  {
-    name: 'Terje',
     results: [
       NOT_PARTICIPATED,
       PARTICIPATED,
       PARTICIPATED,
-      NOT_PARTICIPATED,
+      1,
+      1,
       NOT_PARTICIPATED
     ]
   },
   {
-    name: 'Jan Tore',
-    results: [3, PARTICIPATED, 4, PARTICIPATED, 1]
+    name: 'Seán',
+    results: [
+      2,
+      PARTICIPATED,
+      PARTICIPATED,
+      NOT_PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED
+    ]
   },
   {
-    name: 'Jarle',
+    name: 'Lars Olav',
     results: [
+      1,
       PARTICIPATED,
       PARTICIPATED,
       PARTICIPATED,
@@ -146,8 +202,41 @@ var participants = [
     ]
   },
   {
+    name: 'Terje',
+    results: [
+      NOT_PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      NOT_PARTICIPATED,
+      NOT_PARTICIPATED,
+      NOT_PARTICIPATED
+    ]
+  },
+  {
+    name: 'Jan Tore',
+    results: [3, PARTICIPATED, 4, PARTICIPATED, 1, PARTICIPATED]
+  },
+  {
+    name: 'Jarle',
+    results: [
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      2
+    ]
+  },
+  {
     name: 'Ann Katrin',
-    results: [NOT_PARTICIPATED, 1, PARTICIPATED, PARTICIPATED, PARTICIPATED]
+    results: [
+      NOT_PARTICIPATED,
+      1,
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED,
+      PARTICIPATED
+    ]
   },
   {
     name: 'Kristoffer',
@@ -156,12 +245,14 @@ var participants = [
       NOT_PARTICIPATED,
       2,
       PARTICIPATED,
+      NOT_PARTICIPATED,
       NOT_PARTICIPATED
     ]
   },
   {
     name: 'Bård',
     results: [
+      NOT_PARTICIPATED,
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
@@ -176,7 +267,8 @@ var participants = [
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
-      NOT_PARTICIPATED
+      NOT_PARTICIPATED,
+      PARTICIPATED
     ]
   },
   {
@@ -186,7 +278,8 @@ var participants = [
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
-      PARTICIPATED
+      PARTICIPATED,
+      NOT_PARTICIPATED
     ]
   },
   {
@@ -196,6 +289,7 @@ var participants = [
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
+      PARTICIPATED,
       PARTICIPATED
     ]
   },
@@ -206,6 +300,7 @@ var participants = [
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
       NOT_PARTICIPATED,
+      PARTICIPATED,
       PARTICIPATED
     ]
   }
@@ -220,7 +315,8 @@ var rounds = [
   { head: 'Darts', points: [500, 400, 300, 200], participationScore: 100 },
   { head: 'Poker', points: [500, 400, 300, 200], participationScore: 100 },
   { head: 'Seiling', points: [300, 0, 0, 0], participationScore: 100 },
-  { head: 'CS:Go', points: [300, 0, 0, 0], participationScore: 100 }
+  { head: 'CS:Go', points: [300, 0, 0, 0], participationScore: 100 },
+  { head: "Paint'n sip", points: [500, 400, 300], participationScore: 100 }
 ];
 
 $(document).ready(function() {
