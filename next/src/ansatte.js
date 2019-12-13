@@ -70,6 +70,7 @@ import Scooter from './images/background4.jpg';
 import RustenBil from './images/background2.jpg';
 import Cards from './images/cards.jpeg';
 import Music from './images/music_lover.jpeg';
+import Yoga from './images/yoga.jpeg';
 
 export const ansatte = {
     toreric: {
@@ -767,7 +768,7 @@ export const ansatte = {
         endOfContract: '2019-12-31',
         firstName: 'Ismar',
         ingress:
-            'Ismar har 11 års erfaring som systemutvikler, senior teknisk arkitekt og teknisk teamleder med solid erfaring fra store og komplekse prosjekter innenfor offentlig og privat sektor som Sparebank 1, Statens Vegvesen, Statnett, Telenor og NAV.',
+            'Ismar har 11 års erfaring som systemutvikler, senior teknisk arkitekt og teknisk teamleder med solid erfaring fra store og komplekse prosjekter innenfor offentlig og privat sektor som Ruter, Sparebank 1, Statens Vegvesen, Statnett, Telenor og NAV.',
         keyFeatures: [
             'Fullstack utvikler',
             'Senior teknisk arkitekt',
@@ -788,7 +789,7 @@ export const ansatte = {
             'På fritiden liker han å se på nye smarthus-løsninger og er en nyfrelst yoga entusiast.',
         ],
         linkToCV: IsmarCV,
-        customImage: Music,
+        customImage: Yoga,
     },
 };
 
