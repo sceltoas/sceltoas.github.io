@@ -27,6 +27,8 @@ class IndexPage extends React.Component {
     }
     sendMail = event => {
         if (this.state.loading) {
+            event.preventDefault();
+            event.stopPropagation();
             return;
         }
         this.setState({ ...this.state, loading: true });

@@ -32,7 +32,7 @@ const IndexPage = props => {
                 image={SmartPeople}
                 title={title}
                 subtitle={description}
-                link="#ansatte"
+                link="/ansatte/#ansatte"
             >
                 <h5>
                     Se alle våre konsulenters biografi for mer utdypende
