@@ -26,23 +26,39 @@ class IndexPage extends React.Component {
         this.setState({ ...this.state, number: event.target.value });
     }
     sendMail = event => {
-        this.setState({ ...this.state, showKvittering: true });
-
-        /* function mail(name, number, success, error) {
-  $.ajax({
-    url: 'https://formspree.io/post@scelto.no',
-            method: 'POST',
-    data: {
-      name: name,
-      number: number,
-      _subject: 'Kontakt meg (fra scelto.no)'
-            },
-    dataType: "json",
-    success: success,
-    error: error
-        });
-  return true;
-} */
+        if (this.state.loading) {
+            return;
+        }
+        this.setState({ ...this.state, loading: true });
+        window
+            .fetch('https://api.scel.to/Contact/SendEmail', {
+                method: 'POST',
+                type: 'cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    Name: this.state.name,
+                    PhoneNumber: this.state.number,
+                }),
+            })
+            .then(response => {
+                console.info('response %o', response);
+                if (response.ok) {
+                    this.setState({
+                        ...this.state,
+                        showKvittering: true,
+                        loading: false,
+                    });
+                } else {
+                    this.setState({
+                        ...this.state,
+                        error:
+                            'Vi feilet i å motta din informasjon. Prøv igjen.',
+                        loading: false,
+                    });
+                }
+            });
 
         event.preventDefault();
         event.stopPropagation();
@@ -115,9 +131,25 @@ class IndexPage extends React.Component {
                                             styles.form__container__buttons
                                         }
                                     >
-                                        <LightButton onClick={this.sendMail}>
-                                            Kontakt meg!
+                                        <LightButton
+                                            onClick={this.sendMail}
+                                            className={
+                                                this.state.loading
+                                                    ? styles.submitButtonLoading
+                                                    : ''
+                                            }
+                                        >
+                                            {this.state.loading
+                                                ? 'Sender inn...'
+                                                : 'Kontakt meg!'}
                                         </LightButton>
+                                        {this.state.error && (
+                                            <div
+                                                className={styles.errorMessage}
+                                            >
+                                                {this.state.error}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </Fade>
