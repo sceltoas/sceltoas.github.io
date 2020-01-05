@@ -19,6 +19,10 @@ import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 
 import '../layouts/scelto.less';
 
+const prioriterteAnsatte = ansatteArray()
+    .sort(showAvailableConsultantsFirst)
+    .slice(0, 3);
+
 const IndexPage = props => {
     return (
         <Fragment>
@@ -62,10 +66,8 @@ const IndexPage = props => {
                             justifyContent: 'center',
                         }}
                     >
-                        {ansatteArray()
-                            .sort(showAvailableConsultantsFirst)
-                            .slice(0, 3)
-                            .map(({ name, title, key, image }) => (
+                        {prioriterteAnsatte.map(
+                            ({ name, title, key, image }) => (
                                 <EmployeeImageLink
                                     key={key}
                                     image={image || DefaultEmployeeImage}
@@ -73,7 +75,8 @@ const IndexPage = props => {
                                     title={title}
                                     to={`/ansatte/${key}`}
                                 />
-                            ))}
+                            )
+                        )}
                     </div>
                     <div className="sc-button-container">
                         <DarkButton to="/ansatte" text="Se alle konsulentene" />
