@@ -1,5 +1,20 @@
-export const createMetadata = ({ image, title, description }) => {
-    return [
+export const createMetadata = ({
+    image,
+    title,
+    description
+}) => {
+    return [{
+            name: 'og:title',
+            content: title,
+        },
+        {
+            name: 'og:description',
+            content: description,
+        },
+        {
+            name: 'og:image',
+            content: image,
+        },
         {
             name: 'title',
             content: title,
@@ -10,18 +25,6 @@ export const createMetadata = ({ image, title, description }) => {
         },
         {
             name: 'image',
-            content: image,
-        },
-        {
-            name: 'og:title',
-            content: title,
-        },
-        {
-            name: 'og:description',
-            content: description,
-        },
-        {
-            name: 'og:image',
             content: image,
         },
     ];

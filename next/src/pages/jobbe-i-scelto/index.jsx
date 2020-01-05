@@ -9,16 +9,21 @@ import Footer from '../../components/Footer';
 import Navigation from '../../components/Navigation';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import { kunder } from '../../kunder';
+import { createMetadata } from '../../utils';
+
 import './index.less';
 
 const IndexPage = () => (
     <Fragment>
         <Helmet
             title="Scelto AS"
-            meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' },
-            ]}
+            meta={createMetadata({
+                title:
+                    'Scelto er en arbeidsplass hvor både det faglige og sosiale står i fokus.',
+                description:
+                    'Vi jobber med noen av Norges mest spennende bedrifter og organisasjoner, og vi er alltid på jakt etter nye mennesker som kan være med å utvikle både selskapet og hverandre som mennesker.',
+                image: HeaderImage,
+            })}
             link={[{ rel: 'icon', href: Favicon }]}
         />
         <Navigation />
