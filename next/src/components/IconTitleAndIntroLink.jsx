@@ -6,7 +6,7 @@ const IconTitleAndIntroLink = ({ icon, title, intro }) => (
         style={{
             textAlign: 'center',
             maxWidth: '300px',
-            margin: 'auto auto 100px auto',
+            margin: 'auto 3rem 100px 3rem',
             width: '100%',
             color: '#fff',
         }}

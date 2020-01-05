@@ -27,7 +27,7 @@ const SectionWithIcon = ({
 
             <div className={styles.info}>
                 {title && <h1 className={styles.title}>{title}</h1>}
-                {ingress && <div className={styles.ingress}>{ingress}</div>}
+                {ingress && <h5 className={styles.ingress}>{ingress}</h5>}
                 <div className={styles.labelsWrapper}>{children}</div>
             </div>
         </div>

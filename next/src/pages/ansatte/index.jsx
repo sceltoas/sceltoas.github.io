@@ -3,7 +3,7 @@ import EmployeeImageLink from '../../components/EmployeeImageLink';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
 import SmartPeople from '../../images/smart-people.jpg';
-import { ansatteArray } from '../../ansatte';
+import { ansatteArray } from '../../ansatte-med-assets';
 import { showAvailableConsultantsFirst } from '../../utils';
 import Favicon from '../../images/favicon.png';
 import Helmet from 'react-helmet';
@@ -41,6 +41,7 @@ const IndexPage = props => {
             </FullPageImageWithHeader>
 
             <div
+                id="#ansatte"
                 style={{
                     display: 'flex',
                     flexFlow: 'row wrap',

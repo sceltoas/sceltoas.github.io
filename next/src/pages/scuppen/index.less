@@ -13,11 +13,17 @@
             text-align: left;
         }
         td {
-            border-top: 1px solid rgba(240, 240, 240, 0.05);
+            border-top: 1px solid rgba(240, 240, 240, 0.01);
         }
     }
     .scuppen-scores-entry:hover {
         background-color: rgba(240, 240, 240, 0.1);
         cursor: pointer;
+    }
+
+    .scuppen-scores-entry__resultList {
+        @media (max-width: 800px) {
+            display: none;
+        }
     }
 }

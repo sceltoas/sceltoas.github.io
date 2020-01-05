@@ -30,8 +30,9 @@ const IndexPage = () => (
         <FullPageImageWithHeader
             image={HeaderImage}
             title="Scelto er en arbeidsplass hvor både det faglige og sosiale står i fokus."
+            link="/jobbe-i-scelto/#info"
         />
-        <Section dark>
+        <Section id="info" dark>
             <h5>
                 Vi jobber med noen av Norges mest spennende bedrifter og
                 organisasjoner, og vi er alltid på jakt etter nye mennesker som

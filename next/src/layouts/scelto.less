@@ -6,8 +6,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Sanuk Regular', 'Courier New', serif;
-    line-height: 1.6em;
-    font-size: 16px;
     border-top: 2px solid #c5d200;
 }
 
@@ -20,16 +18,16 @@ h4 {
 }
 
 h1 {
-    font-size: 3.8em;
+    font-size: 3em;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h3 {
     font-family: 'Sanuk Regular', 'Courier New', serif;
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 h4 {
@@ -41,14 +39,14 @@ h5 {
     font-family: 'Sanuk Regular', 'Courier New', serif;
     font-size: 1.5em;
     font-weight: 300;
-    line-height: 1.3em;
+    line-height: 1.7em;
 }
 
 p {
     line-height: 1.6em;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 499px) {
     h1,
     h2,
     h3,
@@ -58,23 +56,53 @@ p {
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2em;
         line-height: 1.3em;
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     h3 {
-        font-size: 1.7em;
-    }
-    h4 {
         font-size: 1.5em;
     }
+    h4 {
+        font-size: 1.3em;
+    }
     h5 {
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1400px) {
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Sanuk', 'Courier New', serif;
+        line-height: 1.3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: 1.3em;
+    }
+    h5 {
+        font-size: 1.1em;
+        line-height: 1.5em;
     }
 }
 
@@ -106,4 +134,13 @@ div.inline {
     padding: 50px 0 0;
     height: auto;
     text-align: center;
+}
+
+::selection {
+    color: #fff;
+    background: #c5d200; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    color: #fff;
+    background: #c5d200; /* Gecko Browsers */
 }

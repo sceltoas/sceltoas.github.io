@@ -26,11 +26,11 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "npm run format && gatsby build",
+    "build": "npm run format && gatsby build && npm run test",
     "start": "gatsby develop -H 0.0.0.0",
     "start:prod": "gatsby build && gatsby serve -o -H 0.0.0.0",
     "format": "prettier  --write \"src/**/*.{js,jsx,less}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node src/__tests__/test.js"
   },
   "devDependencies": {
     "gatsby-image": "^2.2.34",

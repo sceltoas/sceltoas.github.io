@@ -7,7 +7,7 @@ import Section from '../components/Section';
 import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink';
 import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
 import Employees from '../images/man-headphones-working.jpeg';
-import { ansatteArray } from '../ansatte';
+import { ansatteArray } from '../ansatte-med-assets';
 import Fade from 'react-reveal/Fade';
 import Navigation from '../components/Navigation';
 import Helmet from 'react-helmet';
@@ -46,6 +46,7 @@ const IndexPage = props => {
             />
 
             <Section
+                id="whoarewe"
                 title="Hva kjennetegner en Scelto-konsulent?"
                 ingress="Vi er en gruppe positive og kunnskapsrike mennesker
                             som bruker vår ekspertise for at din bedrift skal
@@ -67,15 +68,18 @@ const IndexPage = props => {
                         }}
                     >
                         {prioriterteAnsatte.map(
-                            ({ name, title, key, image }) => (
-                                <EmployeeImageLink
-                                    key={key}
-                                    image={image || DefaultEmployeeImage}
-                                    name={name}
-                                    title={title}
-                                    to={`/ansatte/${key}`}
-                                />
-                            )
+                            ({ name, title, key, image }) => {
+                                console.log(key, image);
+                                return (
+                                    <EmployeeImageLink
+                                        key={key}
+                                        image={image || DefaultEmployeeImage}
+                                        name={name}
+                                        title={title}
+                                        to={`/ansatte/${key}`}
+                                    />
+                                );
+                            }
                         )}
                     </div>
                     <div className="sc-button-container">

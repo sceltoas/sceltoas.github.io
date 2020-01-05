@@ -1,83 +1,5 @@
-import TorEric from './images/mugshots/toreric.jpg';
-import OleTommy from './images/mugshots/oletommy.jpg';
-import Herman from './images/mugshots/herman.jpg';
-import Haaken from './images/mugshots/haaken.jpg';
-import Marius from './images/mugshots/marius.jpg';
-import OleAndre from './images/mugshots/oleandre.jpg';
-import Gustav from './images/mugshots/gustav.jpg';
-import Erlend from './images/mugshots/erlend.jpg';
-import Richard from './images/mugshots/richard.jpg';
-import Erik from './images/mugshots/erik.jpg';
-import JanErik from './images/mugshots/janerik.jpg';
-import Ivar from './images/mugshots/ivar.jpg';
-import Vetle from './images/mugshots/vetle.jpg';
-import Sean from './images/mugshots/sean.jpg';
-import Ken from './images/mugshots/ken.jpg';
-import LarsFredrik from './images/mugshots/larsfredrik.jpg';
-import FredrikB from './images/mugshots/fredrikb.jpg';
-import FredrikS from './images/mugshots/fredriks.jpg';
-import Terje from './images/mugshots/terje.jpg';
-import LarsOlav from './images/mugshots/larsolav.jpg';
-import Jarle from './images/mugshots/jarle.jpg';
-import JanTore from './images/mugshots/jantore.jpg';
-import Kristoffer from './images/mugshots/kristoffer.jpg';
-import AnnKatrin from './images/mugshots/annkatrin.jpg';
-import Jorgen from './images/mugshots/jorgen.jpg';
-import Andreas from './images/mugshots/andreas.jpg';
-import Hallvard from './images/mugshots/hallvard.jpg';
-import Bard from './images/mugshots/baard.jpg';
-import Ismar from './images/mugshots/ismar.jpg';
-/*import NoPicYet from './images/mugshots/no-pic-yet.jpg';*/
-
-import TorEricCV from './cvs/Tor_Eric_Sandvik.pdf';
-import OleTommyCV from './cvs/Ole_Tommy_Lid-Strand.pdf';
-import HermanCV from './cvs/Herman_Crawfurd_Svensen.pdf';
-import HaakenCV from './cvs/Håken_Stark.pdf';
-import MariusCV from './cvs/Marius_Aune_Gravdal.pdf';
-import OleAndreCV from './cvs/Ole-Andrè_Riga-Johansen.pdf';
-import GustavCV from './cvs/Gustav_Andrè_Bilben.pdf';
-import ErlendCV from './cvs/Erlend_Nilsen.pdf';
-import RichardCV from './cvs/Richard_Rennemo.pdf';
-import ErikCV from './cvs/Erik_Salhus.pdf';
-import JanErikCV from './cvs/Jan_Erik_Svendsen.pdf';
-import IvarCV from './cvs/Ivar_Nilsen.pdf';
-import VetleCV from './cvs/Vetle_Valebjørg.pdf';
-import SeanCV from './cvs/Sean_Erik_Scully.pdf';
-import KenCV from './cvs/Ken_Gullaksen.pdf';
-import LarsFredrikCV from './cvs/Lars_Fredrik_Lunde.pdf';
-import FredrikbCV from './cvs/Fredrik_Bjørnøy.pdf';
-import FredriksCV from './cvs/Fredrik_Svensen.pdf';
-import TerjeCV from './cvs/Terje_Lonoy.pdf';
-import LarsOlavCV from './cvs/Lars_Olav_Torvik.pdf';
-import AnnKatrinCV from './cvs/Ann-Katrin_Gagnat.pdf';
-import KristofferCV from './cvs/Kristoffer_Hoeegh_Mysen.pdf';
-import JoergenCV from './cvs/Joergen_Ringen.pdf';
-import AndreasCV from './cvs/Andreas_Nilsen.pdf';
-import HallvardCV from './cvs/Hallvard_Andreas_Stark.pdf';
-import IsmarCV from './cvs/Ismar_Slomic.pdf';
-
-import Drinker from './images/drinker.jpeg';
-import Skateboard from './images/skateboard.jpg';
-import IvarBackground from './images/ivar_background.jpg';
-import HermanBackground from './images/herms-background.jpg';
-import Bybilde from './images/city-panorama.jpeg';
-import TorEricBackground from './images/tor_eric_fisk.jpg';
-import KristofferBackground from './images/kristoffer-background.jpg';
-import HallvardBackground from './images/hallvard-background.jpg';
-import AndreasBackground from './images/andreas-background.jpg';
-import Solbriller from './images/man-person-sunglasses-relaxing.jpeg';
-import RetroSykkel from './images/bicycle_sea.jpeg';
-import Nerd from './images/geek-dark.jpeg';
-import Kode from './images/code_background.jpeg';
-import Scooter from './images/background4.jpg';
-import RustenBil from './images/background2.jpg';
-import Cards from './images/cards.jpeg';
-import Music from './images/music_lover.jpeg';
-import Yoga from './images/yoga.jpeg';
-
-export const ansatte = {
+var ansatte = {
     toreric: {
-        image: TorEric,
         name: 'Tor Eric Sandvik',
         title: 'Daglig leder',
         endOfContract: null,
@@ -102,11 +24,8 @@ export const ansatte = {
             'Tor Eric har jobbet mye med e-handel og internettløsninger, og har blant annet hatt ansvaret for en nyskapende og komplett e-handelsløsning for tannteknikerbedriften Proteket. Proteket Online vant gulltaggen for beste e-handelsløsning i 2009. Tor Erics referanser omtaler ham som en handlekraftig mann som er strukturert, resultatorientert, samarbeidsvillig og selvstendig.',
             'Teamleder med agile metoder som Scrum og Kanban. Prosjektledelse med PRINCE2 og bruk av SSA-V, SSA-S og SSA-T. Rådgiver med bruk av PS 2000 SOL avtalen.',
         ],
-        linkToCV: TorEricCV,
-        customImage: TorEricBackground,
     },
     oletommy: {
-        image: OleTommy,
         name: 'Ole Tommy Lid-Strand',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -130,11 +49,8 @@ export const ansatte = {
             'Med mer en 12 års erfaring fra bransjen har Ole Tommy jobbet med mange ulike teknologier som COBOL, Java, C++ og integrasjonsrammeverk fra Mule, Oracle og JBoss. De siste 10 årene har han i hovedsak jobbet med SOA integrasjonsprosjekter i ulike former.',
             'Ole Tommy har høy arbeidskapasitet, er strukturert og resultatorientert. Han har god evne til å ta tak i nye problemstillinger. Han er fleksibel, åpen og passer lett inn i nye miljøer. På fritiden er han en ivrig gamer og sykkelentusiast, som også er innom litt løping og svømming av og til.',
         ],
-        linkToCV: OleTommyCV,
-        customImage: RetroSykkel,
     },
     herman: {
-        image: Herman,
         name: 'Herman Svensen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -152,11 +68,8 @@ export const ansatte = {
             'Herman er flink til å sette seg inn i nye bransjer og domener, og synes dette er noe av det mest spennende med jobben. Han ønsker stadig å utvikle seg faglig, og deler også mer enn gjerne sin egen kunnskap. Han har i tidligere arbeidsforhold hatt lederoppgaver, både som faggruppeleder for Microsoft/.NET, og som gruppeleder med personalansvar.',
             'Herman er en god lagspiller som sprer godt humør, er ydmyk, og etterstreber høy personlig og profesjonell integritet.',
         ],
-        linkToCV: HermanCV,
-        customImage: HermanBackground,
     },
     haaken: {
-        image: Haaken,
         name: 'Håken Stark',
         title: 'Seniorkonsulent',
         endOfContract: '2020-12-31',
@@ -179,11 +92,8 @@ export const ansatte = {
             'Han har også mer enn fire års erfaring som Scrum Master og prosjektleder hvor han har jobbet med kunder som Agder Energi, Hafslund, Proteket og Statoil Fuel and Retail.',
             'Håken Stark har høy arbeidskapasitet, er strukturert og resultatorientert. Han er selvstendig, men er samtidig åpen og lett å samarbeide med. Han er veldig engasjert i arbeidet sitt, og tror sterkt på å skape gode brukeropplevelser og forretningsverdier for kunden ved å benytte en smidig tilnærming.',
         ],
-        linkToCV: HaakenCV,
-        customImage: RetroSykkel,
     },
     marius: {
-        image: Marius,
         name: 'Marius Aune Gravdal',
         title: 'Seniorkonsulent',
         endOfContract: '2020-08-31',
@@ -205,11 +115,8 @@ export const ansatte = {
             'Marius er engasjert og liker å dele kunnskapen han tilegner seg med andre for å gjøre teamet han jobber i best mulig.',
             'Han brenner for smidig utvikling, men innser at det ikke er noen holy-grail som løser alle utfordringene et utviklingsprosjekt møter. Etter over 10 år i bransjen og en rekke prosjekter har han tilegnet seg en bred kompetanse over en rekke områder, med vekt på energi bransjen hvor han har jobbet med både måleverdi-, drifts-støttesystemer og nå sist den nasjonale datahuben for energibransjen, Elhub. I forbindelse med disse prosjektene har han også opparbeidet seg mye kompetanse på migrering, og kompleksiteten forbundet med dette.',
         ],
-        linkToCV: MariusCV,
-        customImage: Nerd,
     },
     oleandre: {
-        image: OleAndre,
         name: 'Ole-André Riga-Johansen',
         firstName: 'Ole André',
         title: 'Seniorkonsulent',
@@ -232,11 +139,8 @@ export const ansatte = {
         mainSection: [
             'Som teknolog er Ole-André opptatt av grenselandet mellom teknologi og forretningsverdi. Han er en engasjert, entusiastisk og motivert person som er et positivt tilskudd til ethvert team. På fritiden er Ole-André fotballsupporter, reiseentusiast og aksjespekulant.',
         ],
-        linkToCV: OleAndreCV,
-        customImage: Drinker,
     },
     gustav: {
-        image: Gustav,
         name: 'Gustav Bilben',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -252,11 +156,8 @@ export const ansatte = {
             'Han har jobbet med mange forskjellige typer utviklingsoppgaver og har bred erfaring med utvikling og design av integrasjon- og kommunikasjonsløsninger.',
             'Gustav liker å dele sine kunnskaper med andre og har hatt en mentor rolle både formelt og uformelt i de prosjektene han har jobbet.',
         ],
-        linkToCV: GustavCV,
-        customImage: Kode,
     },
     erlend: {
-        image: Erlend,
         name: 'Erlend Nilsen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -277,11 +178,8 @@ export const ansatte = {
             'De siste fem årene har Erlend opparbeidet seg en unik prosess- og domeneforståelse innenfor energi-domenet generelt og AMS/smart grid spesielt gjennom sine roller som produkteier, løsningsarkitekt og technical lead i Embriqs produktportefølje for MDM og AMS (Quant).',
             'Utenfor arbeidstiden er Erlend en sterkt plaget tilhenger av Lillestrøm sportsklubb.',
         ],
-        linkToCV: ErlendCV,
-        customImage: Scooter,
     },
     richard: {
-        image: Richard,
         name: 'Richard Rennemo',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -305,11 +203,8 @@ export const ansatte = {
             'Richard er en erfaren systemutvikler med svært god kompetanse på både frontend og backend.',
             'Alt fra Oracle-databaser til HTML5 og CCS3 står på timeplanen og han jobber daglig med DevOps. Han er pragmatiker og forkjemper for ren, lesbar og ukomplisert kode. I team fungerer han like godt som teamleder og team-medlem. Han er et positivt tilskudd til ethvert miljø, og er spesielt flink til å få samarbeidsprosser til å fungere, Han han har også lett for å forstå forretningprosesser samt å forstå brukerbehov og bearbeide gode løsningsbeskrivelser sammen med brukere og kunder. Richard er også en ivrig quizzer og dataspiller. Fordi kunnskap og lek er viktig!',
         ],
-        linkToCV: RichardCV,
-        customImage: Bybilde,
     },
     erik: {
-        image: Erik,
         name: 'Erik Salhus',
         firstName: 'Erik',
         title: 'Seniorkonsulent',
@@ -332,11 +227,8 @@ export const ansatte = {
             'Erik har god erfaring med utvikling av kundebaserte webløsninger. De siste årene har han jobbet for SPK, Gjensidige og NorgesGruppen både som løsningsarktitekt, utvikler og scrum master.',
             'Erik er en ansvarsbevisst teammedarbeider og liker å drive utviklingen fremover. Han har lang erfaring med arbeid i miljø hvor automatiserte tester, kontinuerlig utvikling og hyppige lanseringer er standard rutine.',
         ],
-        linkToCV: ErikCV,
-        customImage: Skateboard,
     },
     janerik: {
-        image: JanErik,
         name: 'Jan Erik Svendsen ',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -358,11 +250,8 @@ export const ansatte = {
             'Jan Erik Svendsen, født 1971, har 19 års erfaring fra IT bransjen. Han har bred erfaring fra utvikling av IT løsninger for flere ulike bransjer.',
             'Jan Erik har erfaring med utvikling, design og integrasjon av store systemer og god forståelse for forretningsbehov.',
         ],
-        linkToCV: JanErikCV,
-        customImage: Solbriller,
     },
     ivar: {
-        image: Ivar,
         name: 'Ivar Nilsen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -386,11 +275,8 @@ export const ansatte = {
             "Ivar har vært på flere prosjekter innen finans, offentlig sektor og luftfart. Han har vært team-arkitekt hos Statens Pensjonskasse's PERFORM prosjekt og Technical Lead for et prosjekt i oppstartsfasen på Oslo Lufthavn Gardermoen.",
             'Ivar har erfaring med og kunnskap om populære frontend-rammeverk som Angular og React og er vant til å jobbe med moderne byggverktøy som Babel og Webpack.',
         ],
-        linkToCV: IvarCV,
-        customImage: IvarBackground,
     },
     vetle: {
-        image: Vetle,
         name: 'Vetle Valebjørg',
         title: 'Seniorkonsulent',
         endOfContract: '2020-01-31',
@@ -412,11 +298,8 @@ export const ansatte = {
             'Han er vant til å ta et selvstendig ansvar for nyutvikling og forvaltning, og blir ofte en nøkkelperson for sine oppdragsgivere. Under digitalisering av prosesser er han opptatt av - og ser mulighetene for automatisering og prosessforbedringer.',
             'Vetle er en person som tar ansvar og initiativ. Han er nøye og setter høye krav til seg selv når det gjelder kvalitet og leveranse. Som eksempel, kan det nevnes at Vetle utviklet en data- og nøkkelorddrevet test, som ga kunden en fleksibel, grundig og automatisert regresjonstest av systemet ved nye leveranser. ',
         ],
-        linkToCV: VetleCV,
-        customImage: RustenBil,
     },
     sean: {
-        image: Sean,
         name: 'Seán Erik Scully',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -440,11 +323,8 @@ export const ansatte = {
             'Seán Erik Scully har jobbet med utvikling av grensesnitt for mobil og web i snart fire år. Gjennom flere prosjekter har han opparbeidet seg ekspertkompetanse på frontend-stacken, og har arbeidet tett både med UX- og designere for å gi gode brukeropplevelser så vel som gode visuelle inntrykk.',
             'Utover bachelorgrad innen IT fra UiO, kan Seán — som eneste i Scelto —ta seg smukt ut med en mastergrad i latin.',
         ],
-        linkToCV: SeanCV,
-        customImage: RustenBil,
     },
     ken: {
-        image: Ken,
         name: 'Ken Gullaksen',
         title: 'Seniorkonsulent',
         endOfContract: '2020-12-31',
@@ -469,11 +349,8 @@ export const ansatte = {
             'Ken er hyggelig og flink til å kommunisere både med kunder og teknikere. Han er mottakerbevisst, og har en god evne til å finne frem til løsninger som gir mest verdi for innsatsen. Ken er en OSS entusiast og har bidratt til flere kjente Open Source biblioteker, samt publisert en del av sine egne. Hans mest populære, som ble publisert i 2012, har over 800 stjerner på github.',
             'Ellers er Ken en blid og hyggelig person som på fritiden driver med karate og bygger ting til sine to døtre.',
         ],
-        linkToCV: KenCV,
-        customImage: RustenBil,
     },
     larsfredrik: {
-        image: LarsFredrik,
         name: 'Lars Fredrik Lunde',
         title: 'Seniorkonsulent',
         endOfContract: '2020-08-31',
@@ -490,11 +367,8 @@ export const ansatte = {
             'Han liker å holde seg oppdatert på teknologi og trender, samt å dele denne kunnskapen med andre i fagmiljøet. Han har blant annet hatt rollen som fagansvarlig innen .NET-miljøet og er Microsoft Sertified Developer. I tillegg har Lars Fredrik 10 års erfaring med utvikling av webløsninger.',
             'Ellers er Lars Fredrik en driftig, utadvendt og ansvarsfull ressurs som tilstreber å yte sitt beste på hvert prosjekt.',
         ],
-        linkToCV: LarsFredrikCV,
-        customImage: RustenBil,
     },
     fredrikb: {
-        image: FredrikB,
         name: 'Fredrik Bjørnøy',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -510,11 +384,8 @@ export const ansatte = {
             'Fredrik er opptatt av god craftmanship, design og clean code og har brukt mye tid på dette opp igjennom årene.',
             'Fredrik er en veldig sosial person og er glad i å kjøre alpint på vinteren og ta seg en løpetur ute når været er litt varmere.',
         ],
-        linkToCV: FredrikbCV,
-        customImage: RustenBil,
     },
     fredriks: {
-        image: FredrikS,
         name: 'Fredrik Svensen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -537,11 +408,8 @@ export const ansatte = {
             'Han er en entusiastisk og dreven C#-utvikler som har mye fokus på å skrive lesbar og testbar kode med funksjonell nytte. Han er, som en ekte Uncle Bob-disippel, veldig glad i både å forenkle og å slette kode.',
             'På privaten er Fredrik en svært omgjengelig tobarnsfar som elsker å reise, lage mat, høre på vinyl og fotografere.',
         ],
-        linkToCV: FredriksCV,
-        customImage: RustenBil,
     },
     terje: {
-        image: Terje,
         name: 'Terje Lønøy',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -557,11 +425,8 @@ export const ansatte = {
             'Terje har vist sterkt faglig engasjement gjennom å avholde mange kurs og workshops, både internt og eksternt, samt være en aktiv pådriver for interne faggrupper innenfor frontend og mobil.',
             'Han er en sosial og kreativ person som drives av utfordringer og tørst for kunnskap, selv i stressende situasjoner. Videre er han selvstendig, men jobber godt sammen med andre.',
         ],
-        linkToCV: TerjeCV,
-        customImage: Music,
     },
     larsolav: {
-        image: LarsOlav,
         name: 'Lars Olav Torvik',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -577,11 +442,8 @@ export const ansatte = {
             'Selv om Lars Olav er fullstack utvikler er det frontend-utvikling han virkelig brenner for. Det er viktig for han at webløsningene han lager er brukervennlige med responsivt design og han elsker prosjekter hvor han får laget løsninger som oppfyller kravene til en Progressive Web App (PWA).',
             'De siste årene har han jobbet for Giant Leap Technologies og deres kunder, som tech lead for webutvikling. Her har han fått være involvert i alle nivåer av løsningsprosessen. Lars Olav er en ansvarsbevisst teammedarbeider og liker å drive utviklingen fremover.På privaten er Lars Olav en meget sosial person som er glad i å trene agility med hundene sine og jobbe med hobbyprosjekter.',
         ],
-        linkToCV: LarsOlavCV,
-        customImage: Cards,
     },
     jarle: {
-        image: Jarle,
         name: 'Jarle Berentzen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -598,11 +460,8 @@ export const ansatte = {
             'Jarle er en dedikert teknolog som er faglig interessert og oppdatert på rammeverk og teknologier. Jarle har erfaring med Smidig utvikling både som utvikler og som teamleder/scrum master.',
             'Jarle er en god og ryddig kommunikator som inngir tillit både for kunden og blant øvrige teammedlemmer. Han evner også å sette seg inn i kundens forretning, mål og planer. Jarle trives veldig godt i dialog med kunden, og han liker å jobbe i selvorganiserende team hvor man han utfylle hverandre.',
         ],
-        linkToCV: '#',
-        customImage: Music,
     },
     jantore: {
-        image: JanTore,
         name: 'Jan Tore Stølsvik',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -619,11 +478,8 @@ export const ansatte = {
             'Som følge av et utvekslingsår i Singapore har han jobbet på flere prosjekter med internasjonale studenter og kommuniserer derfor like godt på engelsk som på norsk. Jan Tore har holdt foredrag mange ganger på f.eks. JavaZone og NDC.',
             'Jan Tore arbeider hardt, er positiv og løsningsorientert i møte med utfordrende oppgaver. Han er glad i å lære nye ting og jobber godt sammen med andre, samtidig som han er selvstendig.',
         ],
-        linkToCV: '#',
-        customImage: Music,
     },
     annkatrin: {
-        image: AnnKatrin,
         name: 'Ann Katrin Gagnat',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -640,11 +496,8 @@ export const ansatte = {
             'Hun blir gjerne med i alle faser fra kravspesifikasjon til forvaltning av systemene, og har tilegnet seg god evne til å se helheten i løsningene.',
             'Som person har Ann Katrin en positiv innstilling, og hun jobber godt både i team og selvstendig.',
         ],
-        linkToCV: AnnKatrinCV,
-        customImage: Music,
     },
     kristoffer: {
-        image: Kristoffer,
         name: 'Kristoffer Mysen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -667,11 +520,8 @@ export const ansatte = {
             'Som person er Kristoffer åpen, tillitvekkende og flink til å kommunisere. Han har hatt mye ansvar i sine prosjekter og liker å lære bort til andre teammedlemmer. Kristoffer er veldig allsidig og løsningsorientert, og han tror på at ett tett og åpent samarbeid med ærlige tilbakemeldinger er viktig.',
             'På privaten er Kristoffer en hyggelig familiemann som setter like stor pris på en lang joggetur i skogen så vel som en god bok foran peisen.',
         ],
-        linkToCV: KristofferCV,
-        customImage: KristofferBackground,
     },
     jorgen: {
-        image: Jorgen,
         name: 'Jørgen Ringen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -695,11 +545,8 @@ export const ansatte = {
             'Jørgen har høy arbeidskapasitet, er strukturert og forutsigbar og opptatt av å levere resultater. Han jobber selvstendig, men er også åpen og lett å samarbeide med. Han har hatt flere roller på prosjekter hvor han har vært ansvarlig for opplæring og coaching av andre, blant annet som development lead hos Telenor og som teknisk arkitekt i SCRUM-team.',
             'På fritiden er Jørgen en sosial person. Han er interessert i friluftsliv og har stor interesse for løping, langrenn og seiling.',
         ],
-        linkToCV: JoergenCV,
-        customImage: Music,
     },
     baard: {
-        image: Bard,
         name: 'Bård Dybwad Kristensen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -714,11 +561,8 @@ export const ansatte = {
         mainSection: [
             'Bård har deltatt i analyse, estimering, utvikling og testing av n-lags web-applikasjoner, både som teamleder, arkitekt, utvikler og leder av test-team, og har meget gode kunnskap om alle nivåer i slike løsninger.',
         ],
-        linkToCV: '#',
-        customImage: Music,
     },
     andreas: {
-        image: Andreas,
         name: 'Andreas Nilsen',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -734,11 +578,8 @@ export const ansatte = {
             'Andreas er en erfaren DevOps/full-stack utvikler med hovedtyngde på teknologier i Java økosystemet. Han har nå hovedfokuset på Kotlin, Kafka og Kubernetes. Andreas har en spesiell interesse for nettsky, mikrotjenester og hendelsesbasert arkitektur.',
             'Andreas liker å jobbe tett med kunden, for på denne måten skape et mest mulig verdiøkende tjenestetilbud som er lønnsomt for alle parter. Han er en engasjert person som lett å samarbebide med, han er aktiv i fagmiljø og opptatt av å lære seg nye ting. Ingen utfordring er for stor, det er bare mer motiverende.',
         ],
-        linkToCV: AndreasCV,
-        customImage: AndreasBackground,
     },
     hallvard: {
-        image: Hallvard,
         name: 'Hallvard Stark',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -761,11 +602,8 @@ export const ansatte = {
             'Han er en imøtekommende, hyggelig og rolig person som er opptatt av å gjøre godt og grundig arbeid som han kan være stolt av. Han er alltid nysgjerrig på å lære mer innenfor fagfeltet, og han lærer villig bort av sin egen kunnskap.',
             'På fritiden liker Hallvard å lage mat, reise og oppleve nye destinasjoner og ta seg en løpetur så fort anledningen byr seg.',
         ],
-        linkToCV: HallvardCV,
-        customImage: HallvardBackground,
     },
     ismar: {
-        image: Ismar,
         name: 'Ismar Slomic',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
@@ -791,14 +629,7 @@ export const ansatte = {
             'Ismar er opptatt av å se helheten og evner å bevege seg i ulike abstraksjonsnivåer og kommunisere komplekse problemstillinger på forståelig måte med ulike interessenter. Han har flere kurs og sertifiseringer innenfor teknisk arkitektur, som f.eks Togaf 9, Archimate 2, Domain Driven Design og  CQRS.',
             'På fritiden liker han å se på nye smarthus-løsninger og er en nyfrelst yoga entusiast.',
         ],
-        linkToCV: IsmarCV,
-        customImage: Yoga,
     },
 };
 
-export const ansatteArray = () =>
-    Object.keys(ansatte).map(key => {
-        let ansatt = ansatte[key];
-        ansatt.key = key;
-        return ansatt;
-    });
+module.exports = ansatte;

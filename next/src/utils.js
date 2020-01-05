@@ -1,9 +1,6 @@
-export const createMetadata = ({
-    image,
-    title,
-    description
-}) => {
-    return [{
+export const createMetadata = ({ image, title, description }) => {
+    return [
+        {
             property: 'og:title',
             content: title,
         },

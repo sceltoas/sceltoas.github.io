@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import EmployeeIntroWithImage from './EmployeeIntroWithImage';
 import Navigation from './Navigation';
 import Section from './Section';
-import { ansatte } from '../ansatte';
+import { ansatteMedAssets } from '../ansatte-med-assets';
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import CenteredText from './CenteredText';
@@ -23,7 +23,7 @@ const EmployeePage = props => {
         .replace('/ansatte/', '')
         .replace('/', '');
 
-    const employee = ansatte[name];
+    const employee = ansatteMedAssets[name];
     if (!employee) {
         return null;
     }

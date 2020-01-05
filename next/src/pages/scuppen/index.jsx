@@ -32,7 +32,9 @@ const IndexPage = () => (
                     <tr>
                         <th>#</th>
                         <th>Sceltoer</th>
-                        <th>Resultater</th>
+                        <th className="scuppen-scores-entry__resultList">
+                            Resultater
+                        </th>
                         <th>Tellende poengsum</th>
                         <th>Total poengsum</th>
                     </tr>
@@ -42,7 +44,9 @@ const IndexPage = () => (
                         <tr class="scuppen-scores-entry">
                             <td>{index + 1}</td>
                             <td>{score.name}</td>
-                            <td>{score.resultList}</td>
+                            <td className="scuppen-scores-entry__resultList">
+                                {score.resultList}
+                            </td>
                             <td>{score.countingScore}</td>
                             <td style={{ opacity: '.5' }}>{score.score}</td>
                         </tr>

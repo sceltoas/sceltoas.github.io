@@ -17,7 +17,7 @@ const IndexPage = () => (
             title="Scelto AS"
             meta={createMetadata({
                 title:
-                    'Scelto tilbyr ekspertkonsulenter innen systemutvikling og teknisk arkitektur',
+                    'Scelto tilbyr ekspert-konsulenter innen systemutvikling og teknisk arkitektur',
                 description:
                     'Systemutviklerne i Scelto har et høyt kompetansenivå på de fleste områder innen utvikling og metodikk - enten det gjelder frontend-utvikling med interaksjonsdesign, eller backend-utvikling på både Java- og .NET-plattform. Våre konsulenter har ofte teknisk ansvar eller teamansvar i kombinasjon med utviklerrollen.',
                 image: Puzzle,
@@ -29,10 +29,10 @@ const IndexPage = () => (
             image={Puzzle}
             title={
                 <span>
-                    Scelto tilbyr ekspertkonsulenter innen{' '}
+                    Scelto tilbyr ekspert-konsulenter innen{' '}
                     <a
                         className="sc-link"
-                        href="#systemutvikling"
+                        href="/tjenester/#systemutvikling"
                         alt="Naviger til systemutvikling"
                     >
                         systemutvikling
@@ -40,14 +40,14 @@ const IndexPage = () => (
                     og{' '}
                     <a
                         className="sc-link"
-                        href="#teknisk-arkitektur"
+                        href="/tjenester/#teknisk-arkitektur"
                         alt="Naviger til teknisk arkitektur"
                     >
                         teknisk arkitektur
                     </a>
                 </span>
             }
-            link="#systemutvikling"
+            link="/tjenester/#systemutvikling"
         />
         <SectionWithIcon
             id="systemutvikling"
