@@ -6,7 +6,7 @@ export const query = graphql`
     query {
         EmployeeImages: allFile(
             sort: { order: ASC, fields: [absolutePath] }
-            filter: { relativePath: { regex: "/mugshots/.*.jpg/" } }
+            filter: { relativePath: { regex: "/mugshots/terje.jpg/" } }
         ) {
             edges {
                 node {
