@@ -86,7 +86,7 @@ export const query = graphql`
                     relativePath
                     name
                     childImageSharp {
-                        fluid(maxWidth: 300) {
+                        fluid(maxWidth: 500) {
                             ...GatsbyImageSharpFluid
                         }
                     }

@@ -23,10 +23,10 @@ import JanTore from './images/mugshots/jantore.jpg';
 import Kristoffer from './images/mugshots/kristoffer.jpg';
 import AnnKatrin from './images/mugshots/annkatrin.jpg';
 import Jorgen from './images/mugshots/jorgen.jpg';
-import Andreas from './images/mugshots/no-pic-yet.jpg';
-import Hallvard from './images/mugshots/no-pic-yet.jpg';
-import Bard from './images/mugshots/no-pic-yet.jpg';
-import Ismar from './images/mugshots/no-pic-yet.jpg';
+import Andreas from './images/mugshots/andreas.jpg';
+import Hallvard from './images/mugshots/hallvard.jpg';
+import Bard from './images/mugshots/baard.jpg';
+import Ismar from './images/mugshots/ismar.jpg';
 /*import NoPicYet from './images/mugshots/no-pic-yet.jpg';*/
 
 import TorEricCV from './cvs/Tor_Eric_Sandvik.pdf';
@@ -62,6 +62,9 @@ import IvarBackground from './images/ivar_background.jpg';
 import HermanBackground from './images/herms-background.jpg';
 import Bybilde from './images/city-panorama.jpeg';
 import TorEricBackground from './images/tor_eric_fisk.jpg';
+import KristofferBackground from './images/kristoffer-background.jpg';
+import HallvardBackground from './images/hallvard-background.jpg';
+import AndreasBackground from './images/andreas-background.jpg';
 import Solbriller from './images/man-person-sunglasses-relaxing.jpeg';
 import RetroSykkel from './images/bicycle_sea.jpeg';
 import Nerd from './images/geek-dark.jpeg';
@@ -665,7 +668,7 @@ export const ansatte = {
             'På privaten er Kristoffer en hyggelig familiemann som setter like stor pris på en lang joggetur i skogen så vel som en god bok foran peisen.',
         ],
         linkToCV: KristofferCV,
-        customImage: Music,
+        customImage: KristofferBackground,
     },
     jorgen: {
         image: Jorgen,
@@ -732,7 +735,7 @@ export const ansatte = {
             'Andreas liker å jobbe tett med kunden, for på denne måten skape et mest mulig verdiøkende tjenestetilbud som er lønnsomt for alle parter. Han er en engasjert person som lett å samarbebide med, han er aktiv i fagmiljø og opptatt av å lære seg nye ting. Ingen utfordring er for stor, det er bare mer motiverende.',
         ],
         linkToCV: AndreasCV,
-        customImage: Music,
+        customImage: AndreasBackground,
     },
     hallvard: {
         image: Hallvard,
@@ -759,7 +762,7 @@ export const ansatte = {
             'På fritiden liker Hallvard å lage mat, reise og oppleve nye destinasjoner og ta seg en løpetur så fort anledningen byr seg.',
         ],
         linkToCV: HallvardCV,
-        customImage: Music,
+        customImage: HallvardBackground,
     },
     ismar: {
         image: Ismar,
