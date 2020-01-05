@@ -4,15 +4,15 @@ export const createMetadata = ({
     description
 }) => {
     return [{
-            name: 'og:title',
+            property: 'og:title',
             content: title,
         },
         {
-            name: 'og:description',
+            property: 'og:description',
             content: description,
         },
         {
-            name: 'og:image',
+            property: 'og:image',
             content: image,
         },
         {
