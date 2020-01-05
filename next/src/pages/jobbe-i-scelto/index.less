@@ -11,7 +11,7 @@ ol.list {
 .li-content {
     display: flex;
     flex-direction: column;
-    margin: 1rem 2rem 1rem 1rem;
+    margin: 0 2rem 1rem 1rem;
 }
 .li-content > div {
     color: #a0a0a0;
@@ -29,12 +29,14 @@ ol.list li {
     font-size: 1rem;
     margin-bottom: 2rem;
     align-items: center;
+    align-items: flex-start;
 }
 
 ol.list li::before {
     font-family: 'Sanuk Thin';
     content: '0' counter(my-awesome-counter);
     font-size: 4.5rem;
+    line-height: 4.5rem;
 }
 
 .kunder {

@@ -81,10 +81,11 @@ const IndexPage = () => (
                         <div className="li-content">
                             <h5>Gode betingelser</h5>
                             <div>
+                                Scelto sine ansatte har provisjonslønn og får 60% av sin timepris
                                 (
                                 <Link className="sc-link" to="/lonnskalkulator">
                                     <span role="img" aria-label="Open terms">
-                                        kalkulator
+                                        Regn ut selv i kalkulatoren
                                     </span>
                                 </Link>
                                 )
