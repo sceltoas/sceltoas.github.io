@@ -10,21 +10,21 @@ const Footer = () => (
             <div className={styles.contact}>
                 <div>Følg oss på sosiale medier: </div>
                 <div className={styles.contactSoMe}>
-                    <Link to="http://scel.to/g/lnkd">
+                    <a href="http://scel.to/g/lnkd">
                         <img
                             src={LinkedIn}
                             width="40px"
                             alt={`Ikon for linkedin`}
                         />
-                    </Link>
+                    </a>
 
-                    <Link to="http://scel.to/g/tw">
+                    <a href="http://scel.to/g/tw">
                         <img
                             src={Twitter}
                             width="40px"
                             alt={`Ikon for twitter`}
                         />
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className={styles.email}>
