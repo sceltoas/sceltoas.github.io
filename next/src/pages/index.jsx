@@ -48,12 +48,7 @@ const IndexPage = props => {
             <Section
                 id="whoarewe"
                 title="Hva kjennetegner en Scelto-konsulent?"
-                ingress="Vi er en gruppe positive og kunnskapsrike mennesker
-                            som bruker vår ekspertise for at din bedrift skal
-                            kunne yte best mulig. Våre konsulenters evne til å
-                            samarbeide tett med våre kunder og kolleger gjør at
-                            alle våre tjenester og produkter blir skreddersydd
-                            etter kundens ønske."
+                ingress="Vi er en gruppe positive og kunnskapsrike mennesker som bruker vår ekspertise for at din bedrift skal kunne yte best mulig. Våre konsulenters evne til å samarbeide tett med våre kunder og kolleger gjør at alle våre tjenester og produkter blir skreddersydd etter kundens ønske."
             >
                 <Fragment>
                     <h5>

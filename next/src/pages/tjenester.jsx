@@ -57,6 +57,8 @@ const IndexPage = () => (
         >
             <TextWithCircle>Frontend</TextWithCircle>
             <TextWithCircle>Full stack</TextWithCircle>
+            <TextWithCircle>Integrasjon</TextWithCircle>
+            <TextWithCircle>Cloud</TextWithCircle>
             <TextWithCircle>DevOps</TextWithCircle>
         </SectionWithIcon>
         <SectionWithIcon

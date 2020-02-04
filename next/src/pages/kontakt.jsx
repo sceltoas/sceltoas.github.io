@@ -56,7 +56,7 @@ class IndexPage extends React.Component {
                     this.setState({
                         ...this.state,
                         error:
-                            'Vi feilet i å motta din informasjon. Prøv igjen.',
+                            'Vi klarte ikke å sende din kontaktinfo akkurat nå. Vennligst prøv senere.',
                         loading: false,
                     });
                 }
