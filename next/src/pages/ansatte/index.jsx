@@ -34,10 +34,8 @@ const IndexPage = props => {
                 subtitle={description}
                 link="/ansatte/#ansatte"
             >
-                <h5>
-                    Se alle våre konsulenters biografi for mer utdypende
-                    informasjon om vår kompetanse!
-                </h5>
+                Se alle våre konsulenters biografi for mer utdypende informasjon
+                om vår kompetanse!
             </FullPageImageWithHeader>
 
             <div

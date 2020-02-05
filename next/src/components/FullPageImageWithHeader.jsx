@@ -32,9 +32,7 @@ const FullPageImageWithHeader = ({
         )}
 
         {children && (
-            <div className="full-page-image-with-header__content">
-                {children}
-            </div>
+            <h3 className="full-page-image-with-header__content">{children}</h3>
         )}
 
         {!!contactMeHref && (
