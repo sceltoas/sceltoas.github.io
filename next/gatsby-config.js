@@ -1,11 +1,12 @@
 const path = require('path');
 
-
 module.exports = {
     siteMetadata: {
-        title: `Scelto AS - IT-konsulentselskap i Oslo`,
+        title: `Scelto AS - IT-konsulentselskap i Oslo-området`,
+        siteUrl: `https://www.scelto.no`,
     },
     plugins: [
+        `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-less`,
         `gatsby-plugin-postcss`,
@@ -21,9 +22,9 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                trackingId: "UA-58669694-1",
+                trackingId: 'UA-58669694-1',
             },
         },
     ],
-    pathPrefix: "/next",
-}
+    pathPrefix: '/next',
+};
