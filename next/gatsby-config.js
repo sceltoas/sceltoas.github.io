@@ -7,6 +7,7 @@ module.exports = {
     },
     plugins: [
         `gatsby-plugin-sitemap`,
+        'gatsby-plugin-robots-txt',
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-less`,
         `gatsby-plugin-postcss`,
