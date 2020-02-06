@@ -89,7 +89,10 @@ const IndexPage = () => (
                             <div>
                                 Scelto sine ansatte har provisjonslønn og får
                                 60% av sin timepris (
-                                <Link className="sc-link" to="/lonnskalkulator">
+                                <Link
+                                    className="sc-link"
+                                    to="/jobbe-i-scelto/lonnskalkulator"
+                                >
                                     <span role="img" aria-label="Open terms">
                                         Regn ut selv i kalkulatoren
                                     </span>

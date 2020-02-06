@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
-import DL from '../../images/tor_eric_crop.jpg';
-import Section from '../../components/Section';
-import HeaderImage from '../../images/direction-scelto.jpeg';
-import SalaryCalculator from '../../components/SalaryCalculator';
+import DL from '../../../images/tor_eric_crop.jpg';
+import Section from '../../../components/Section';
+import HeaderImage from '../../../images/direction-scelto.jpeg';
+import SalaryCalculator from '../../../components/SalaryCalculator';
 import Helmet from 'react-helmet';
-import Favicon from '../../images/favicon.png';
-import Footer from '../../components/Footer';
-import Navigation from '../../components/Navigation';
-import { createMetadata } from '../../utils';
+import Favicon from '../../../images/favicon.png';
+import Footer from '../../../components/Footer';
+import Navigation from '../../../components/Navigation';
+import { createMetadata } from '../../../utils';
 
 import './index.less';
 
@@ -25,13 +25,17 @@ const IndexPage = () => (
             link={[{ rel: 'icon', href: Favicon }]}
         />
         <Navigation />
-        <div className="why-work-at-scelto">
-            <Section dark>
+        <div className="salery-calculator">
+            <Section
+                dark
+                title="Lønnskalkulator"
+                ingress="Scelto sine ansatte har provisjonslønn og får 60% av sin timepris."
+            >
                 <SalaryCalculator />
             </Section>
 
-            <Section dark>
-                <div style={{ textAlign: 'center' }}>
+            <Section>
+                <div className="contact">
                     <img
                         alt="Tor-Eric Sandvik - Daglig leder"
                         style={{

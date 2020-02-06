@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import LinkedIn from '../images/icons/Scelto–icon-linkedin-footer.svg';
 import Twitter from '../images/icons/Scelto–icon-twitter-footer.svg';
 import styles from './Footer.module.less';
