@@ -1,6 +1,10 @@
 export const createMetadata = ({ image, title, description }) => {
     return [
         {
+            name: 'google-site-verification',
+            content: 'YqE7LSusm4d7IOMw6s3lkGnb9ToxmJDvnJWqNKUxZg4',
+        },
+        {
             property: 'og:title',
             content: title,
         },
