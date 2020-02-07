@@ -18,6 +18,7 @@ import { createMetadata, showAvailableConsultantsFirst } from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 
 import '../layouts/scelto.less';
+import './index.less';
 
 const prioriterteAnsatte = ansatteArray()
     .sort(showAvailableConsultantsFirst)
@@ -89,13 +90,7 @@ const IndexPage = props => {
                 ingress="Scelto tilbyr konsulentutleie innen systemutvikling og teknisk arkitektur. Alle konsulentene hos oss er seniorprofiler med bred teknisk og forretningsmessig erfaring."
             >
                 <Fragment>
-                    <div
-                        style={{
-                            display: 'flex',
-                            flexFlow: 'row wrap',
-                            justifyContent: 'center',
-                        }}
-                    >
+                    <div className="tjenester">
                         <Fade>
                             <IconTitleAndIntroLink
                                 icon={SystemutviklingIcon}

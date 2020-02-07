@@ -33,24 +33,32 @@ const IndexPage = () => (
             link="/jobbe-i-scelto/#info"
         />
         <Section id="info" dark>
-            <h5>
-                Vi jobber med noen av Norges mest spennende bedrifter og
-                organisasjoner, og vi er alltid på jakt etter nye mennesker som
-                kan være med å utvikle både selskapet og hverandre som
-                mennesker.
-            </h5>
-            <h5>
-                Vi mener det sosiale danner grunnlaget for et godt arbeidsmiljø,
-                og derfor samles vi ofte gjennom året for blant annet turer
-                innen- og utlands, møtes til en hyggelig lunsj, har
-                Scelto-kvelder med aktiviteter, sommerfest og julebord, og i det
-                hele tatt gjør ting sammen for å bli bedre kjent med hverandre.
-            </h5>
+            <Fragment>
+                <h5>
+                    Vi jobber med noen av Norges mest spennende bedrifter og
+                    organisasjoner, og vi er alltid på jakt etter nye mennesker
+                    som kan være med å utvikle både selskapet og hverandre som
+                    mennesker.
+                </h5>
+                <h5>
+                    Vi mener det sosiale danner grunnlaget for et godt
+                    arbeidsmiljø, og derfor samles vi ofte gjennom året for
+                    blant annet turer innen- og utlands, møtes til en hyggelig
+                    lunsj, har Scelto-kvelder med aktiviteter, sommerfest og
+                    julebord, og i det hele tatt gjør ting sammen for å bli
+                    bedre kjent med hverandre.
+                </h5>
+            </Fragment>
         </Section>
         <Section title="Attraktive og spennende kunder">
             <div className="kunder">
                 {kunder.map(kunde => (
-                    <img className="icon" alt={kunde.name} src={kunde.icon} />
+                    <img
+                        key={kunde.name}
+                        className="icon"
+                        alt={kunde.name}
+                        src={kunde.icon}
+                    />
                 ))}
             </div>
         </Section>
@@ -105,8 +113,9 @@ const IndexPage = () => (
                         <div className="li-content">
                             <h5>Sosialt</h5>
                             <div>
-                                Fokus på sosial kalender med bl.a. sommerfest,
-                                månedlige felleslunsjer og{' '}
+                                Fokus på sosial kalender med bl.a. hyttetur på
+                                våren, sommerfest med ledsager, strategitur på
+                                høsten, månedlige felleslunsjer og{' '}
                                 <Link to="/scuppen" className="sc-link">
                                     #scuppen
                                 </Link>
