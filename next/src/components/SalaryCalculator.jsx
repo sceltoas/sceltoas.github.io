@@ -125,7 +125,7 @@ class SalaryCalculator extends React.Component {
                         onChange={this.onPriceChanged}
                         maxLength="4"
                     />
-                    <div className="large-text">&nbsp;og jeg jobber&nbsp;</div>
+                    <div className="large-text">&nbsp;og jobber&nbsp;</div>
                     <InlineInput
                         id="numHours"
                         placeholder={this.state.numHours}
