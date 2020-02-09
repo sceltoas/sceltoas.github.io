@@ -63,10 +63,9 @@ var ansatte = {
         twitter: 'herms_cs',
         github: 'herms',
         mainSection: [
-            'Herman er en dyktig .NET-utvikler med erfaring fra frontend-utvikling til database. I tillegg har han god kjennskap til Java-utvikling og har dermed en bred plattform som løsningsarkitekt.',
-            'Herman er M.Sc i informasjonsteknologi, er TOGAF9-sertifisert, sertifisert ScrumMaster og Microsoft Certified Professional Developer innen web-utvikling.',
-            'Herman er flink til å sette seg inn i nye bransjer og domener, og synes dette er noe av det mest spennende med jobben. Han ønsker stadig å utvikle seg faglig, og deler også mer enn gjerne sin egen kunnskap. Han har i tidligere arbeidsforhold hatt lederoppgaver, både som faggruppeleder for Microsoft/.NET, og som gruppeleder med personalansvar.',
-            'Herman er en god lagspiller som sprer godt humør, er ydmyk, og etterstreber høy personlig og profesjonell integritet.',
+            'Herman er teknisk arkitekt og senior .NET-utvikler med erfaring fra frontend-utvikling til database. I tillegg har han god kjennskap til Java-utvikling og har dermed en bred plattform som løsningsarkitekt. Herman er M.Sc i informasjonsteknologi, er TOGAF9-sertifisert, sertifisert Scrum Master og Microsoft-sertifisert utvikler innen web og sky. I de senere år har han også jobbet med både Microsoft Azure og Amazon Web Services, og jobber nå med sertifiseringløp på begge disse skyplattformene (Microsoft Certified: Azure Solutions Architect Expert og AWS Certified Cloud Practitioner).',
+            'Herman er flink til å sette seg inn i nye bransjer og domener, og synes dette er noe av det mest spennende med jobben. Han har jobbet i store prosjekter hos store kunder, og små prosjekter hos små kunder, i både store og små team. Selv om han trives best i velfungerende team der kunnskapsdeling står i fokus, står han også godt på egne ben. Han ønsker stadig å utvikle seg faglig, og deler også mer enn gjerne sin egen kunnskap. Han er fagansvarlig i Scelto, og har også i tidligere arbeidsforhold hatt lederoppgaver, både som fagansvarlig, og som gruppeleder med personalansvar.',
+            'Herman er en god lagspiller som sprer godt humør, er ydmyk, og etterstreber høy personlig og profesjonell integritet. På fritiden liker han å nyte naturen, helst med ski på - både oppover, nedover og til nød bortover. Dessuten en smarthusentusiast som jobber med å automatisere og forenkle hverdagen i hjemmet.'
         ],
     },
     haaken: {
