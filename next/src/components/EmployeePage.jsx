@@ -67,7 +67,7 @@ const EmployeePage = props => {
                     background: '#666664',
                     color: '#fff',
                 }}
-                title={`${employee.firstName} sine scills`}
+                title={`Kort om ${employee.firstName}`}
                 ingress={employee.ingress}
             >
                 {employee.mainSection &&
