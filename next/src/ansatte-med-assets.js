@@ -75,6 +75,7 @@ import Cards from './images/cards.jpeg';
 import Music from './images/music_lover.jpeg';
 import Yoga from './images/yoga.jpeg';
 import ansatte from './ansatte';
+import { showAvailableConsultantsFirst } from './utils';
 
 export const ansatteMedAssets = {
     toreric: {
