@@ -47,27 +47,25 @@ const IndexPage = props => {
                     margin: '50px 20px 0',
                 }}
             >
-                {ansatteArray()
-                    .sort(showAvailableConsultantsFirst)
-                    .map(({ name, title, key }) => {
-                        const image = props.data.EmployeeImages.edges.find(
-                            node => node.node.name === key
-                        );
+                {ansatteArray().map(({ name, title, key }) => {
+                    const image = props.data.EmployeeImages.edges.find(
+                        node => node.node.name === key
+                    );
 
-                        return (
-                            <EmployeeImageLink
-                                key={key}
-                                image={
-                                    (image &&
-                                        image.node.childImageSharp.fluid.src) ||
-                                    DefaultEmployeeImage
-                                }
-                                name={name}
-                                title={title}
-                                to={`/ansatte/${key}`}
-                            />
-                        );
-                    })}
+                    return (
+                        <EmployeeImageLink
+                            key={key}
+                            image={
+                                (image &&
+                                    image.node.childImageSharp.fluid.src) ||
+                                DefaultEmployeeImage
+                            }
+                            name={name}
+                            title={title}
+                            to={`/ansatte/${key}`}
+                        />
+                    );
+                })}
             </div>
             <Footer />
         </Fragment>

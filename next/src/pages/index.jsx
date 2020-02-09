@@ -20,9 +20,7 @@ import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 import '../layouts/scelto.less';
 import './index.less';
 
-const prioriterteAnsatte = ansatteArray()
-    .sort(showAvailableConsultantsFirst)
-    .slice(0, 3);
+const prioriterteAnsatte = ansatteArray().slice(0, 3);
 
 const IndexPage = props => {
     return (
