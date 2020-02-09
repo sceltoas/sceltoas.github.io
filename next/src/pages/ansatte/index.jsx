@@ -48,6 +48,7 @@ const IndexPage = props => {
                 }}
             >
                 {ansatteArray()
+                    .map(ansatt => ansatt)
                     .sort(showAvailableConsultantsFirst)
                     .map(({ name, title, key }) => {
                         const image = props.data.EmployeeImages.edges.find(

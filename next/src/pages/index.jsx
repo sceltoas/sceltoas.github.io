@@ -60,6 +60,7 @@ const IndexPage = props => {
                         }}
                     >
                         {ansatteArray()
+                            .map(ansatt => ansatt)
                             .sort(showAvailableConsultantsFirst)
                             .slice(0, 3)
                             .map(({ name, title, key, image }) => {
