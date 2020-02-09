@@ -7,15 +7,15 @@ import Section from '../components/Section';
 import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink';
 import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
 import Employees from '../images/man-headphones-working.jpeg';
-import { ansatteArray } from '../ansatte-med-assets';
 import Fade from 'react-reveal/Fade';
 import Navigation from '../components/Navigation';
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
 import { LightButton, DarkButton } from '../components/Button';
-import { createMetadata, showAvailableConsultantsFirst } from '../utils';
+import { createMetadata } from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
+import { sortedAnsatte } from '../ansatte-med-assets';
 
 import '../layouts/scelto.less';
 import './index.less';
@@ -59,21 +59,17 @@ const IndexPage = props => {
                             justifyContent: 'center',
                         }}
                     >
-                        {ansatteArray()
-                            .map(ansatt => ansatt)
-                            .sort(showAvailableConsultantsFirst)
-                            .slice(0, 3)
-                            .map(({ name, title, key, image }) => {
-                                return (
-                                    <EmployeeImageLink
-                                        key={key}
-                                        image={image || DefaultEmployeeImage}
-                                        name={name}
-                                        title={title}
-                                        to={`/ansatte/${key}`}
-                                    />
-                                );
-                            })}
+                        {sortedAnsatte.map(({ name, title, key, image }) => {
+                            return (
+                                <EmployeeImageLink
+                                    key={key}
+                                    image={image || DefaultEmployeeImage}
+                                    name={name}
+                                    title={title}
+                                    to={`/ansatte/${key}`}
+                                />
+                            );
+                        })}
                     </div>
                     <div className="sc-button-container">
                         <DarkButton to="/ansatte" text="Se alle konsulentene" />

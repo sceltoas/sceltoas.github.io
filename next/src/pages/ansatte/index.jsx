@@ -3,14 +3,13 @@ import EmployeeImageLink from '../../components/EmployeeImageLink';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
 import SmartPeople from '../../images/smart-people.jpg';
-import { ansatteArray } from '../../ansatte-med-assets';
-import { showAvailableConsultantsFirst } from '../../utils';
 import Favicon from '../../images/favicon.png';
 import Helmet from 'react-helmet';
 import Footer from '../../components/Footer';
 import { createMetadata } from '../../utils';
 import { graphql } from 'gatsby';
 import DefaultEmployeeImage from '../../images/mugshots/no-pic-yet.jpg';
+import { sortedAnsatte } from '../../ansatte-med-assets';
 
 const IndexPage = props => {
     const title = 'Hva kjennetegner en Scelto-konsulent?';
@@ -47,28 +46,25 @@ const IndexPage = props => {
                     margin: '50px 20px 0',
                 }}
             >
-                {ansatteArray()
-                    .map(ansatt => ansatt)
-                    .sort(showAvailableConsultantsFirst)
-                    .map(({ name, title, key }) => {
-                        const image = props.data.EmployeeImages.edges.find(
-                            node => node.node.name === key
-                        );
+                {sortedAnsatte.map(({ name, title, key }) => {
+                    const image = props.data.EmployeeImages.edges.find(
+                        node => node.node.name === key
+                    );
 
-                        return (
-                            <EmployeeImageLink
-                                key={key}
-                                image={
-                                    (image &&
-                                        image.node.childImageSharp.fluid.src) ||
-                                    DefaultEmployeeImage
-                                }
-                                name={name}
-                                title={title}
-                                to={`/ansatte/${key}`}
-                            />
-                        );
-                    })}
+                    return (
+                        <EmployeeImageLink
+                            key={key}
+                            image={
+                                (image &&
+                                    image.node.childImageSharp.fluid.src) ||
+                                DefaultEmployeeImage
+                            }
+                            name={name}
+                            title={title}
+                            to={`/ansatte/${key}`}
+                        />
+                    );
+                })}
             </div>
             <Footer />
         </Fragment>

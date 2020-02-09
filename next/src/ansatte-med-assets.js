@@ -259,3 +259,7 @@ export const ansatteArray = () =>
         ansatt.key = key;
         return ansatt;
     });
+
+export const sortedAnsatte = ansatteArray()
+    .map(ansatt => ansatt)
+    .sort(showAvailableConsultantsFirst);
