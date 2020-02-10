@@ -183,8 +183,8 @@ const IndexPage = () => (
                     </h5>
                     <h5>
                         Eller ta kontakt på mail{' '}
-                        <a className="sc-link" href="mailto:tor.erik@scelto.no">
-                            tor.eric@scelto.no
+                        <a className="sc-link" href="mailto:tor.eric.sandvik@scelto.no">
+                            tor.eric.sandvik@scelto.no
                         </a>
                     </h5>
                 </div>
