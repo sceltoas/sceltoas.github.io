@@ -1,3 +1,6 @@
-*.iml
-.idea/*
-next/public/
+/node_modules
+.idea
+.vscode
+.cache
+/public
+*.code-workspace

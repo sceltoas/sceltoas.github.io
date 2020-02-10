@@ -18,7 +18,6 @@ steps:
 - script: |
     npm install
     npm run build
-  workingDirectory: next
   displayName: 'npm install and build'
 
 - task: AzureRmWebAppDeployment@4
@@ -30,4 +29,4 @@ steps:
     deployToSlotOrASE: true
     ResourceGroupName: 'scelto-web-migrate'
     SlotName: 'staging'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/next/public'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/public'
