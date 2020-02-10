@@ -64,7 +64,7 @@ const IndexPage = () => (
         <SectionWithIcon
             dark={true}
             title="Teknisk arkitektur"
-            ingress="Vi i Scelto har bred erfaring med utredning og implementasjon av applikasjon/teknisk arkitektur. Fra integrasjonsapplikasjoner til isolerte applikasjoner på tvers av teknologier og plattformer kan våre arkitekter hjelpe deg å velge riktig tekniske løsninger, praksister og metoder for et vellykket prosjekt. Vi vet at gjennomføring ikke bare handler om teknologi, men like mye om kommunikasjon mellom mennesker."
+            ingress="Vi i Scelto har bred erfaring med utredning og implementasjon av applikasjon/teknisk arkitektur. Fra integrasjonsapplikasjoner til isolerte applikasjoner på tvers av teknologier og plattformer kan våre arkitekter hjelpe deg å velge riktig tekniske løsninger, praksiser og metoder for et vellykket prosjekt. Vi vet at gjennomføring ikke bare handler om teknologi, men like mye om kommunikasjon mellom mennesker."
             icon={Arkitektur}
             id="teknisk-arkitektur"
         >
