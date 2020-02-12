@@ -59,11 +59,18 @@ const IndexPage = props => {
                             justifyContent: 'center',
                         }}
                     >
-                        {sortedAnsatte.map(({ name, title, key, image }) => {
+                        {sortedAnsatte.map(({ name, title, key }) => {
+                            const image = props.data.EmployeeImages.edges.find(
+                                node => node.node.name === key
+                            );
                             return (
                                 <EmployeeImageLink
                                     key={key}
-                                    image={image || DefaultEmployeeImage}
+                                    image={
+                                        (image &&
+                                            image.node.childImageSharp.fixed) ||
+                                        DefaultEmployeeImage
+                                    }
                                     name={name}
                                     title={title}
                                     to={`/ansatte/${key}`}
@@ -123,8 +130,8 @@ export const query = graphql`
                     relativePath
                     name
                     childImageSharp {
-                        fluid(maxWidth: 300) {
-                            ...GatsbyImageSharpFluid
+                        fixed(width: 300) {
+                            ...GatsbyImageSharpFixed
                         }
                     }
                 }

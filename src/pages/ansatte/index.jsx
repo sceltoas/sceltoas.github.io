@@ -56,7 +56,7 @@ const IndexPage = props => {
                             key={key}
                             image={
                                 (image &&
-                                    image.node.childImageSharp.fluid.src) ||
+                                    image.node.childImageSharp.fixed) ||
                                 DefaultEmployeeImage
                             }
                             name={name}
@@ -82,8 +82,8 @@ export const query = graphql`
                     relativePath
                     name
                     childImageSharp {
-                        fluid(maxWidth: 500) {
-                            ...GatsbyImageSharpFluid
+                        fixed(width: 300) {
+                            ...GatsbyImageSharpFixed
                         }
                     }
                 }
