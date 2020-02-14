@@ -1,5 +1,10 @@
 blockquote {
-    padding: 60px 80px 40px;
+    @media screen and (min-width: 0px) and (max-width: 800px) {
+        padding: 60px 00px 40px;
+    }
+    @media screen and (min-width: 801px) {
+        padding: 60px 80px 40px;
+    }
     position: relative;
     &.employee-testimonial {
         &::before {
@@ -12,14 +17,16 @@ blockquote {
             z-index: -1;
         }
         ::after {
-            content: '';
-            top: 40px;
-            left: 50%;
-            margin-left: -100px;
-            position: absolute;
-            border-bottom: 3px solid #555;
-            height: 3px;
-            width: 200px;
+            @media screen and (min-width: 900px) {
+                content: '';
+                top: 40px;
+                left: 50%;
+                margin-left: -100px;
+                position: absolute;
+                border-bottom: 3px solid #555;
+                height: 3px;
+                width: 200px;
+            }
         }
         & > p {
             font-size: 1.3rem;
