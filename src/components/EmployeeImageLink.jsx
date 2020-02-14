@@ -1,15 +1,14 @@
 import React from 'react';
 import './EmployeeImageLink.less';
 import { Link as GLink } from 'gatsby';
+import Img from 'gatsby-image';
 import Link from './Link';
 
 const EmployeeImageLink = ({ name, title, image, to }) => (
     <GLink to={to} className="employee-image-link">
         <div className="image">
-            <img
-                src={image}
-                width="100%"
-                height="100%"
+            <Img
+                fixed={image}
                 alt={`Bilde av ${name}`}
             />
         </div>
