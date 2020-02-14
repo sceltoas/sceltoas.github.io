@@ -66,6 +66,13 @@ var ansatte = {
             'Herman er flink til å sette seg inn i nye bransjer og domener, og synes dette er noe av det mest spennende med jobben. Han har jobbet i store prosjekter hos store kunder, og små prosjekter hos små kunder, i både store og små team. Selv om han trives best i velfungerende team der kunnskapsdeling står i fokus, står han også godt på egne ben. Herman ønsker stadig å utvikle seg, og deler også mer enn gjerne sin egen kunnskap.',
             'Herman er en god lagspiller som sprer godt humør, er ydmyk, og etterstreber høy personlig og profesjonell integritet. På fritiden liker han å nyte naturen, helst med ski på - både oppover, nedover og til nød bortover. Dessuten en smarthusentusiast som jobber med å automatisere og forenkle hverdagen i hjemmet.',
         ],
+        testimonial: {
+            text: 'Over the last few years, Herman has played a critical role to take Santander’s risk origination systems to a new level. Passion, enthusiasm and can-do attitude, as well as dedication and commitment to the project and the company, are the words that best define him. His capacity to solve complex business challenges, his agile mindset, together with a deep technical knowledge are the key competences that have made his time in Santander a story of success.',
+            customer: 'Santander',
+            person: 'Manuel Siñeriz',
+            position: 'Risk Decision Systems Manager',
+            year: 2018
+        }
     },
     haaken: {
         name: 'Håken Stark',

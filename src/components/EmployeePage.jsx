@@ -12,6 +12,7 @@ import Footer from './Footer';
 import { LightButtonAnchor } from './Button';
 import { createMetadata } from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
+import EmployeeTestimonial from './EmployeeTestimonial';
 
 const currentOrigin =
     typeof window !== `undefined`
@@ -59,6 +60,11 @@ const EmployeePage = props => {
                             DefaultEmployeeImage
                         }
                     />
+                    <Fragment>
+                        {employee.testimonial && (
+                            <EmployeeTestimonial testimonial={employee.testimonial.text} person={employee.testimonial.person} position={employee.testimonial.position} customer={employee.testimonial.customer} />
+                        )}
+                    </Fragment>
                 </Fade>
             </Section>
 
