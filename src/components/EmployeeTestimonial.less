@@ -1,3 +1,5 @@
+@import '../layouts/colors.less';
+
 blockquote {
     @media screen and (min-width: 0px) and (max-width: 800px) {
         padding: 60px 00px 40px;
@@ -11,7 +13,7 @@ blockquote {
             position: absolute;
             top: 0;
             content: '\201C';
-            color: #555;
+            color: @grey;
             font-size: 20rem;
             line-height: 1;
             z-index: -1;
@@ -23,7 +25,7 @@ blockquote {
                 left: 50%;
                 margin-left: -100px;
                 position: absolute;
-                border-bottom: 3px solid #555;
+                border-bottom: 3px solid @grey;
                 height: 3px;
                 width: 200px;
             }

@@ -13,6 +13,7 @@ import { LightButtonAnchor } from './Button';
 import { createMetadata } from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 import EmployeeTestimonial from './EmployeeTestimonial';
+import './EmployeePage.less';
 
 const currentOrigin =
     typeof window !== `undefined`
@@ -69,12 +70,10 @@ const EmployeePage = props => {
             </Section>
 
             <Section
-                style={{
-                    background: '#666664',
-                    color: '#fff',
-                }}
+                className="employee-summary"
                 title={`Kort om ${employee.firstName}`}
                 ingress={employee.ingress}
+                useStyles={false}
             >
                 {employee.mainSection &&
                     employee.mainSection.length > 1 &&
