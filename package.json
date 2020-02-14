@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@mdi/font": "^4.9.95",
-    "@mdi/js": "^4.9.95",
     "countup.js": "^1.9.3",
     "gatsby": "^2.0.111",
     "gatsby-plugin-google-analytics": "^2.1.35",
@@ -38,7 +36,6 @@
     "test": "node src/__tests__/test.js"
   },
   "devDependencies": {
-    "@mdi/react": "^1.2.1",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-less": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.22",
