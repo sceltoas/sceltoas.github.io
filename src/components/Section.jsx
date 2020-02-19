@@ -13,15 +13,16 @@ const Section = ({
     style,
     icon,
     className,
+    useStyles = true
 }) => (
     <section
         id={id}
         className={`section ${className}`}
-        style={{
+        style={useStyles?{
             backgroundColor: dark ? '#333' : '#fff',
             color: dark ? '#fff' : '#333',
             ...style,
-        }}
+        }:{}}
     >
         <div
             style={{
