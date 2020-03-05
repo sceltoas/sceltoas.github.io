@@ -26,7 +26,7 @@ class IndexPage extends React.Component {
         this.setState({ ...this.state, number: event.target.value });
     }
     sendMail = event => {
-        if (this.state.loading || !this.isValidForm) {
+        if (this.state.loading) {
           console.log("stopped");
             event.preventDefault();
             event.stopPropagation();
