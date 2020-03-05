@@ -31,6 +31,9 @@ class IndexPage extends React.Component {
             event.stopPropagation();
             return;
         }
+        if (!this.state.name.length || !this.state.number.length) {
+          return;
+        }
         this.setState({ ...this.state, loading: true });
         window
             .fetch('https://api.scel.to/Contact/SendEmail', {
