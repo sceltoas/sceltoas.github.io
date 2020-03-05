@@ -26,13 +26,11 @@ class IndexPage extends React.Component {
         this.setState({ ...this.state, number: event.target.value });
     }
     sendMail = event => {
-        if (this.state.loading) {
+        if (this.state.loading || !this.isValidForm) {
+          console.log("stopped");
             event.preventDefault();
             event.stopPropagation();
             return;
-        }
-        if (!this.state.name.length || !this.state.number.length) {
-          return;
         }
         this.setState({ ...this.state, loading: true });
         window
@@ -138,6 +136,7 @@ class IndexPage extends React.Component {
                                     >
                                         <LightButton
                                             onClick={this.sendMail}
+                                            disabled={!this.state.name.length || !this.state.number.length}
                                             className={
                                                 this.state.loading
                                                     ? styles.submitButtonLoading

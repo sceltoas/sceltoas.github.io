@@ -19,6 +19,17 @@
     composes: button;
     color: white;
 
+    &:disabled {
+        border: 4px solid #666464;
+        opacity: 0.5;
+        color: #333;
+
+        &:hover,
+        &:focus {
+            background: transparent;
+        }
+    }
+
     &:hover,
     &:focus {
         background: #c5d200;
