@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styles from './Button.module.less';
 
-export const LightButton = ({ text, to, className, disabled, children, ...rest }) => (
+export const LightButton = ({ text, to, className, children, ...rest }) => (
     <button
         to={to}
         className={`${className ? className : ''} ${styles.buttonLight}`}
-        disabled={disabled}
         {...rest}
     >
         {text || children}
