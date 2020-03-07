@@ -60,13 +60,16 @@ class InlineInput extends React.Component {
     }
 
     render() {
-        const { id, placeholder, maxLength, className } = this.props;
+        const { id, placeholder, maxLength, minWidth, className } = this.props;
 
         return (
             <Fragment>
                 <div
                     id={`hidden-${id}`}
                     ref={ref => (this.divElement = ref)}
+                    style={{
+                        minWidth: minWidth != null ? minWidth : "auto"
+                    }}
                     className="inline inline-input__input"
                 >
                     {this.state.value || placeholder}

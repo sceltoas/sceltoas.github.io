@@ -118,6 +118,7 @@ class IndexPage extends React.Component {
                                             placeholder={'Ola Nordmann'}
                                             onChange={this.onNameChanged}
                                             maxLength="20"
+                                            minWidth="320px"
                                         />
                                         <div className="">
                                             og mitt telefonnummer er&nbsp;
