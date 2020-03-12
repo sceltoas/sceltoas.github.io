@@ -4,13 +4,13 @@ import { Link } from 'gatsby';
 import styles from './Button.module.less';
 
 export const LightButton = ({ text, to, className, children, ...rest }) => (
-    <Link
+    <button
         to={to}
         className={`${className ? className : ''} ${styles.buttonLight}`}
         {...rest}
     >
         {text || children}
-    </Link>
+    </button>
 );
 export const LightButtonAnchor = ({
     text,

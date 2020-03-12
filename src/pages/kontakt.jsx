@@ -136,6 +136,7 @@ class IndexPage extends React.Component {
                                     >
                                         <LightButton
                                             onClick={this.sendMail}
+                                            disabled={!this.state.name.length || !this.state.number.length}
                                             className={
                                                 this.state.loading
                                                     ? styles.submitButtonLoading
