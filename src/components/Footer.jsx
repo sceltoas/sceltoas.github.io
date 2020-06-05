@@ -2,6 +2,7 @@ import React from 'react';
 import LinkedIn from '../images/icons/Scelto–icon-linkedin-footer.svg';
 import Twitter from '../images/icons/Scelto–icon-twitter-footer.svg';
 import styles from './Footer.module.less';
+import miljofyrtarn from '../images/Miljfyrtarn-ensfarget-hvit.png';
 
 const Footer = () => (
     <footer className={styles.footer}>
@@ -52,7 +53,19 @@ const Footer = () => (
                 </div>
             </div>
         </div>
-        <div className={styles.copyright}>Scelto AS &copy; 2016</div>
+        <div className={styles.copyrightAndCertifications}>
+            <div className={styles.copyright}>Scelto AS &copy; 2016</div>
+            <div className="">
+                <a
+                    href="https://www.miljofyrtarn.no/"
+                    alt="Scelto er sertifisert miljøfyrtårn. Interesserte kan få miljørapporten ved henvendelser til bedriften."
+                    title="Interesserte kan få miljørapporten ved henvendelser til bedriften"
+                    target="_new"
+                >
+                    <img src={miljofyrtarn} />
+                </a>
+            </div>
+        </div>
     </footer>
 );
 
