@@ -7,10 +7,7 @@ import Link from './Link';
 const EmployeeImageLink = ({ name, title, image, to }) => (
     <GLink to={to} className="employee-image-link">
         <div className="image">
-            <Img
-                fixed={image}
-                alt={`Bilde av ${name}`}
-            />
+            <Img fixed={image} alt={`Bilde av ${name}`} />
         </div>
         <div className="employee-image-link__text-container">
             <h5>

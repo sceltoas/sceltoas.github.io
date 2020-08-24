@@ -63,7 +63,12 @@ const EmployeePage = props => {
                     />
                     <Fragment>
                         {employee.testimonial && (
-                            <EmployeeTestimonial testimonial={employee.testimonial.text} person={employee.testimonial.person} position={employee.testimonial.position} customer={employee.testimonial.customer} />
+                            <EmployeeTestimonial
+                                testimonial={employee.testimonial.text}
+                                person={employee.testimonial.person}
+                                position={employee.testimonial.position}
+                                customer={employee.testimonial.customer}
+                            />
                         )}
                     </Fragment>
                 </Fade>

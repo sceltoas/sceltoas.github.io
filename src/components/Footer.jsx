@@ -62,7 +62,7 @@ const Footer = () => (
                     title="Interesserte kan få miljørapporten ved henvendelser til bedriften"
                     target="_new"
                 >
-                    <img src={miljofyrtarn} />
+                    <img src={miljofyrtarn} alt="Miljøfyrtårn sin logo" />
                 </a>
             </div>
         </div>

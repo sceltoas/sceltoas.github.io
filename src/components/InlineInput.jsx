@@ -68,7 +68,7 @@ class InlineInput extends React.Component {
                     id={`hidden-${id}`}
                     ref={ref => (this.divElement = ref)}
                     style={{
-                        minWidth: minWidth != null ? minWidth : "auto"
+                        minWidth: minWidth != null ? minWidth : 'auto',
                     }}
                     className="inline inline-input__input"
                 >

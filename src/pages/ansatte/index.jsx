@@ -55,8 +55,7 @@ const IndexPage = props => {
                         <EmployeeImageLink
                             key={key}
                             image={
-                                (image &&
-                                    image.node.childImageSharp.fixed) ||
+                                (image && image.node.childImageSharp.fixed) ||
                                 DefaultEmployeeImage
                             }
                             name={name}
