@@ -46,7 +46,7 @@ const IndexPage = props => {
                     margin: '50px 20px 0',
                 }}
             >
-                {sortedAnsatte.map(({ name, title, key }) => {
+                {props.pageContext.ansatte.map(({ name, title, key }) => {
                     const image = props.data.EmployeeImages.edges.find(
                         node => node.node.name === key
                     );
