@@ -24,6 +24,7 @@ import AnnKatrin from './images/mugshots/annkatrin.jpg';
 import Jorgen from './images/mugshots/jorgen.jpg';
 import Andreas from './images/mugshots/andreas.jpg';
 import Hallvard from './images/mugshots/hallvard.jpg';
+import Frederik from './images/mugshots/frederik.jpg';
 import Bard from './images/mugshots/baard.jpg';
 import Ismar from './images/mugshots/ismar.jpg';
 /*import NoPicYet from './images/mugshots/no-pic-yet.jpg';*/
@@ -71,6 +72,7 @@ import RustenBil from './images/background2.jpg';
 import Cards from './images/cards.jpeg';
 import Music from './images/music_lover.jpeg';
 import Yoga from './images/yoga.jpeg';
+import FrederikBackground from './images/frederik-background.jpg';
 import ansatte from './ansatte';
 import {
     showAvailableConsultantsFirst
@@ -244,6 +246,11 @@ export const ansatteMedAssets = {
         image: Ismar,
         linkToCV: IsmarCV,
         customImage: Yoga,
+    },
+    frederik: {
+        ...ansatte.frederik,
+        image: Frederik,
+        customImage: FrederikBackground,
     },
 };
 
