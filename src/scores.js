@@ -241,17 +241,6 @@ var participants = [
         ],
     },
     {
-        name: 'Kristoffer',
-        results: [
-            NOT_PARTICIPATED,
-            NOT_PARTICIPATED,
-            2,
-            PARTICIPATED,
-            NOT_PARTICIPATED,
-            NOT_PARTICIPATED,
-        ],
-    },
-    {
         name: 'Bård',
         results: [
             NOT_PARTICIPATED,

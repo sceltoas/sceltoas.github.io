@@ -20,7 +20,6 @@ import Terje from './images/mugshots/terje.jpg';
 import LarsOlav from './images/mugshots/larsolav.jpg';
 import Jarle from './images/mugshots/jarle.jpg';
 import JanTore from './images/mugshots/jantore.jpg';
-import Kristoffer from './images/mugshots/kristoffer.jpg';
 import AnnKatrin from './images/mugshots/annkatrin.jpg';
 import Jorgen from './images/mugshots/jorgen.jpg';
 import Andreas from './images/mugshots/andreas.jpg';
@@ -50,7 +49,6 @@ import FredriksCV from './cvs/Fredrik_Svensen.pdf';
 import TerjeCV from './cvs/Terje_Lonoy.pdf';
 import LarsOlavCV from './cvs/Lars_Olav_Torvik.pdf';
 import AnnKatrinCV from './cvs/Ann-Katrin_Gagnat.pdf';
-import KristofferCV from './cvs/Kristoffer_Hoeegh_Mysen.pdf';
 import JoergenCV from './cvs/Joergen_Ringen.pdf';
 import AndreasCV from './cvs/Andreas_Nilsen.pdf';
 import HallvardCV from './cvs/Hallvard_Andreas_Stark.pdf';
@@ -62,7 +60,6 @@ import IvarBackground from './images/ivar_background.jpg';
 import HermanBackground from './images/herms-background.jpg';
 import Bybilde from './images/city-panorama.jpeg';
 import TorEricBackground from './images/tor_eric_fisk.jpg';
-import KristofferBackground from './images/kristoffer-background.jpg';
 import HallvardBackground from './images/hallvard-background.jpg';
 import AndreasBackground from './images/andreas-background.jpg';
 import Solbriller from './images/man-person-sunglasses-relaxing.jpeg';
@@ -215,12 +212,6 @@ export const ansatteMedAssets = {
         image: AnnKatrin,
         linkToCV: AnnKatrinCV,
         customImage: Music,
-    },
-    kristoffer: {
-        ...ansatte.kristoffer,
-        image: Kristoffer,
-        linkToCV: KristofferCV,
-        customImage: KristofferBackground,
     },
     jorgen: {
         ...ansatte.jorgen,

@@ -502,30 +502,6 @@ var ansatte = {
             'Som person har Ann Katrin en positiv innstilling, og hun jobber godt både i team og selvstendig.',
         ],
     },
-    kristoffer: {
-        name: 'Kristoffer Mysen',
-        title: 'Seniorkonsulent',
-        endOfContract: '2019-12-31',
-        firstName: 'Kristoffer',
-        ingress:
-            'Kristoffer er en erfaren og dyktig seniorkonsulent med erfaring siden 2006. Som akademisk bakgrunn har han en Master of Science ved Universitetet i Oslo.',
-        keyFeatures: [
-            'Systemutvikling Java',
-            'Fullstack utvikler',
-            'Teknisk Arkitektur',
-        ],
-        email: 'kristoffer@scelto.no',
-        linkedIn: 'kristoffer-mysen',
-        twitter: '',
-        github: 'KrisMysen',
-        mainSection: [
-            'Siden starten av sin karriere i 2006 har han kontinuerlig jobbet som utvikler og arkitekt, primært med backend-løsninger basert på Java. Samtidig  har han opparbeidet seg en solid frontend-erfaring og jobber nå som fullstack utvikler.',
-            'Kristoffer er genuint opptatt av fag og trives med komplekse oppgaver gjerne med tett dialog med forretningssiden. Han har lang erfaring med å ta en idé fra tegnebordet til kjørbar løsning gjennom å samarbeide tett med kunde, ha god forståelse for prosjektplanlegging og riktig gjennomføring/leveranse.',
-            'Kristoffer er spesielt opptatt av å utvikle langsiktige løsninger. Hans lange erfaring som utvikler av en produktportefølje, har gjort han opptatt av engasjement og produkteierskap. Det vil si at han brenner for å lage løsninger som er enkle å vedlikeholde, inneholder tydelig og lettleselig kode, har gode nok tester og er godt dokumentert.',
-            'Som person er Kristoffer åpen, tillitvekkende og flink til å kommunisere. Han har hatt mye ansvar i sine prosjekter og liker å lære bort til andre teammedlemmer. Kristoffer er veldig allsidig og løsningsorientert, og han tror på at ett tett og åpent samarbeid med ærlige tilbakemeldinger er viktig.',
-            'På privaten er Kristoffer en hyggelig familiemann som setter like stor pris på en lang joggetur i skogen så vel som en god bok foran peisen.',
-        ],
-    },
     jorgen: {
         name: 'Jørgen Ringen',
         title: 'Seniorkonsulent',
