@@ -612,6 +612,28 @@ var ansatte = {
             'På fritiden liker han å se på nye smarthus-løsninger og er en nyfrelst yoga entusiast.',
         ],
     },
+    frederik: {
+        name: 'Frederik Skytte',
+        title: 'Seniorkonsulent',
+        endOfContract: '2019-12-31',
+        firstName: 'Frederik',
+        ingress:
+            'Frederik Skytte er ekspert i utvikling av mobile applikasjoner og rådgivning i alt om mobil teknologi.',
+        keyFeatures: [
+            'Mobil utvikling',
+            'Mobil teknologi',
+            'Rådgivning',
+            'Android/iOS',
+        ],
+        email: 'frederik@scelto.no',
+        linkedIn: 'frederikskytte',
+        twitter: '',
+        github: 'herrskytte',
+        mainSection: [
+            'I rollen som utvikler er Frederik allsidig, men har aller størst kompetanse på Java/Kotlin og utvikling av native Android apper. Som spesialkompetanse har Frederik gjennom både studier og prosjekter fokusert på mobil teknologi og utvikling. Denne kompetansen er tatt i bruk ved design og utvikling av Android-, iOS- og kryss-plattform applikasjoner for Mattilsynet, CargoNet, Bufdir, VingCard, HiOA, Norsk Luftambulanse, Ruter, Computas og Politiet.',
+            'Frederik har gode samarbeidsevner, noe som kombinert med hans solide tekniske kompetanse gjør ham til en sentral bidragsyter i alle prosjekter han deltar i. Det gjør at han ofte tar et overordnet ansvar både for teknologi og funksjonalitet.  Han har gjennom sin erfaring gjort løsningsbeskrivelser, interaksjonsdesign, utvikling, rådgivning, prosjektledelse, testing og teknisk ledelse.',
+        ],
+    },
 };
 
 module.exports = ansatte;
