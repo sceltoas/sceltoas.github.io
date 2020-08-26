@@ -54,6 +54,7 @@ import JoergenCV from './cvs/Joergen_Ringen.pdf';
 import AndreasCV from './cvs/Andreas_Nilsen.pdf';
 import HallvardCV from './cvs/Hallvard_Andreas_Stark.pdf';
 import IsmarCV from './cvs/Ismar_Slomic.pdf';
+import FrederikCV from './cvs/Frederik_Skytte.pdf';
 
 import Drinker from './images/drinker.jpeg';
 import Skateboard from './images/skateboard.jpg';
@@ -250,6 +251,7 @@ export const ansatteMedAssets = {
     frederik: {
         ...ansatte.frederik,
         image: Frederik,
+        linkToCV: FrederikCV,
         customImage: FrederikBackground,
     },
 };
