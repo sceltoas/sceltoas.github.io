@@ -24,6 +24,7 @@ import AnnKatrin from './images/mugshots/annkatrin.jpg';
 import Jorgen from './images/mugshots/jorgen.jpg';
 import Andreas from './images/mugshots/andreas.jpg';
 import Hallvard from './images/mugshots/hallvard.jpg';
+import Haakon from './images/mugshots/haakon.jpg';
 import Frederik from './images/mugshots/frederik.jpg';
 import Bard from './images/mugshots/baard.jpg';
 import Ismar from './images/mugshots/ismar.jpg';
@@ -54,6 +55,7 @@ import JoergenCV from './cvs/Joergen_Ringen.pdf';
 import AndreasCV from './cvs/Andreas_Nilsen.pdf';
 import HallvardCV from './cvs/Hallvard_Andreas_Stark.pdf';
 import IsmarCV from './cvs/Ismar_Slomic.pdf';
+import HaakonCV from './cvs/Håkon_Hobæk.pdf';
 import FrederikCV from './cvs/Frederik_Skytte.pdf';
 
 import Drinker from './images/drinker.jpeg';
@@ -74,6 +76,7 @@ import Cards from './images/cards.jpeg';
 import Music from './images/music_lover.jpeg';
 import Yoga from './images/yoga.jpeg';
 import FrederikBackground from './images/frederik-background.jpg';
+import HaakonBackground from './images/haakon-background.jpg';
 import ansatte from './ansatte';
 import {
     showAvailableConsultantsFirst
@@ -247,6 +250,12 @@ export const ansatteMedAssets = {
         image: Ismar,
         linkToCV: IsmarCV,
         customImage: Yoga,
+    },
+    haakon: {
+        ...ansatte.haakon,
+        image: Haakon,
+        linkToCV: HaakonCV,
+        customImage: HaakonBackground,
     },
     frederik: {
         ...ansatte.frederik,

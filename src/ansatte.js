@@ -612,6 +612,24 @@ var ansatte = {
             'På fritiden liker han å se på nye smarthus-løsninger og er en nyfrelst yoga entusiast.',
         ],
     },
+    haakon: {
+        name: 'Håkon Hobæk',
+        title: 'Seniorkonsulent',
+        endOfContract: '2020-12-31',
+        firstName: 'Håkon',
+        ingress: 'Håkon har en bachelor og master i matematikk, og en bachelor i informatikk fra UiO. Han har erfaring fra 2012 som utvikler. Han har erfaring fra flere komplekse prosjekter innen privat og sikkerhets/forsvar sektor som Kongsberggruppen, Thales, og Sintef.',
+        keyFeatures: [
+            'Frontend med React',
+            'Backend med C#'
+        ],
+        linkedIn: 'håkon-hobæk-0539bb13',
+        mainSection: [
+            'Han er en engasjert utvikler som brenner for læring. Han har sine primære kompetanseområder innenfor javascript og .net. Han har også utdannelse og kompetanse innen matematikk og fysikk.  Han har arbeidet med dokumentasjon og implementasjon av avanserte matematiske modeller.',
+            'Håkon elsker å løse problemer. Han finner det spennende med nye domener. For øyeblikket trives han aller best med javascript og frontendutvikling.',
+            'Han har høy arbeidskapasitet, er strukturert og forutsigbar og opptatt av å levere resultater. Han jobber selvstendig, men er også åpen og lett å samarbeide med. Han påtar seg oppgaver og ansvar som en naturlig del av hverdagen.',
+            'På fritiden er Håkon en aktiv person som bruker hver mulighet han kan til å reise. Ellers er det historie, geopolitikk, bøker og trening som opptar fritiden.'
+        ]
+    },
     frederik: {
         name: 'Frederik Skytte',
         title: 'Seniorkonsulent',
