@@ -275,3 +275,8 @@ export const ansatteArray = () =>
 export const sortedAnsatte = ansatteArray()
     .map(ansatt => ansatt)
     .sort(showAvailableConsultantsFirst);
+
+export const sortedSlicedAnsatte = ansatteArray()
+    .map(ansatt => ansatt)
+    .sort(showAvailableConsultantsFirst)
+    .slice(0, 3);
