@@ -22,7 +22,7 @@ const IndexPage = () => (
             link={[{ rel: 'icon', href: Favicon }]}
         />
         <Navigation />
-        <Section dark title="Scuppen 2019" className="scuppen-scores">
+        <Section dark title="Scuppen 2020" className="scuppen-scores">
             <table
                 cellPadding="0"
                 cellSpacing="0"
@@ -55,8 +55,7 @@ const IndexPage = () => (
             </table>
             <p style={{ fontSize: '0.6em' }}>D=Deltatt, F=Feilet i å møte</p>
             <p class="small">
-                Resultat etter 5 runder. Tellende poengsum er etter at de to
-                dårligste resultatene strykes.
+                Resultat etter 3 runder.
             </p>
         </Section>
         <Footer />
