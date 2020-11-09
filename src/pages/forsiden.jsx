@@ -15,7 +15,6 @@ import Footer from '../components/Footer';
 import { LightButton, DarkButton } from '../components/Button';
 import { createMetadata } from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
-import { sortedAnsatte } from '../ansatte-med-assets';
 
 import '../layouts/scelto.less';
 import './index.less';
@@ -59,24 +58,27 @@ const IndexPage = props => {
                             justifyContent: 'center',
                         }}
                     >
-                        {sortedAnsatte.map(({ name, title, key }) => {
-                            const image = props.data.EmployeeImages.edges.find(
-                                node => node.node.name === key
-                            );
-                            return (
-                                <EmployeeImageLink
-                                    key={key}
-                                    image={
-                                        (image &&
-                                            image.node.childImageSharp.fixed) ||
-                                        DefaultEmployeeImage
-                                    }
-                                    name={name}
-                                    title={title}
-                                    to={`/ansatte/${key}`}
-                                />
-                            );
-                        })}
+                        {props.pageContext.ansatte.map(
+                            ({ name, title, key }) => {
+                                const image = props.data.EmployeeImages.edges.find(
+                                    node => node.node.name === key
+                                );
+                                return (
+                                    <EmployeeImageLink
+                                        key={key}
+                                        image={
+                                            (image &&
+                                                image.node.childImageSharp
+                                                    .fixed) ||
+                                            DefaultEmployeeImage
+                                        }
+                                        name={name}
+                                        title={title}
+                                        to={`/ansatte/${key}`}
+                                    />
+                                );
+                            }
+                        )}
                     </div>
                     <div className="sc-button-container">
                         <DarkButton to="/ansatte" text="Se alle konsulentene" />

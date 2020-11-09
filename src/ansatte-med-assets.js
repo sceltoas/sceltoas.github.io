@@ -78,9 +78,7 @@ import Yoga from './images/yoga.jpeg';
 import FrederikBackground from './images/frederik-background.jpg';
 import HaakonBackground from './images/haakon-background.jpg';
 import ansatte from './ansatte';
-import {
-    showAvailableConsultantsFirst
-} from './utils';
+import { showAvailableConsultantsFirst } from './utils';
 
 export const ansatteMedAssets = {
     toreric: {
