@@ -25,7 +25,7 @@ var ansatte = {
             'Teamleder med agile metoder som Scrum og Kanban. Prosjektledelse med PRINCE2 og bruk av SSA-V, SSA-S og SSA-T. Rådgiver med bruk av PS 2000 SOL avtalen.',
         ],
     },
-  oletommy: {
+    oletommy: {
         name: 'Ole Tommy Lid-Strand',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
