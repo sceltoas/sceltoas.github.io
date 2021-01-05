@@ -31,7 +31,7 @@ var ansatte = {
         endOfContract: '2019-12-31',
         firstName: 'Ole Tommy',
         ingress:
-            'Ole Tommy har over 12 års erfaring fra IT bransjen. Er utdannet Master of Informatics. og opparbeidet seg har bred erfaring fra etablering og innføring av IT løsninger for flere ulike bransjer. Han har fungert i rollen som utvikler/arkitekt i flere prosjekter for kunder som Eidsiva Energi, Hafslund og Canal Digital og Eika Alliansen. En stor tilhenger av åpen kildekode og av å gjøre ting enkelt.',
+            'Ole Tommy Lid-Strand har erfaring fra IT bransjen siden 2006. Er utdannet Master of Informatics og har opparbeidet seg en bred erfaring fra etablering og innføring av kritiske IT løsninger for flere ulike bransjer. Han har fungert i flere roller, blant annet som utvikler, arkitekt og teamleder i flere prosjekter for kunder som Skatteetaten, Embriq, Eidsiva Energi, Hafslund, Canal Digital og Eika Alliansen. De fleste oppdragene har hatt et stort fokus på integrasjon og skape nye løsninger. Han er ikke redd for å ta tak i gamle løsninger og løfte disse til dagens standard.',
         keyFeatures: [
             'Integrasjonsspesialist',
             'Java-utvikler',
@@ -40,14 +40,15 @@ var ansatte = {
             'SOA',
             'Mule',
             'Oracle',
+            'Camel',
         ],
         email: 'ole.tommy@scelto.no',
         linkedIn: 'oletls',
         twitter: 'oletls',
         github: 'oletls',
         mainSection: [
-            'Med mer en 12 års erfaring fra bransjen har Ole Tommy jobbet med mange ulike teknologier som COBOL, Java, C++ og integrasjonsrammeverk fra Mule, Oracle og JBoss. De siste 10 årene har han i hovedsak jobbet med SOA integrasjonsprosjekter i ulike former.',
-            'Ole Tommy har høy arbeidskapasitet, er strukturert og resultatorientert. Han har god evne til å ta tak i nye problemstillinger. Han er fleksibel, åpen og passer lett inn i nye miljøer. På fritiden er han en ivrig gamer og sykkelentusiast, som også er innom litt løping og svømming av og til.',
+            'Med mer en 14 års erfaring fra bransjen har Ole Tommy jobbet med mange ulike teknologier som COBOL, Java, C++ og integrasjonsrammeverk fra Mule, Camel, Oracle og JBoss. Ole Tommy er lidenskapelig opptatt av hvordan teknologi og digitalisering kan skape verdi hos sluttbruker. Han er forkjemper for at noe av det aller viktigste som skal til for å kunne bygge virkelig gode tekniske løsninger, som står seg over tid, er at man har dyp innsikt i kundens unike domene og forretningsprosesser.',
+            'Ole Tommy har høy arbeidskapasitet, er strukturert og resultatorientert. Han er en ansvarlig utvikler som er proaktiv og som gjerne tar tak i utfordringer han måtte finne. Han har god evne til å ta raskt ta tak i nye problemstillinger og er en god lagspiller, fleksibel, åpen og passer lett inn i nye miljøer. På fritiden er Ole Tommy en sosial og aktiv 2 barnsfar som liker alt fra triatlon, ski og klatring til gaming, brettspill og matlaging.',
         ],
     },
     herman: {
