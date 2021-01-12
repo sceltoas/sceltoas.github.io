@@ -78,9 +78,7 @@ import Yoga from './images/yoga.jpeg';
 import FrederikBackground from './images/frederik-background.jpg';
 import HaakonBackground from './images/haakon-background.jpg';
 import ansatte from './ansatte';
-import {
-    showAvailableConsultantsFirst
-} from './utils';
+import { showAvailableConsultantsFirst } from './utils';
 
 export const ansatteMedAssets = {
     toreric: {
@@ -275,3 +273,8 @@ export const ansatteArray = () =>
 export const sortedAnsatte = ansatteArray()
     .map(ansatt => ansatt)
     .sort(showAvailableConsultantsFirst);
+
+export const sortedSlicedAnsatte = ansatteArray()
+    .map(ansatt => ansatt)
+    .sort(showAvailableConsultantsFirst)
+    .slice(0, 3);

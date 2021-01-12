@@ -15,7 +15,7 @@ import Footer from '../components/Footer';
 import { LightButton, DarkButton } from '../components/Button';
 import { createMetadata } from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
-import { sortedAnsatte } from '../ansatte-med-assets';
+import { sortedSlicedAnsatte } from '../ansatte-med-assets';
 
 import '../layouts/scelto.less';
 import './index.less';
@@ -59,7 +59,7 @@ const IndexPage = props => {
                             justifyContent: 'center',
                         }}
                     >
-                        {sortedAnsatte.map(({ name, title, key }) => {
+                        {sortedSlicedAnsatte.map(({ name, title, key }) => {
                             const image = props.data.EmployeeImages.edges.find(
                                 node => node.node.name === key
                             );
